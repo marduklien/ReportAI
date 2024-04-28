@@ -1,7 +1,7 @@
 import './node_modules/@tabler/core/dist/js/tabler.min.js';
 import './node_modules/bootstrap/dist/js/bootstrap.min.js';
 
-import './assets/js/dropdown.js';
+import './src/dropdown.js';
 
 
 import './node_modules/litepicker/dist/js/main.js';
