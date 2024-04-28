@@ -34,7 +34,6 @@ vite 專案執行開發模式 `npm run dev` 後即會自動監聽，不需要使
 ## 部署 gh-pages 流程說明
 ### Windows 版本
 1. 在 GitHub 建立一個新的 Repository
-
 2. 部署前請務必先將原始碼上傳到 GitHub Repository 也就是初始化 GitHub，因此通常第一步驟會在專案終端機輸入以下指令
 ```cmd
 git init # 若已經初始化過就可以不用輸入
