@@ -32,9 +32,9 @@
                         <tr>
                           <th><button class="table-sort" data-sort="sort-table">表名</button></th>
                           <th><button class="table-sort" data-sort="sort-line">行數</button></th>
-                          <th><button class="table-sort" data-sort="sort-data">數據大小</button></th>
-                          <th><button class="table-sort" data-sort="sort-index">索引大小</button></th>
-                          <th><button class="table-sort" data-sort="sort-total">總大小</button></th>
+                          <th><button class="table-sort" data-sort="sort-data">數據大小(MB)</button></th>
+                          <th><button class="table-sort" data-sort="sort-index">索引大小(MB)</button></th>
+                          <th><button class="table-sort" data-sort="sort-total">總大小(MB)</button></th>
                         </tr>
                       </thead>
                       <tbody class="table-tbody">
@@ -150,7 +150,7 @@
     </div>
 
     <script type="module" src="../main.js"></script>
-    <script src="../src/list.js"></script>
+    <script src="/assets/js/list.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
         const list = new List('table-default', {
