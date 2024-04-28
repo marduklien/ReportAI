@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-flags.min.css"> -->
+
+    <title>目標管理 - Report AI</title>
+  </head>
+  <body>
+
+    <div class="page">
+      <%- include('./layout/header'); -%>
+      <div class="page-wrapper">
+        <!-- Page header -->
+        <div class="page-header d-print-none">
+          <div class="container-xl">
+            <div class="row g-2 align-items-center">
+              <div class="col">
+                <h2 class="page-title">
+                  目標管理
+                </h2>
+              </div>
+              <div class="col-auto ms-auto d-print-none">
+                <!-- <a href="#" class="btn btn-purple">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
+                  新增
+                </a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Page body -->
+        <div class="page-body">
+          <div class="container-xl">
+            <div class="table-responsive border">
+                <table class="table table-hover table-vcenter">
+                  <thead>
+                    <tr>
+                      <th>問題</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>今年的銷貨收入</td>
+                      <td class="text-secondary">
+                        <div class="btn-list">
+                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                                編輯
+                            </a>
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                                刪除
+                            </a>
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-editType">
+                                類型修改
+                            </a>
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-Notice">
+                                現況通知
+                            </a>
+                          </div>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>今年的銷貨毛利</td>
+                        <td class="text-secondary">
+                          <div class="btn-list">
+                              <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                                  編輯
+                              </a>
+                              <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                                  刪除
+                              </a>
+                              <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-editType">
+                                類型修改
+                            </a>
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-Notice">
+                                現況通知
+                            </a>
+                            </div>
+                        </td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+          </div>
+          <!-- Pagination -->
+          <div class="container-xl">
+            <div class="row row-cards">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <ul class="pagination d-flex justify-content-center">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                            <!-- Download SVG icon from http://tabler-icons.io/i/chevron-left -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
+                            上一頁
+                          </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">
+                            下一頁 <!-- Download SVG icon from http://tabler-icons.io/i/chevron-right -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <%- include('./layout/footer'); -%>
+    </div>
+    <!-- modal -->
+    <div class="modal modal-blur fade" id="modal-edit" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">編輯</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="form-label">選擇欄位名稱</label>
+                    <input type="text" class="form-control" name="input-name" placeholder="選擇欄位"/>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">目標值</label>
+                    <input type="text" class="form-control" name="input-name" placeholder="2,400,000.00"/>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">目標值單位</label>
+                    <input type="text" class="form-control" name="input-name" placeholder="元"/>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">通知群組</label>
+                    <input type="text" class="form-control" name="input-name" placeholder="測試群組"/>
+                </div>
+                <div class="mb-3">
+                    <div class="form-label">觸發條件</div>
+                    <div>
+                      <label class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radios-target" checked>
+                        <span class="form-check-label">低於目標值通知</span>
+                      </label>
+                      <label class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radios-target">
+                        <span class="form-check-label">高於目標值通知</span>
+                      </label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="form-label">指標</div>
+                    <div>
+                      <label class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radios-date" checked>
+                        <span class="form-check-label">月指標</span>
+                      </label>
+                      <label class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radios-date">
+                        <span class="form-check-label">季指標</span>
+                      </label>
+                      <label class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radios-date">
+                        <span class="form-check-label">年指標</span>
+                      </label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">發送日期(1-28)</label>
+                    <input type="text" class="form-control" name="input-name" placeholder="1"/>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">監控日期</label>
+                    <div class="row">
+                        <div class="input-icon mb-2 col-6">
+                            <input class="form-control " placeholder="Select a date" id="datepicker-icon" value="2024-04-01"/>
+                            <span class="input-icon-addon">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M11 15h1" /><path d="M12 15v3" /></svg>
+                            </span>
+                          </div>
+                          <div class="input-icon col-6">
+                            <span class="input-icon-addon">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M11 15h1" /><path d="M12 15v3" /></svg>
+                            </span>
+                            <input class="form-control" placeholder="Select a date" id="datepicker-icon-prepend" value="2024-04-258"/>
+                          </div>      
+                    </div>
+                  </div>
+                <div class="mb-3">
+                    <div class="form-label">是否啟用</div>
+                    <div>
+                      <label class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radios-enable" checked>
+                        <span class="form-check-label">啟用</span>
+                      </label>
+                      <label class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radios-disabled">
+                        <span class="form-check-label">未啟用</span>
+                      </label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="form-label">今年銷貨收入</div>
+                    <div class="input-group input-group-flat">
+                        <span class="input-group-text">110277736</span>
+                        <input type="text" class="form-control ps-0"  value="" autocomplete="off">
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
+              <button type="button" class="btn btn-purple" data-bs-dismiss="modal">確認</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal modal-blur fade" id="modal-editType" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">編輯</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <div class="form-label">問題 : 今年銷貨收入</div>
+                    <div class="input-group input-group-flat">
+                        <span class="input-group-text">SELECT SUM(sales_amount) AS 今年銷貨收入 <br>
+                            FROM yu_sales <br>
+                            WHERE YEAR(order_date) = YEAR(CURDATE())</span>
+                        <input type="text" class="form-control ps-0"  value="" autocomplete="off">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">被取代文字</label>
+                    <input type="text" class="form-control" name="example-text-input" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">取代文字</label>
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <input type="text" class="form-control" name="example-text-input" placeholder="請輸入被取代文字">
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="btn btn-purple">
+                                新增
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">名稱</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
+              <button type="button" class="btn btn-purple" data-bs-dismiss="modal">確認</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal modal-blur fade" id="modal-danger" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-status bg-danger"></div>
+            <div class="modal-body text-center py-4">
+              <!-- Download SVG icon from http://tabler-icons.io/i/alert-triangle -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon mb-2 text-danger icon-lg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.24 3.957l-8.422 14.06a1.989 1.989 0 0 0 1.7 2.983h16.845a1.989 1.989 0 0 0 1.7 -2.983l-8.423 -14.06a1.989 1.989 0 0 0 -3.4 0z" /><path d="M12 9v4" /><path d="M12 17h.01" /></svg>
+              <h3 class="mb-3">刪除確認警告</h3>
+              <div class="text-secondary">刪除確認?</div>
+            </div>
+            <div class="modal-footer">
+              <div class="w-100">
+                <div class="row">
+                  <div class="col"><a href="#" class="btn w-100" data-bs-dismiss="modal">
+                    取消
+                    </a></div>
+                  <div class="col"><a href="#" class="btn btn-danger w-100" data-bs-dismiss="modal">
+                    確認
+                    </a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal modal-blur fade" id="modal-Notice" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">現況通知</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                現況通知
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
+              <button type="button" class="btn btn-purple" data-bs-dismiss="modal">確認</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script type="module" src="../main.js"></script>
+
+    <script>
+        // @formatter:off
+        document.addEventListener("DOMContentLoaded", function () {
+            var el;
+            window.TomSelect && (new TomSelect(el = document.getElementById('select-tags'), {
+                copyClassesToDropdown: false,
+                dropdownParent: 'body',
+                controlInput: '<input>',
+                render:{
+                    item: function(data,escape) {
+                        if( data.customProperties ){
+                            return '<div><span class="dropdown-item-indicator">' + data.customProperties + '</span>' + escape(data.text) + '</div>';
+                        }
+                        return '<div>' + escape(data.text) + '</div>';
+                    },
+                    option: function(data,escape){
+                        if( data.customProperties ){
+                            return '<div><span class="dropdown-item-indicator">' + data.customProperties + '</span>' + escape(data.text) + '</div>';
+                        }
+                        return '<div>' + escape(data.text) + '</div>';
+                    },
+                },
+            }));
+        });
+        // @formatter:on
+    </script>
+
+     <!-- Litepicker -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    	window.Litepicker && (new Litepicker({
+    		element: document.getElementById('datepicker-icon'),
+    		buttonText: {
+    			previousMonth: `<!-- Download SVG icon from http://tabler-icons.io/i/chevron-left -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>`,
+    			nextMonth: `<!-- Download SVG icon from http://tabler-icons.io/i/chevron-right -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>`,
+    		},
+    	}));
+    });
+    </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    	window.Litepicker && (new Litepicker({
+    		element: document.getElementById('datepicker-icon-prepend'),
+    		buttonText: {
+    			previousMonth: `<!-- Download SVG icon from http://tabler-icons.io/i/chevron-left -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>`,
+    			nextMonth: `<!-- Download SVG icon from http://tabler-icons.io/i/chevron-right -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>`,
+    		},
+    	}));
+    });
+    </script>
+
+  </body>
+</html>

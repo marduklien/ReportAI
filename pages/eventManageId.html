@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-flags.min.css"> -->
+
+    <title>事件 - Report AI</title>
+  </head>
+  <body>
+
+    <div class="page">
+      <%- include('./layout/header'); -%>
+      <div class="page-wrapper">
+        <!-- Page header -->
+        <div class="page-header d-print-none">
+            <div class="container-xl">
+                <div class="row g-2 align-items-center">
+                <div class="col">
+                    <h2 class="page-title">
+                    2023第一季總營收第一期未達目標 97%
+                    </h2>
+                </div>
+                <div class="col-auto ms-auto d-print-none">
+                    <!-- <a href="#" class="btn btn-purple">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
+                    新增
+                    </a> -->
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page body -->
+        <div class="page-body">
+          <div class="container-xl">
+            日期: 2023-02-01
+            事件狀態:
+            事件管理人: 總經理
+            事件聯絡人
+            謝經理(管理總部)
+            回覆內容
+            <a href="#" class="btn btn-purple">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
+            新增回覆
+            </a>
+            總經理 32天前
+            已核對
+          </div>
+        </div>
+      </div>
+      <%- include('./layout/footer'); -%>
+    </div>
+
+    <script type="module" src="../main.js"></script>
+    <script src="/src/list.js" defer></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const list = new List('table-default', {
+            sortClass: 'table-sort',
+            listClass: 'table-tbody',
+            valueNames: [ 'sort-name', 'sort-type', 'sort-trigger', 'sort-score',
+                { attr: 'data-date', name: 'sort-date' },
+                { attr: 'data-trigger', name: 'sort-trigger' },
+                { attr: 'data-quantity', name: 'sort-quantity' }            ]
+        });
+        })
+      </script>
+  </body>
+</html>

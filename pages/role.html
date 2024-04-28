@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+    <title>角色管理 - Report AI</title>
+  </head>
+  <body>
+    <div class="page">
+      <%- include('./layout/header'); -%>
+      <div class="page-wrapper">
+        <!-- Page header -->
+        <div class="page-header d-print-none">
+          <div class="container-xl">
+            <div class="row g-2 align-items-center">
+              <div class="col">
+                <h2 class="page-title">
+                  角色管理
+                </h2>
+              </div>
+              <div class="col-auto ms-auto d-print-none">
+                <a href="#" class="btn btn-purple">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
+                 新增
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Page body -->
+        <div class="page-body">
+          <div class="container-xl">
+            <div class="table-responsive border">
+                <table class="table table-hover table-vcenter">
+                  <thead>
+                    <tr>
+                      <th>名稱</th>
+                      <th>使用者列表</th>
+                      <th>指標列表</th>
+                      <th>Table列表</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>主管</td>
+                      <td class="text-secondary">總經理</td>
+                      <td class="text-secondary">
+                        <ul class="ps-0">
+                            <li>2023 Q1焦點產品銷售</li>
+                            <li>2023 Q1銷售</li>
+                            <li>2023 Q2焦點產品銷售</li>
+                            <li>2023 Q2銷售</li>
+                        </ul>
+                      </td>
+                      <td class="text-secondary">charge content_bonus</td>
+                      <td class="text-secondary">
+                        <div class="btn-list">
+                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                                編輯
+                            </a>
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                                刪除
+                            </a>
+                          </div>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>高階主管</td>
+                        <td class="text-secondary"></td>
+                        <td class="text-secondary">
+                          <ul class="ps-0">
+                              <li>2023 Q1焦點產品銷售</li>
+                              <li>2023 Q1銷售</li>
+                          </ul>
+                        </td>
+                        <td class="text-secondary">charge content_bonus</td>
+                        <td class="text-secondary">
+                          <div class="btn-list">
+                              <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                                  編輯
+                              </a>
+                              <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                                  刪除
+                              </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>經銷事業處主管</td>
+                        <td class="text-secondary">江處長</td>
+                        <td class="text-secondary">
+                          <ul class="ps-0">
+                              <li>2023 Q1焦點產品銷售</li>
+                              <li>2023 Q1銷售</li>
+                          </ul>
+                        </td>
+                        <td class="text-secondary">charge content_bonus</td>
+                        <td class="text-secondary">
+                          <div class="btn-list">
+                              <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                                  編輯
+                              </a>
+                              <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                                  刪除
+                              </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>醫院事業處主管</td>
+                        <td class="text-secondary">任經理</td>
+                        <td class="text-secondary">
+                          <ul class="ps-0">
+                              <li>2023 Q1焦點產品銷售</li>
+                              <li>2023 Q1銷售</li>
+                          </ul>
+                        </td>
+                        <td class="text-secondary">charge content_bonus</td>
+                        <td class="text-secondary">
+                          <div class="btn-list">
+                              <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                                  編輯
+                              </a>
+                              <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                                  刪除
+                              </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>診所事業處、國貿主管</td>
+                        <td class="text-secondary">
+                            <ul>
+                                <li>古副理</li>
+                                <li>楊經理</li>
+                                <li>王經理</li>
+                            </ul>
+                        </td>
+                        <td class="text-secondary">
+                          <ul>
+                              <li>2023 Q1焦點產品銷售</li>
+                              <li>2023 Q1銷售</li>
+                          </ul>
+                        </td>
+                        <td class="text-secondary">charge content_bonus</td>
+                        <td class="text-secondary">
+                          <div class="btn-list">
+                              <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                                  編輯
+                              </a>
+                              <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                                  刪除
+                              </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>生產事業處主管</td>
+                        <td class="text-secondary">副廠長</td>
+                        <td class="text-secondary">
+                          <ul class="ps-0">
+                              <li>2023 Q1焦點產品銷售</li>
+                              <li>2023 Q1銷售</li>
+                          </ul>
+                        </td>
+                        <td class="text-secondary">charge content_bonus</td>
+                        <td class="text-secondary">
+                          <div class="btn-list">
+                              <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                                  編輯
+                              </a>
+                              <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                                  刪除
+                              </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>行政管理單位	</td>
+                        <td class="text-secondary">
+                            <ul>
+                                <li>劉處長</li>
+                                <li>柯處長</li>
+                                <li>謝經理</li>
+                            </ul>
+                        </td>
+                        <td class="text-secondary">
+                          <ul>
+                              <li>2023 Q1焦點產品銷售</li>
+                              <li>2023 Q1銷售</li>
+                          </ul>
+                        </td>
+                        <td class="text-secondary">charge content_bonus</td>
+                        <td class="text-secondary">
+                          <div class="btn-list">
+                              <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                                  編輯
+                              </a>
+                              <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                                  刪除
+                              </a>
+                            </div>
+                        </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          </div>
+          <!-- Pagination -->
+          <div class="container-xl">
+            <div class="row row-cards">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <ul class="pagination d-flex justify-content-center">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                            <!-- Download SVG icon from http://tabler-icons.io/i/chevron-left -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
+                            上一頁
+                          </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">
+                            下一頁 <!-- Download SVG icon from http://tabler-icons.io/i/chevron-right -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <%- include('./layout/footer'); -%>
+    </div>
+    <!-- modal -->
+    <div class="modal modal-blur fade" id="modal-new" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">新增</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="col mb-3">
+                    <label class="form-label">角色名稱</label>
+                    <input type="text" class="form-control" name="input-name" placeholder="請輸入角色名稱"/>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Tags input</label>
+                    <select type="text" class="form-select" placeholder="Select tags" id="select-tags" value="" multiple>
+                        <option value="user01">總經理</option>
+                        <option value="user02">王經理</option>
+                        <option value="user03">任經理</option>
+                        <option value="user04">江處長</option>
+                        <option value="user05">謝經理</option>
+                        <option value="user06">副廠長</option>
+                        <option value="user07">劉處長</option>
+                        <option value="user08">柯處長</option>
+                        <option value="user09">楊經理</option>
+                        <option value="user10">古副理</option>
+                    </select>
+                  </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Select with labels</label>
+                    <select type="text" class="form-select" id="select-labels" value="">
+                      <option value="copy" data-custom-properties="&lt;span class=&quot;badge bg-primary-lt&quot;&gt;cmd + C&lt;/span&gt;">Copy</option>
+                      <option value="paste" data-custom-properties="&lt;span class=&quot;badge bg-primary-lt&quot;&gt;cmd + V&lt;/span&gt;">Paste</option>
+                      <option value="cut" data-custom-properties="&lt;span class=&quot;badge bg-primary-lt&quot;&gt;cmd + X&lt;/span&gt;">Cut</option>
+                    </select>
+                  </div>
+        
+
+        </div>
+            <div class="modal-footer">
+              <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確認</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal modal-blur fade" id="modal-edit" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">編輯</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="form-label">名稱</label>
+                    <input type="text" class="form-control" name="input-name" placeholder="測試群組"/>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確認</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal modal-blur fade" id="modal-danger" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-status bg-danger"></div>
+            <div class="modal-body text-center py-4">
+              <!-- Download SVG icon from http://tabler-icons.io/i/alert-triangle -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon mb-2 text-danger icon-lg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.24 3.957l-8.422 14.06a1.989 1.989 0 0 0 1.7 2.983h16.845a1.989 1.989 0 0 0 1.7 -2.983l-8.423 -14.06a1.989 1.989 0 0 0 -3.4 0z" /><path d="M12 9v4" /><path d="M12 17h.01" /></svg>
+              <h3 class="mb-3">刪除確認警告</h3>
+              <div class="text-secondary">刪除確認?</div>
+            </div>
+            <div class="modal-footer">
+              <div class="w-100">
+                <div class="row">
+                  <div class="col"><a href="#" class="btn w-100" data-bs-dismiss="modal">
+                    取消
+                    </a></div>
+                  <div class="col"><a href="#" class="btn btn-danger w-100" data-bs-dismiss="modal">
+                    確認
+                    </a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script type="module" src="../main.js"></script>
+    <script>
+        // @formatter:off
+        document.addEventListener("DOMContentLoaded", function () {
+            var el;
+            window.TomSelect && (new TomSelect(el = document.getElementById('select-tags'), {
+                copyClassesToDropdown: false,
+                dropdownParent: 'body',
+                controlInput: '<input>',
+                render:{
+                    item: function(data,escape) {
+                        if( data.customProperties ){
+                            return '<div><span class="dropdown-item-indicator">' + data.customProperties + '</span>' + escape(data.text) + '</div>';
+                        }
+                        return '<div>' + escape(data.text) + '</div>';
+                    },
+                    option: function(data,escape){
+                        if( data.customProperties ){
+                            return '<div><span class="dropdown-item-indicator">' + data.customProperties + '</span>' + escape(data.text) + '</div>';
+                        }
+                        return '<div>' + escape(data.text) + '</div>';
+                    },
+                },
+            }));
+        });
+        // @formatter:on
+    </script>
+
+    <script>
+        // @formatter:off
+        document.addEventListener("DOMContentLoaded", function () {
+            var el;
+            window.TomSelect && (new TomSelect(el = document.getElementById('select-labels'), {
+                copyClassesToDropdown: false,
+                dropdownParent: 'body',
+                controlInput: '<input>',
+                render:{
+                    item: function(data,escape) {
+                        if( data.customProperties ){
+                            return '<div><span class="dropdown-item-indicator">' + data.customProperties + '</span>' + escape(data.text) + '</div>';
+                        }
+                        return '<div>' + escape(data.text) + '</div>';
+                    },
+                    option: function(data,escape){
+                        if( data.customProperties ){
+                            return '<div><span class="dropdown-item-indicator">' + data.customProperties + '</span>' + escape(data.text) + '</div>';
+                        }
+                        return '<div>' + escape(data.text) + '</div>';
+                    },
+                },
+            }));
+        });
+        // @formatter:on
+    </script>
+
+  </body>
+</html>

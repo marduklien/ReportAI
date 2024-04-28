@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+    <title>關聯表 - Report AI</title>
+  </head>
+  <body>
+    <div class="page">
+      <%- include('./layout/header'); -%>
+      <div class="page-wrapper">
+        <!-- Page header -->
+        <div class="page-header d-print-none">
+            <div class="container-xl">
+                <div class="row g-2 align-items-center">
+                <div class="col">
+                    <h2 class="page-title">
+                    關聯表
+                    </h2>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page body -->
+        <div class="page-body">
+          <div class="container-xl">
+            <div id="table-default" class="table-responsive border">
+                <div id="table-default" class="table-responsive">
+                    <table class="table table-hover table-vcenter">
+                      <thead>
+                        <tr>
+                          <th><button class="table-sort" data-sort="sort-table">表名</button></th>
+                          <th><button class="table-sort" data-sort="sort-line">行數</button></th>
+                          <th><button class="table-sort" data-sort="sort-data">數據大小</button></th>
+                          <th><button class="table-sort" data-sort="sort-index">索引大小</button></th>
+                          <th><button class="table-sort" data-sort="sort-total">總大小</button></th>
+                        </tr>
+                      </thead>
+                      <tbody class="table-tbody">
+                        <tr>
+                            <td class="text-primary sort-table">trans_master</td>
+                            <td class="text-secondary sort-line" data-line="3824513">3824513</td>
+                            <td class="text-secondary sort-data" data-data="904.01">904.01</td>
+                            <td class="text-secondary sort-index" data-index="223.36">223.36</td>
+                            <td class="text-secondary sort-total" data-total="1127.364">1127.364</td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary sort-table">trans_2017</td>
+                            <td class="text-secondary sort-line" data-line="3824063">3824063</td>
+                            <td class="text-secondary sort-data" data-data="508.1">508.1</td>
+                            <td class="text-secondary sort-index" data-index="109.09">109.09</td>
+                            <td class="text-secondary sort-total" data-total="617.19">617.19</td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary sort-table">trans_game_info_master</td>
+                            <td class="text-secondary sort-line" data-line="3824063">3824063</td>
+                            <td class="text-secondary sort-data" data-data="353.88">353.88</td>
+                            <td class="text-secondary sort-index" data-index="127.46">127.46</td>
+                            <td class="text-secondary sort-total" data-total="481.34">481.34</td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary sort-table">trans_game_info_2017</td>
+                            <td class="text-secondary sort-line" data-line="3824063">3824063</td>
+                            <td class="text-secondary sort-data" data-data="70.02">70.02</td>
+                            <td class="text-secondary sort-index" data-index="25.43">25.43</td>
+                            <td class="text-secondary sort-total" data-total="95.45">95.45</td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary sort-table">coupon_trans_pin</td>
+                            <td class="text-secondary sort-line" data-line="31297">31297</td>
+                            <td class="text-secondary sort-data" data-data="2.98">2.98</td>
+                            <td class="text-secondary sort-index" data-index="0.67">0.67</td>
+                            <td class="text-secondary sort-total" data-total="3.65">3.65</td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary sort-table">user</td>
+                            <td class="text-secondary sort-line" data-line="3637">3637</td>
+                            <td class="text-secondary sort-data" data-data="0.78">0.78</td>
+                            <td class="text-secondary sort-index" data-index="0.3">0.3</td>
+                            <td class="text-secondary sort-total" data-total="1.08">1.08</td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary sort-table">trans_bonus</td>
+                            <td class="text-secondary sort-line" data-line="2937">2937</td>
+                            <td class="text-secondary sort-data" data-data="0.78">0.78</td>
+                            <td class="text-secondary sort-index" data-index="0.3">0.3</td>
+                            <td class="text-secondary sort-total" data-total="1.08">1.08</td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary sort-table">coupon_master</td>
+                            <td class="text-secondary sort-line" data-line="2010">2010</td>
+                            <td class="text-secondary sort-data" data-data="4.02">4.02</td>
+                            <td class="text-secondary sort-index" data-index="0.8">0.8</td>
+                            <td class="text-secondary sort-total" data-total="4.82">4.82</td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary sort-table">v_item_category</td>
+                            <td class="text-secondary sort-line" data-line="1516">1516</td>
+                            <td class="text-secondary sort-data" data-data="1.8">1.8</td>
+                            <td class="text-secondary sort-index" data-index="0.36">0.36</td>
+                            <td class="text-secondary sort-total" data-total="2.16">2.16</td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary sort-table">payment_agent</td>
+                            <td class="text-secondary sort-line" data-line="1121">1121</td>
+                            <td class="text-secondary sort-data" data-data="1.02">1.02</td>
+                            <td class="text-secondary sort-index" data-index="0.3">0.3</td>
+                            <td class="text-secondary sort-total" data-total="1.32">1.32</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+            </div>
+          </div>
+          <!-- Pagination -->
+          <div class="container-xl">
+            <div class="row row-cards">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <ul class="pagination d-flex justify-content-center">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                            <!-- Download SVG icon from http://tabler-icons.io/i/chevron-left -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
+                            上一頁
+                          </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">
+                            下一頁 <!-- Download SVG icon from http://tabler-icons.io/i/chevron-right -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <%- include('./layout/footer'); -%>
+    </div>
+
+    <script type="module" src="../main.js"></script>
+    <script src="/src/list.js" defer></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const list = new List('table-default', {
+            sortClass: 'table-sort',
+            listClass: 'table-tbody',
+            valueNames: [ 'sort-table', 'sort-line', 'sort-data', 'sort-index', 'sort-total',
+                { attr: 'data-line', name: 'sort-line' },
+                { attr: 'data-data', name: 'sort-data' },
+                { attr: 'data-index', name: 'sort-index' },
+                { attr: 'data-total', name: 'sort-total' },
+            ]
+        });
+        })
+      </script>
+  </body>
+</html>

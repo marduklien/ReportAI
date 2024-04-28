@@ -1,0 +1,32 @@
+{
+  "name": "vite-tabler-bs5",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && gh-pages -d dist"
+  },
+  "devDependencies": {
+    "ejs": "^3.1.9",
+    "vite": "^4.2.0",
+    "vite-plugin-ejs": "^1.6.4"
+  },
+  "dependencies": {
+    "@tabler/core": "^1.0.0-beta20",
+    "@tabler/icons": "^3.2.0",
+    "apexcharts": "^3.49.0",
+    "autosize": "^6.0.1",
+    "bootstrap": "^5.2.3",
+    "gh-pages": "^5.0.0",
+    "glob": "^10.2.2",
+    "litepicker": "^2.0.12",
+    "nouislider": "^15.7.1",
+    "sass": "^1.61.0",
+    "sass-loader": "^13.2.2",
+    "tom-select": "^2.3.1",
+    "vite-plugin-live-reload": "^3.0.2"
+  }
+}

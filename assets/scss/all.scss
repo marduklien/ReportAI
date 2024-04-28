@@ -1,0 +1,43 @@
+// font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+// tabler + bootstrap
+@import '../../node_modules/@tabler/core/src/scss/tabler';
+// @import "../../node_modules/bootstrap";
+
+@import "../../node_modules/bootstrap/scss/functions";
+
+// tabler flag
+@import url('https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-flags.min.css');
+// tabler icon
+@import url('https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css');
+// tom-select
+@import url('https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.bootstrap5.min.css');
+
+
+// 變數
+@import './utils/variables';
+//@import './utils/variables-bs5';
+@import './maps';
+
+// 工具類
+@import './utils/util';
+
+// The rest
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "./utilities";
+@import './root';
+@import './reboot';
+
+// 全站設定
+@import './utils/base';
+
+// Layout 共同框架
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+// 頁面設計
+@import './pages/index.scss';
+

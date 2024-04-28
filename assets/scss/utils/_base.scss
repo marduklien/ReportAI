@@ -1,0 +1,53 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+   color: $darkblue;
+   font-family: 'Noto Sans TC', sans-serif;
+   font-size: 16px;
+   font-weight: normal;
+   background-color: $lightgray
+}
+
+
+h1, h2, h3, h4, h5, h6, ul, p {
+    margin-bottom: 0;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+ol, ul, dl {
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+    display: block;
+    color: $gray-900;
+    text-decoration: none;
+  
+    &:hover {
+      color: $success;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  th, td {
+    text-align: left;
+    vertical-align: middle;
+}
