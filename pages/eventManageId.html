@@ -53,19 +53,5 @@
     </div>
 
     <script type="module" src="../main.js"></script>
-    <script src="/src/list.js" defer></script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        const list = new List('table-default', {
-            sortClass: 'table-sort',
-            listClass: 'table-tbody',
-            valueNames: [ 'sort-name', 'sort-type', 'sort-trigger', 'sort-score',
-                { attr: 'data-date', name: 'sort-date' },
-                { attr: 'data-trigger', name: 'sort-trigger' },
-                { attr: 'data-quantity', name: 'sort-quantity' }            ]
-        });
-        })
-      </script>
   </body>
 </html>
