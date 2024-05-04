@@ -13,8 +13,8 @@
             <!-- 績效指標 -->
             <div class="mb-3 row">
             <div class="col-6">
-                <label for="multiple-select-per" class="form-label">績效指標</label>
-                <select class="form-select" id="multiple-select-per" data-placeholder="請選擇指標" multiple>
+                <label for="add-select-per" class="form-label">績效指標</label>
+                <select class="form-select" id="add-select-per" data-placeholder="請選擇指標" multiple>
                     <option value="ind01">2023 Q1銷售</option>
                     <option value="ind02">2023 Q1焦點產品銷售</option>
                     <option value="ind03">2023 Q2銷售</option>
@@ -48,8 +48,8 @@
             </div>
             <!-- 通知群組 -->
             <div class="mb-3">
-                <label for="multiple-select-group" class="form-label">通知群組</label>
-                  <select class="form-select" id="multiple-select-group" data-placeholder="請選擇群組" multiple>
+                <label for="add-select-group" class="form-label">通知群組</label>
+                  <select class="form-select" id="add-select-group" data-placeholder="請選擇群組" multiple>
                     <option value="group_01">測試群組1</option>
                     <option value="group_02">測試群組2</option>
                     <option value="group_03">測試群組3</option>
@@ -92,7 +92,12 @@
                             監控開始日期
                         </div>
                         <div class="col-12 col-sm-8">
-                            <div data-coreui-locale="en-tw" data-coreui-placeholder="開始日期" data-coreui-toggle="date-picker" dir="rtl"></div>
+                            <div class="input-icon">
+                                <span class="input-icon-addon"><!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"></path><path d="M16 3v4"></path><path d="M8 3v4"></path><path d="M4 11h16"></path><path d="M11 15h1"></path><path d="M12 15v3"></path></svg>
+                                </span>
+                                <input class="form-control" placeholder="選擇日期" id="datepicker-icon-start" value="">
+                            </div>
                         </div>
                     </div>
                     <div class="input-icon col-12 col-sm-6 d-flex flex-column flex-sm-row justify-content-star align-sm-item-center ps-sm-2">
@@ -100,7 +105,12 @@
                             監控結束日期
                         </div>
                         <div class="col-12 col-sm-8">
-                            <div data-coreui-locale="en-tw" data-coreui-placeholder="結束日期" data-coreui-toggle="date-picker"></div>
+                            <div class="input-icon">
+                                <span class="input-icon-addon"><!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"></path><path d="M16 3v4"></path><path d="M8 3v4"></path><path d="M4 11h16"></path><path d="M11 15h1"></path><path d="M12 15v3"></path></svg>
+                                  </span>
+                                <input class="form-control " placeholder="選擇日期" id="datepicker-icon-end" value="">
+                            </div>
                         </div>
                     </div>      
                 </div>
@@ -132,7 +142,7 @@
                     </div>
                     <div class="col-12 col-sm-8 d-flex">
                         <div class="col-9 align-sm-item-center">
-                            <select class="form-select" id="multiple-select-user" data-placeholder="選擇使用者" multiple>
+                            <select class="form-select" id="add-select-user" data-placeholder="選擇使用者" multiple>
                                 <option value="user01">總經理-診所事業處-wang@aimedicine.com.tw</option>
                                 <option value="user02">王經理-診所事業處-wang@aimedicine.com.tw</option>
                                 <option value="user03">任經理-診所事業處-wang@aimedicine.com.tw</option>

@@ -135,8 +135,8 @@
     </div>
 
     <script type="module" src="../main.js"></script>
+    <!-- 下拉複選 -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script>
       (function($) {
@@ -154,7 +154,7 @@
         };
     })(window.jQuery);
 
-    $( '#multiple-select-per,#multiple-select-group,#multiple-select-user' ).select2( {
+    $( '#add-select-per,#add-select-group,#add-select-user,#edit-select-per,#edit-select-group,#edit-select-user' ).select2( {
         theme: "bootstrap-5",
         width: $( this ).data( 'width' ) ? $( this ).data( 'width' ) : $( this ).hasClass( 'w-100' ) ? '100%' : 'style',
         placeholder: $( this ).data( 'placeholder' ),
@@ -162,8 +162,67 @@
         closeOnSelect: true,
         allowClear :true,
       });
-
     </script>
-
+    <!-- 日期選擇 -->
+    <script>
+      // @formatter:off
+      document.addEventListener("DOMContentLoaded", function () {
+        window.Litepicker && (new Litepicker({
+          element: document.getElementById('datepicker-icon-start'),
+          buttonText: {
+            previousMonth: `
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>`,
+            nextMonth: `
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>`,
+          },
+        }));
+      });
+      // @formatter:on
+    </script>
+    <script>
+      // @formatter:off
+      document.addEventListener("DOMContentLoaded", function () {
+        window.Litepicker && (new Litepicker({
+          element: document.getElementById('datepicker-icon-end'),
+          buttonText: {
+            previousMonth: `
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>`,
+            nextMonth: `
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>`,
+          },
+        }));
+      });
+      // @formatter:on
+    </script>
+        <script>
+          // @formatter:off
+          document.addEventListener("DOMContentLoaded", function () {
+            window.Litepicker && (new Litepicker({
+              element: document.getElementById('datepicker-icon-start-edit'),
+              buttonText: {
+                previousMonth: `
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>`,
+                nextMonth: `
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>`,
+              },
+            }));
+          });
+          // @formatter:on
+        </script>
+        <script>
+          // @formatter:off
+          document.addEventListener("DOMContentLoaded", function () {
+            window.Litepicker && (new Litepicker({
+              element: document.getElementById('datepicker-icon-end-edit'),
+              buttonText: {
+                previousMonth: `
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>`,
+                nextMonth: `
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>`,
+              },
+            }));
+          });
+          // @formatter:on
+        </script>
   </body>
 </html>

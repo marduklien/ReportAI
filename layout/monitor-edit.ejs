@@ -12,34 +12,34 @@
             </div>
             <!-- 績效指標 -->
             <div class="mb-3 row">
-            <div class="col-6">
-                <label for="ms1" class="form-label">績效指標</label>
-                <select class="form-multi-select" id="ms1" multiple data-coreui-selection-type="tags" data-coreui-search="true">
-                    <option value="user01">2023 Q1銷售</option>
-                    <option value="user02">2023 Q1焦點產品銷售</option>
-                    <option value="user03">2023 Q2銷售</option>
-                    <option value="user04">2023 Q2焦點產品銷售</option>
-                    <option value="user05">2023 Q3銷售</option>
-                    <option value="user06">庫存週轉率（Inventory Turnover）</option>
-                    <option value="user07">庫存成本比率（Inventory Cost-to-Sales Ratio）</option>
-                    <option value="user08">安全庫存水平（Safety Stock Level）</option>
-                    <option value="user09">缺貨率（Stockout Rate）</option>
-                    <option value="user10">平均庫存週期（Average Inventory Days）</option>
-                    <option value="user11">周轉時間（Lead Time）</option>
-                    <option value="user12">品質控制（Quality Control）</option>
-                    <option value="user13">產能利用率（Capacity Utilization）</option>
-                    <option value="user14">交貨時間（Lead Time）</option>
-                    <option value="user15">平均收款週期（Average Collection Period）</option>
-                    <option value="user16">帳齡分析（Aging of Accounts Receivable）</option>
-                    <option value="user17">逾期帳款率（Accounts Receivable Overdue Percentage）</option>
-                    <option value="user18">應收帳款週轉率（Accounts Receivable Turnover）</option>
-                    <option value="user19">合約履行率（Contract Compliance）</option>
-                    <option value="user20">合約達成率（Contract Attainment）</option>
-                    <option value="user21">2023 Q3焦點產品銷售</option>
-                    <option value="user22">2023 Q4焦點產品銷售</option>
-                    <option value="user23">2023 Q4銷售</option>
-                </select>
-            </div>
+                <div class="col-6">
+                    <label for="edit-select-per" class="form-label">績效指標</label>
+                    <select class="form-select" id="edit-select-per" data-placeholder="請選擇指標" multiple>
+                        <option value="ind01">2023 Q1銷售</option>
+                        <option value="ind02">2023 Q1焦點產品銷售</option>
+                        <option value="ind03">2023 Q2銷售</option>
+                        <option value="ind04">2023 Q2焦點產品銷售</option>
+                        <option value="ind05">2023 Q3銷售</option>
+                        <option value="ind06">庫存週轉率（Inventory Turnover）</option>
+                        <option value="ind07">庫存成本比率（Inventory Cost-to-Sales Ratio）</option>
+                        <option value="ind08">安全庫存水平（Safety Stock Level）</option>
+                        <option value="ind09">缺貨率（Stockout Rate）</option>
+                        <option value="ind10">平均庫存週期（Average Inventory Days）</option>
+                        <option value="ind11">周轉時間（Lead Time）</option>
+                        <option value="ind12">品質控制（Quality Control）</option>
+                        <option value="ind13">產能利用率（Capacity Utilization）</option>
+                        <option value="ind14">交貨時間（Lead Time）</option>
+                        <option value="ind15">平均收款週期（Average Collection Period）</option>
+                        <option value="ind16">帳齡分析（Aging of Accounts Receivable）</option>
+                        <option value="ind17">逾期帳款率（Accounts Receivable Overdue Percentage）</option>
+                        <option value="ind18">應收帳款週轉率（Accounts Receivable Turnover）</option>
+                        <option value="ind19">合約履行率（Contract Compliance）</option>
+                        <option value="ind20">合約達成率（Contract Attainment）</option>
+                        <option value="ind21">2023 Q3焦點產品銷售</option>
+                        <option value="ind22">2023 Q4焦點產品銷售</option>
+                        <option value="ind23">2023 Q4銷售</option>
+                    </select>
+                </div>
             <!-- 目標值 -->
             <div class="col-6">
                 <label class="form-label">目標值</label>
@@ -48,13 +48,13 @@
             </div>
             <!-- 通知群組 -->
             <div class="mb-3">
-                <label for="group" class="form-label">通知群組</label>
-                <select class="form-multi-select" id="group" placeholder="選擇群組" multiple data-coreui-selection-type="tags" data-coreui-search="true">
+                <label for="edit-select-group" class="form-label">通知群組</label>
+                  <select class="form-select" id="edit-select-group" data-placeholder="請選擇群組" multiple>
                     <option value="group_01">測試群組1</option>
                     <option value="group_02">測試群組2</option>
                     <option value="group_03">測試群組3</option>
-                  </select>
-              </div>
+                </select>
+            </div>
             <!-- 觸發條件 -->
             <div class="mb-3">
                 <label class="form-label">觸發條件</label>
@@ -92,7 +92,12 @@
                             監控開始日期
                         </div>
                         <div class="col-12 col-sm-8">
-                            <div data-coreui-locale="en-tw" data-coreui-placeholder="開始日期" data-coreui-toggle="date-picker" dir="rtl"></div>
+                            <div class="input-icon">
+                                <span class="input-icon-addon"><!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"></path><path d="M16 3v4"></path><path d="M8 3v4"></path><path d="M4 11h16"></path><path d="M11 15h1"></path><path d="M12 15v3"></path></svg>
+                                </span>
+                                <input class="form-control" placeholder="選擇日期" id="datepicker-icon-start-edit" value="">
+                            </div>
                         </div>
                     </div>
                     <div class="input-icon col-12 col-sm-6 d-flex flex-column flex-sm-row justify-content-star align-sm-item-center ps-sm-2">
@@ -100,7 +105,12 @@
                             監控結束日期
                         </div>
                         <div class="col-12 col-sm-8">
-                            <div data-coreui-locale="en-tw" data-coreui-placeholder="結束日期" data-coreui-toggle="date-picker"></div>
+                            <div class="input-icon">
+                                <span class="input-icon-addon"><!-- Download SVG icon from http://tabler-icons.io/i/calendar -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"></path><path d="M16 3v4"></path><path d="M8 3v4"></path><path d="M4 11h16"></path><path d="M11 15h1"></path><path d="M12 15v3"></path></svg>
+                                  </span>
+                                <input class="form-control " placeholder="選擇日期" id="datepicker-icon-end-edit" value="">
+                            </div>
                         </div>
                     </div>      
                 </div>
@@ -132,7 +142,7 @@
                 </div>
                 <div class="col-12 col-sm-8 d-flex">
                     <div class="col-9 align-sm-item-center">
-                        <select class="form-multi-select" id="group" placeholder="選擇使用者" multiple data-coreui-selection-type="tags" data-coreui-search="true">
+                        <select class="form-select" id="edit-select-user" data-placeholder="選擇使用者" multiple>
                             <option value="user01">總經理-診所事業處-wang@aimedicine.com.tw</option>
                             <option value="user02">王經理-診所事業處-wang@aimedicine.com.tw</option>
                             <option value="user03">任經理-診所事業處-wang@aimedicine.com.tw</option>
@@ -152,7 +162,6 @@
             </div>
             </div>
         </div>
-
         <div class="table-responsive border">
         <table class="table table-hover table-vcenter">
             <thead>
@@ -173,7 +182,6 @@
             </tbody>
         </table>
         </div>
-
     </div>
     <div class="modal-footer">
         <button type="button" class="btn" data-bs-dismiss="modal">取消</button>

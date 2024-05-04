@@ -7,11 +7,11 @@
         <form action="./" method="post" id="framework_form">
     <!-- 選擇欄位名稱 -->
       <div class="mb-3">
-        <label for="group" class="form-label">選擇欄位名稱</label>
-        <select class="form-multi-select" id="group" placeholder="選擇群組" multiple data-coreui-selection-type="tags" data-coreui-search="true">
-            <option value="group_01">今年銷貨毛利</option>
-            <option value="group_02">今年銷貨毛利</option>
-            <option value="group_03">今年銷貨毛利</option>
+        <label for="select-item" class="form-label">選擇欄位名稱</label>
+          <select class="form-select" id="select-item" data-placeholder="請選擇欄位" multiple>
+            <option value="group_01">今年的銷貨收入</option>
+            <option value="group_02">今年的銷貨毛利</option>
+            <option value="group_03">今年的銷貨收入</option>
           </select>
       </div>
       <!-- 目標值 -->
@@ -26,8 +26,8 @@
         </div>
     <!-- 通知群組 -->
       <div class="mb-3">
-        <label for="group" class="form-label">通知群組</label>
-        <select class="form-multi-select" id="group" placeholder="選擇群組" multiple data-coreui-selection-type="tags" data-coreui-search="true">
+          <label for="select-group" class="form-label">通知群組</label>
+          <select class="form-select" id="select-group" data-placeholder="請選擇群組" multiple>
             <option value="group_01">測試群組1</option>
             <option value="group_02">測試群組2</option>
             <option value="group_03">測試群組3</option>
