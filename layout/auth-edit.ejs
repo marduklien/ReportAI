@@ -1,0 +1,85 @@
+<div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">編輯</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <form action="./" method="post" id="framework_form">
+        <!-- 帳號 -->
+        <div class="col mb-3">
+            <label class="form-label">帳號</label>
+            <input type="text" class="form-control" name="input-name" placeholder="請輸入帳號"/>
+        </div>
+        <!-- 密碼 -->
+        <div class="col mb-3">
+          <label class="form-label">
+            密碼
+          </label>
+          <div class="input-group input-group-flat">
+            <input type="password" class="form-control"  placeholder="請輸入密碼"  autocomplete="off">
+            <span class="input-group-text">
+              <a href="#" class="link-secondary" title="顯示" data-bs-toggle="tooltip">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
+              </a>
+            </span>
+          </div>
+        </div>
+        <!-- 暱稱 -->
+        <div class="col mb-3">
+          <label class="form-label">暱稱</label>
+          <input type="text" class="form-control" name="input-nickname" placeholder="請輸入暱稱"/>
+        </div>
+        <!-- 信箱 -->
+        <div class="mb-3">
+          <label class="form-label">信箱</label>
+          <input type="email" class="form-control" placeholder="請輸入暱稱email" autocomplete="off">
+        </div>
+        <!-- 部門 -->
+        <div class="col mb-3">
+          <label class="form-label">部門</label>
+          <input type="text" class="form-control" name="input-deportment" placeholder="請輸入部門"/>
+        </div>
+        <!-- 權限 -->
+        <div class="mb-3">
+            <label for="group" class="form-label">權限</label>
+            <select class="form-multi-select" id="group" placeholder="選擇權限" multiple data-coreui-selection-type="tags" multiple data-coreui-search="true">
+                <option value="user01">管理者</option>
+                <option value="user02">編輯者</option>
+              </select>
+          </div>
+          <!-- 角色 -->
+          <div class="mb-3">
+            <label for="group" class="form-label">角色</label>
+            <select class="form-multi-select" id="group" placeholder="選擇角色" multiple data-coreui-selection-type="tags" multiple data-coreui-search="true">
+                <option value="user01">主管</option>
+                <option value="user02">高階主管</option>
+                <option value="user03">經銷事業處主管</option>
+                <option value="user04">經銷事業處主管</option>
+                <option value="user05">醫院事業處主管</option>
+                <option value="user06">診所事業處、國貿主管</option>
+                <option value="user07">生產事業處主管</option>
+                <option value="user08">行政管理單位</option>
+              </select>
+          </div>
+          <!-- 是否鎖定 -->
+          <!-- 是否鎖定 -->
+          <div class="mb-3">
+            <label class="form-label">是否鎖定</label>
+            <div>
+                <label class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="radios-enable" checked>
+                <span class="form-check-label">未鎖定</span>
+                </label>
+                <label class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="radios-enable">
+                <span class="form-check-label">鎖定</span>
+                </label>
+            </div>
+            </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
+      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確認</button>
+    </div>
+    </form>
+</div>

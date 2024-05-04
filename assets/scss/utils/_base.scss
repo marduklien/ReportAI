@@ -8,11 +8,11 @@
 }
 
 body {
-   color: $darkblue;
+   color: $primary;
    font-family: 'Noto Sans TC', sans-serif;
    font-size: 16px;
    font-weight: normal;
-   background-color: $lightgray
+  //  background-color: $lightgray
 }
 
 
@@ -50,4 +50,22 @@ a {
   th, td {
     text-align: left;
     vertical-align: middle;
+}
+
+
+.dropdown-toggle::after {
+  border-top: 0;
+  border-right: 0;
+}
+
+.icon {
+  fill: none;
+}
+
+.form-multi-select-tag {
+  background-color: #DFCCFB;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #F1EAFF;
 }

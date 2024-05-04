@@ -1,0 +1,55 @@
+<div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">編輯</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <form action="./" method="post" id="framework_form">
+        <!-- 問題  -->
+        <div class="mb-3">
+            <div class="form-label">問題 : 今年銷貨收入</div>
+            <div class="input-group input-group-flat">
+                <textarea class="form-control text-left" name="example-textarea-input" rows="6" placeholder="請輸入指標 SQL"><code>SELECT SUM(sales_revenue) AS sales from sales WHERE sales_month = '2023-01' OR sales_month = '2023-02' OR sales_month = '2023-03'</code></textarea>
+            </div>
+        </div>
+        <!-- 被取代文字 -->
+        <div class="mb-3">
+            <label class="form-label">被取代文字</label>
+            <input type="text" class="form-control" name="example-text-input" placeholder="">
+        </div>
+        <!-- 取代文字 -->
+        <div class="mb-3">
+            <label class="form-label">取代文字</label>
+            <div class="row mb-3">
+                <div class="col-6">
+                    <input type="text" class="form-control" name="example-text-input" placeholder="請輸入取代文字">
+                </div>
+                <div class="col-6">
+                    <a href="#" class="btn btn-purple">
+                        新增
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 名稱 -->
+        <div class="table-responsive border">
+            <table class="table table-hover table-vcenter">
+                <thead>
+                <tr>
+                    <th>名稱</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="text-secondary table-active">取代文字</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
+      <button type="button" class="btn btn-purple" data-bs-dismiss="modal">確認</button>
+    </div>
+    </form>
+</div>

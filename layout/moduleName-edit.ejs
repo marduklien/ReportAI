@@ -1,0 +1,26 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title">新增指標資訊</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <form action="./" method="post" id="framework_form">
+        <div class="modal-body">
+            <div class="col mb-3">
+                <label class="form-label">指標資訊名稱</label>
+                <input type="text" class="form-control" name="input-name" value="2023 Q1銷售"/>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">指標 SQL</label>
+                <textarea class="form-control" name="example-textarea-input" rows="6" placeholder="請輸入指標 SQL">SELECT SUM(sales_revenue) AS sales from sales WHERE sales_month = '2023-01' OR sales_month = '2023-02' OR sales_month = '2023-03'</textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">指標單位</label>
+                <input type="text" class="form-control" name="input-Token" value="元"/>
+            </div>
+        <div class="modal-footer">
+            <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確認</button>
+        </div>
+    </form>
+    </div>
+</div>
