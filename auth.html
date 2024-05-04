@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <title>使用者管理 - Report AI</title>
-    <script type="module" crossorigin src="/ReportAI/assets/all-4f35231b.js"></script>
-    <link rel="stylesheet" href="/ReportAI/assets/all-8e86b5d6.css">
+    <script type="module" crossorigin src="/ReportAI/assets/all-48ffdcf8.js"></script>
+    <link rel="stylesheet" href="/ReportAI/assets/all-09953b3f.css">
   </head>
   <body>
     <div class="page">
@@ -23,7 +23,6 @@
     <div class="navbar-nav flex-row order-md-last">
       <div class="nav-item dropdown">
         <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
-          <span class="avatar avatar-sm" style="background-image: url(./static/avatars/000m.jpg)"></span>
           <div class="d-none d-xl-block ps-2">
             <div>王大明</div>
             <div class="mt-1 small text-secondary">總經理</div>
@@ -35,7 +34,7 @@
           <a href="#" class="dropdown-item">Feedback</a>
           <div class="dropdown-divider"></div>
           <a href="./settings.html" class="dropdown-item">Settings</a>
-          <a href="./sign-in.html" class="dropdown-item">Logout</a>
+          <a href="./sign-in.html" class="dropdown-item">登出</a>
         </div>
       </div>
     </div>
@@ -151,38 +150,7 @@
       </div>
     </div>
   </div>
-</header>
-
-<!-- <header class="navbar navbar-expand-sm navbar-light d-print-none">
-    <div class="container-xl">
-      <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
-        <a href="index.html">
-          <img src="../assets/images/logo.png"  alt="Logo" class="navbar-brand-image" />
-        </a>
-      </h1>
-
-      <div class="navbar-nav flex-row order-md-last">
-        <div class="nav-item">
-            <ul>
-                <li><a href="index.html">關聯表</a></li>
-                <li><a href="chat.html">資訊查詢</a></li>
-                <li><a href="">戰情室</a></li>
-                <li><a href="">管理</a></li>
-                <li><a href="">績效</a></li>
-                <li><a href="">事件</a></li>
-                <li><a href="charts.html">戰情室報表範例</a></li>
-            </ul>
-            <a href="#" class="nav-link d-flex lh-1 text-reset p-0">
-                <span class="avatar avatar-sm" style="background-image: url(...)"></span>
-                <div class="d-none d-xl-block ps-2">
-                <div>王大明</div>
-                <div class="mt-1 small text-secondary">總經理</div>
-                </div>
-            </a>
-        </div>
-      </div>
-    </div>
-</header> -->      <div class="page-wrapper">
+</header>      <div class="page-wrapper">
         <!-- Page header -->
         <div class="page-header d-print-none">
           <div class="container-xl">
@@ -193,7 +161,7 @@
                 </h2>
               </div>
               <div class="col-auto ms-auto d-print-none">
-                <a href="#" class="btn btn-purple">
+                <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-new">
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
                  新增
                 </a>
@@ -223,6 +191,168 @@
                       <td class="text-secondary">王經理</td>
                       <td class="text-secondary">wang@aimedicine.com.tw</td>
                       <td class="text-secondary">診所事業處</td>
+                      <td class="text-secondary">診所事業處、國貿主管</td>
+                      <td class="text-secondary">未鎖定</td>
+                      <td class="text-secondary">
+                        <div class="btn-list">
+                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                                編輯
+                            </a>
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                                刪除
+                            </a>
+                          </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>andy@aimedicine.com.tw</td>
+                      <td class="text-secondary">任經理</td>
+                      <td class="text-secondary">andy@aimedicine.com.tw</td>
+                      <td class="text-secondary">醫院事業處</td>
+                      <td class="text-secondary">醫院事業處主管</td>
+                      <td class="text-secondary">未鎖定</td>
+                      <td class="text-secondary">
+                        <div class="btn-list">
+                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                                編輯
+                            </a>
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                                刪除
+                            </a>
+                          </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>admin@gmail.com</td>
+                      <td class="text-secondary">總經理</td>
+                      <td class="text-secondary">admin@gmail.com</td>
+                      <td class="text-secondary">管理部門</td>
+                      <td class="text-secondary">主管</td>
+                      <td class="text-secondary">未鎖定</td>
+                      <td class="text-secondary">
+                        <div class="btn-list">
+                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                                編輯
+                            </a>
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                                刪除
+                            </a>
+                          </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>demi@aimedicine.com.tw</td>
+                      <td class="text-secondary">江處長</td>
+                      <td class="text-secondary">demi@aimedicine.com.tw</td>
+                      <td class="text-secondary">經銷事業處</td>
+                      <td class="text-secondary">經銷事業處主管</td>
+                      <td class="text-secondary">未鎖定</td>
+                      <td class="text-secondary">
+                        <div class="btn-list">
+                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                                編輯
+                            </a>
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                                刪除
+                            </a>
+                          </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>elva@aimedicine.com.tw</td>
+                      <td class="text-secondary">謝經理</td>
+                      <td class="text-secondary">elva@aimedicine.com.tw</td>
+                      <td class="text-secondary">管理總部</td>
+                      <td class="text-secondary">行政管理單位</td>
+                      <td class="text-secondary">未鎖定</td>
+                      <td class="text-secondary">
+                        <div class="btn-list">
+                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                                編輯
+                            </a>
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                                刪除
+                            </a>
+                          </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>ShunAnHsiao@aimedicine.com.tw</td>
+                      <td class="text-secondary">副廠長</td>
+                      <td class="text-secondary">ShunAnHsiao@aimedicine.com.tw</td>
+                      <td class="text-secondary">生產事業處</td>
+                      <td class="text-secondary">生產事業處主管</td>
+                      <td class="text-secondary">未鎖定</td>
+                      <td class="text-secondary">
+                        <div class="btn-list">
+                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                                編輯
+                            </a>
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                                刪除
+                            </a>
+                          </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>jessica@aimedicine.com.tw</td>
+                      <td class="text-secondary">劉處長</td>
+                      <td class="text-secondary">jessica@aimedicine.com.tw</td>
+                      <td class="text-secondary">總經理室</td>
+                      <td class="text-secondary">行政管理單位</td>
+                      <td class="text-secondary">未鎖定</td>
+                      <td class="text-secondary">
+                        <div class="btn-list">
+                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                                編輯
+                            </a>
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                                刪除
+                            </a>
+                          </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>frankko@aimedicine.com.tw</td>
+                      <td class="text-secondary">柯處長</td>
+                      <td class="text-secondary">frankko@aimedicine.com.tw</td>
+                      <td class="text-secondary">管理總部</td>
+                      <td class="text-secondary">行政管理單位</td>
+                      <td class="text-secondary">未鎖定</td>
+                      <td class="text-secondary">
+                        <div class="btn-list">
+                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                                編輯
+                            </a>
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                                刪除
+                            </a>
+                          </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>bosen.yang@aimedicine.com.tw</td>
+                      <td class="text-secondary">楊經理</td>
+                      <td class="text-secondary">bosen.yang@aimedicine.com.tw</td>
+                      <td class="text-secondary">診所事業處</td>
+                      <td class="text-secondary">診所事業處、國貿主管</td>
+                      <td class="text-secondary">未鎖定</td>
+                      <td class="text-secondary">
+                        <div class="btn-list">
+                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                                編輯
+                            </a>
+                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                                刪除
+                            </a>
+                          </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>k8819576@aimedicine.com.tw</td>
+                      <td class="text-secondary">古副理</td>
+                      <td class="text-secondary">k8819576@aimedicine.com.tw</td>
+                      <td class="text-secondary">國貿</td>
                       <td class="text-secondary">診所事業處、國貿主管</td>
                       <td class="text-secondary">未鎖定</td>
                       <td class="text-secondary">
@@ -272,7 +402,7 @@
               </div>
           </div>
         </div>
-        </div>
+      </div>
       <footer class="footer footer-transparent d-print-none">
     <div class="container-xl">
       <div class="row align-items-center">
@@ -288,155 +418,210 @@
   </footer>      </div>
     <!-- modal -->
     <div class="modal modal-blur fade" id="modal-new" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">新增</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="col mb-3">
-                    <label class="form-label">角色名稱</label>
-                    <input type="text" class="form-control" name="input-name" placeholder="請輸入角色名稱"/>
-                </div>
-
-                <div class="mb-3">
-                    <label class="form-label">Tags input</label>
-                    <select type="text" class="form-select" placeholder="Select tags" id="select-tags" value="" multiple>
-                        <option value="user01">總經理</option>
-                        <option value="user02">王經理</option>
-                        <option value="user03">任經理</option>
-                        <option value="user04">江處長</option>
-                        <option value="user05">謝經理</option>
-                        <option value="user06">副廠長</option>
-                        <option value="user07">劉處長</option>
-                        <option value="user08">柯處長</option>
-                        <option value="user09">楊經理</option>
-                        <option value="user10">古副理</option>
-                    </select>
-                  </div>
-
-                <div class="mb-3">
-                    <label class="form-label">Select with labels</label>
-                    <select type="text" class="form-select" id="select-labels" value="">
-                      <option value="copy" data-custom-properties="&lt;span class=&quot;badge bg-primary-lt&quot;&gt;cmd + C&lt;/span&gt;">Copy</option>
-                      <option value="paste" data-custom-properties="&lt;span class=&quot;badge bg-primary-lt&quot;&gt;cmd + V&lt;/span&gt;">Paste</option>
-                      <option value="cut" data-custom-properties="&lt;span class=&quot;badge bg-primary-lt&quot;&gt;cmd + X&lt;/span&gt;">Cut</option>
-                    </select>
-                  </div>
-        
-
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">新增</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <form action="./" method="post" id="framework_form">
+        <!-- 帳號 -->
+        <div class="col mb-3">
+            <label class="form-label">帳號</label>
+            <input type="text" class="form-control" name="input-name" placeholder="請輸入帳號"/>
         </div>
-            <div class="modal-footer">
-              <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確認</button>
-            </div>
+        <!-- 密碼 -->
+        <div class="col mb-3">
+          <label class="form-label">
+            密碼
+          </label>
+          <div class="input-group input-group-flat">
+            <input type="password" class="form-control"  placeholder="請輸入密碼"  autocomplete="off">
+            <span class="input-group-text">
+              <a href="#" class="link-secondary" title="顯示" data-bs-toggle="tooltip">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
+              </a>
+            </span>
           </div>
         </div>
+        <!-- 暱稱 -->
+        <div class="col mb-3">
+          <label class="form-label">暱稱</label>
+          <input type="text" class="form-control" name="input-nickname" placeholder="請輸入暱稱"/>
+        </div>
+        <!-- 信箱 -->
+        <div class="mb-3">
+          <label class="form-label">信箱</label>
+          <input type="email" class="form-control" placeholder="請輸入暱稱email" autocomplete="off">
+        </div>
+        <!-- 部門 -->
+        <div class="col mb-3">
+          <label class="form-label">部門</label>
+          <input type="text" class="form-control" name="input-deportment" placeholder="請輸入部門"/>
+        </div>
+        <!-- 權限 -->
+        <div class="mb-3">
+            <label for="group" class="form-label">權限</label>
+            <select class="form-multi-select" id="group" placeholder="選擇權限" multiple data-coreui-selection-type="tags" multiple data-coreui-search="true">
+                <option value="user01">管理者</option>
+                <option value="user02">編輯者</option>
+              </select>
+          </div>
+          <!-- 角色 -->
+          <div class="mb-3">
+            <label for="group" class="form-label">角色</label>
+            <select class="form-multi-select" id="group" placeholder="選擇角色" multiple data-coreui-selection-type="tags" multiple data-coreui-search="true">
+                <option value="user01">主管</option>
+                <option value="user02">高階主管</option>
+                <option value="user03">經銷事業處主管</option>
+                <option value="user04">經銷事業處主管</option>
+                <option value="user05">醫院事業處主管</option>
+                <option value="user06">診所事業處、國貿主管</option>
+                <option value="user07">生產事業處主管</option>
+                <option value="user08">行政管理單位</option>
+              </select>
+          </div>
+          <!-- 是否鎖定 -->
+          <div class="mb-3">
+            <label class="form-label">是否鎖定</label>
+            <div>
+                <label class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="radios-enable" checked>
+                <span class="form-check-label">未鎖定</span>
+                </label>
+                <label class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="radios-enable">
+                <span class="form-check-label">鎖定</span>
+                </label>
+            </div>
+            </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
+      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確認</button>
+    </div>
+    </form>
+</div>        </div>
     </div>
 
     <div class="modal modal-blur fade" id="modal-edit" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">編輯</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="mb-3">
-                    <label class="form-label">名稱</label>
-                    <input type="text" class="form-control" name="input-name" placeholder="測試群組"/>
-                </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確認</button>
-            </div>
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">編輯</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <form action="./" method="post" id="framework_form">
+        <!-- 帳號 -->
+        <div class="col mb-3">
+            <label class="form-label">帳號</label>
+            <input type="text" class="form-control" name="input-name" placeholder="請輸入帳號"/>
+        </div>
+        <!-- 密碼 -->
+        <div class="col mb-3">
+          <label class="form-label">
+            密碼
+          </label>
+          <div class="input-group input-group-flat">
+            <input type="password" class="form-control"  placeholder="請輸入密碼"  autocomplete="off">
+            <span class="input-group-text">
+              <a href="#" class="link-secondary" title="顯示" data-bs-toggle="tooltip">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
+              </a>
+            </span>
           </div>
         </div>
+        <!-- 暱稱 -->
+        <div class="col mb-3">
+          <label class="form-label">暱稱</label>
+          <input type="text" class="form-control" name="input-nickname" placeholder="請輸入暱稱"/>
+        </div>
+        <!-- 信箱 -->
+        <div class="mb-3">
+          <label class="form-label">信箱</label>
+          <input type="email" class="form-control" placeholder="請輸入暱稱email" autocomplete="off">
+        </div>
+        <!-- 部門 -->
+        <div class="col mb-3">
+          <label class="form-label">部門</label>
+          <input type="text" class="form-control" name="input-deportment" placeholder="請輸入部門"/>
+        </div>
+        <!-- 權限 -->
+        <div class="mb-3">
+            <label for="group" class="form-label">權限</label>
+            <select class="form-multi-select" id="group" placeholder="選擇權限" multiple data-coreui-selection-type="tags" multiple data-coreui-search="true">
+                <option value="user01">管理者</option>
+                <option value="user02">編輯者</option>
+              </select>
+          </div>
+          <!-- 角色 -->
+          <div class="mb-3">
+            <label for="group" class="form-label">角色</label>
+            <select class="form-multi-select" id="group" placeholder="選擇角色" multiple data-coreui-selection-type="tags" multiple data-coreui-search="true">
+                <option value="user01">主管</option>
+                <option value="user02">高階主管</option>
+                <option value="user03">經銷事業處主管</option>
+                <option value="user04">經銷事業處主管</option>
+                <option value="user05">醫院事業處主管</option>
+                <option value="user06">診所事業處、國貿主管</option>
+                <option value="user07">生產事業處主管</option>
+                <option value="user08">行政管理單位</option>
+              </select>
+          </div>
+          <!-- 是否鎖定 -->
+          <!-- 是否鎖定 -->
+          <div class="mb-3">
+            <label class="form-label">是否鎖定</label>
+            <div>
+                <label class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="radios-enable" checked>
+                <span class="form-check-label">未鎖定</span>
+                </label>
+                <label class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="radios-enable">
+                <span class="form-check-label">鎖定</span>
+                </label>
+            </div>
+            </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
+      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確認</button>
+    </div>
+    </form>
+</div>        </div>
     </div>
 
     <div class="modal modal-blur fade" id="modal-danger" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
           <div class="modal-content">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-status bg-danger"></div>
-            <div class="modal-body text-center py-4">
-              <!-- Download SVG icon from http://tabler-icons.io/i/alert-triangle -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon mb-2 text-danger icon-lg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.24 3.957l-8.422 14.06a1.989 1.989 0 0 0 1.7 2.983h16.845a1.989 1.989 0 0 0 1.7 -2.983l-8.423 -14.06a1.989 1.989 0 0 0 -3.4 0z" /><path d="M12 9v4" /><path d="M12 17h.01" /></svg>
-              <h3 class="mb-3">刪除確認警告</h3>
-              <div class="text-secondary">刪除確認?</div>
-            </div>
-            <div class="modal-footer">
-              <div class="w-100">
-                <div class="row">
-                  <div class="col"><a href="#" class="btn w-100" data-bs-dismiss="modal">
-                    取消
-                    </a></div>
-                  <div class="col"><a href="#" class="btn btn-danger w-100" data-bs-dismiss="modal">
-                    確認
-                    </a></div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-status bg-danger"></div>
+    <div class="modal-body text-center py-4">
+      <!-- Download SVG icon from http://tabler-icons.io/i/alert-triangle -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon mb-2 text-danger icon-lg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.24 3.957l-8.422 14.06a1.989 1.989 0 0 0 1.7 2.983h16.845a1.989 1.989 0 0 0 1.7 -2.983l-8.423 -14.06a1.989 1.989 0 0 0 -3.4 0z" /><path d="M12 9v4" /><path d="M12 17h.01" /></svg>
+      <h3 class="mb-3">刪除確認警告</h3>
+      <div class="text-secondary">刪除確認?</div>
+    </div>
+    <div class="modal-footer">
+      <div class="w-100">
+        <div class="row">
+          <div class="col"><a href="#" class="btn w-100" data-bs-dismiss="modal">
+            取消
+            </a></div>
+          <div class="col"><a href="#" class="btn btn-danger w-100" data-bs-dismiss="modal">
+            確認
+            </a></div>
+        </div>
+      </div>
+    </div>
+  </div>
         </div>
     </div>
 
     
-    <script>
-        // @formatter:off
-        document.addEventListener("DOMContentLoaded", function () {
-            var el;
-            window.TomSelect && (new TomSelect(el = document.getElementById('select-tags'), {
-                copyClassesToDropdown: false,
-                dropdownParent: 'body',
-                controlInput: '<input>',
-                render:{
-                    item: function(data,escape) {
-                        if( data.customProperties ){
-                            return '<div><span class="dropdown-item-indicator">' + data.customProperties + '</span>' + escape(data.text) + '</div>';
-                        }
-                        return '<div>' + escape(data.text) + '</div>';
-                    },
-                    option: function(data,escape){
-                        if( data.customProperties ){
-                            return '<div><span class="dropdown-item-indicator">' + data.customProperties + '</span>' + escape(data.text) + '</div>';
-                        }
-                        return '<div>' + escape(data.text) + '</div>';
-                    },
-                },
-            }));
-        });
-        // @formatter:on
-    </script>
-
-    <script>
-        // @formatter:off
-        document.addEventListener("DOMContentLoaded", function () {
-            var el;
-            window.TomSelect && (new TomSelect(el = document.getElementById('select-labels'), {
-                copyClassesToDropdown: false,
-                dropdownParent: 'body',
-                controlInput: '<input>',
-                render:{
-                    item: function(data,escape) {
-                        if( data.customProperties ){
-                            return '<div><span class="dropdown-item-indicator">' + data.customProperties + '</span>' + escape(data.text) + '</div>';
-                        }
-                        return '<div>' + escape(data.text) + '</div>';
-                    },
-                    option: function(data,escape){
-                        if( data.customProperties ){
-                            return '<div><span class="dropdown-item-indicator">' + data.customProperties + '</span>' + escape(data.text) + '</div>';
-                        }
-                        return '<div>' + escape(data.text) + '</div>';
-                    },
-                },
-            }));
-        });
-        // @formatter:on
-    </script>
 
   </body>
 </html>

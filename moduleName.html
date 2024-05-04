@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-    <title>關聯表 - Report AI</title>
+    <title>績效指標 - Report AI</title>
     <script type="module" crossorigin src="/ReportAI/assets/all-48ffdcf8.js"></script>
     <link rel="stylesheet" href="/ReportAI/assets/all-09953b3f.css">
   </head>
@@ -153,104 +153,53 @@
 </header>      <div class="page-wrapper">
         <!-- Page header -->
         <div class="page-header d-print-none">
-            <div class="container-xl">
-                <div class="row g-2 align-items-center">
-                <div class="col">
-                    <h2 class="page-title">
-                    關聯表
-                    </h2>
-                </div>
-                </div>
+          <div class="container-xl">
+            <div class="row g-2 align-items-center">
+              <div class="col">
+                <h2 class="page-title">
+                    銷售營收
+                </h2>
+              </div>
+              <div class="col-auto ms-auto d-print-none">
+                <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-new">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
+                  新增
+                </a>
+              </div>
             </div>
+          </div>
         </div>
         <!-- Page body -->
         <div class="page-body">
           <div class="container-xl">
-                <div id="table-default" class="table-responsive border">
-                    <table class="table table-hover table-vcenter">
-                      <thead>
-                        <tr>
-                          <th><button class="table-sort" data-sort="sort-table">表名</button></th>
-                          <th><button class="table-sort" data-sort="sort-line">行數</button></th>
-                          <th><button class="table-sort" data-sort="sort-data">數據大小(MB)</button></th>
-                          <th><button class="table-sort" data-sort="sort-index">索引大小(MB)</button></th>
-                          <th><button class="table-sort" data-sort="sort-total">總大小(MB)</button></th>
-                        </tr>
-                      </thead>
-                      <tbody class="table-tbody">
-                        <tr>
-                            <td class="text-primary sort-table">trans_master</td>
-                            <td class="text-secondary sort-line" data-line="3824513">3824513</td>
-                            <td class="text-secondary sort-data" data-data="904.01">904.01</td>
-                            <td class="text-secondary sort-index" data-index="223.36">223.36</td>
-                            <td class="text-secondary sort-total" data-total="1127.364">1127.364</td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary sort-table">trans_2017</td>
-                            <td class="text-secondary sort-line" data-line="3824063">3824063</td>
-                            <td class="text-secondary sort-data" data-data="508.1">508.1</td>
-                            <td class="text-secondary sort-index" data-index="109.09">109.09</td>
-                            <td class="text-secondary sort-total" data-total="617.19">617.19</td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary sort-table">trans_game_info_master</td>
-                            <td class="text-secondary sort-line" data-line="3824063">3824063</td>
-                            <td class="text-secondary sort-data" data-data="353.88">353.88</td>
-                            <td class="text-secondary sort-index" data-index="127.46">127.46</td>
-                            <td class="text-secondary sort-total" data-total="481.34">481.34</td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary sort-table">trans_game_info_2017</td>
-                            <td class="text-secondary sort-line" data-line="3824063">3824063</td>
-                            <td class="text-secondary sort-data" data-data="70.02">70.02</td>
-                            <td class="text-secondary sort-index" data-index="25.43">25.43</td>
-                            <td class="text-secondary sort-total" data-total="95.45">95.45</td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary sort-table">coupon_trans_pin</td>
-                            <td class="text-secondary sort-line" data-line="31297">31297</td>
-                            <td class="text-secondary sort-data" data-data="2.98">2.98</td>
-                            <td class="text-secondary sort-index" data-index="0.67">0.67</td>
-                            <td class="text-secondary sort-total" data-total="3.65">3.65</td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary sort-table">user</td>
-                            <td class="text-secondary sort-line" data-line="3637">3637</td>
-                            <td class="text-secondary sort-data" data-data="0.78">0.78</td>
-                            <td class="text-secondary sort-index" data-index="0.3">0.3</td>
-                            <td class="text-secondary sort-total" data-total="1.08">1.08</td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary sort-table">trans_bonus</td>
-                            <td class="text-secondary sort-line" data-line="2937">2937</td>
-                            <td class="text-secondary sort-data" data-data="0.78">0.78</td>
-                            <td class="text-secondary sort-index" data-index="0.3">0.3</td>
-                            <td class="text-secondary sort-total" data-total="1.08">1.08</td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary sort-table">coupon_master</td>
-                            <td class="text-secondary sort-line" data-line="2010">2010</td>
-                            <td class="text-secondary sort-data" data-data="4.02">4.02</td>
-                            <td class="text-secondary sort-index" data-index="0.8">0.8</td>
-                            <td class="text-secondary sort-total" data-total="4.82">4.82</td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary sort-table">v_item_category</td>
-                            <td class="text-secondary sort-line" data-line="1516">1516</td>
-                            <td class="text-secondary sort-data" data-data="1.8">1.8</td>
-                            <td class="text-secondary sort-index" data-index="0.36">0.36</td>
-                            <td class="text-secondary sort-total" data-total="2.16">2.16</td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary sort-table">payment_agent</td>
-                            <td class="text-secondary sort-line" data-line="1121">1121</td>
-                            <td class="text-secondary sort-data" data-data="1.02">1.02</td>
-                            <td class="text-secondary sort-index" data-index="0.3">0.3</td>
-                            <td class="text-secondary sort-total" data-total="1.32">1.32</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+            <div class="table-responsive border">
+                <table class="table table-hover table-vcenter">
+                  <thead>
+                    <tr>
+                      <th>指標資訊名稱</th>
+                      <th>SQL</th>
+                      <th>指標單位</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="col-3">2023 Q1銷售</td>
+                      <td class="text-secondary col-7">
+                        SELECT SUM(sales_revenue) AS sales from sales WHERE sales_month = '2023-01' OR sales_month = '2023-02' OR sales_month = '2023-03'	
+                      </td>
+                      <td class="text-secondary col-1">元</td>
+                      <td class="text-secondary col-1">
+                        <div class="btn-list">
+                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                                編輯
+                            </a>
+                          </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
           </div>
           <!-- Pagination -->
           <div class="container-xl">
@@ -298,23 +247,71 @@
       </div>
     </div>
   </footer>    </div>
+    <!-- modal -->
+    <div class="modal modal-blur fade" id="modal-new" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title">新增指標資訊</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <form action="./" method="post" id="framework_form">
+        <div class="modal-body">
+            <div class="col mb-3">
+                <label class="form-label">指標資訊名稱</label>
+                <input type="text" class="form-control" name="input-name" placeholder="請輸入指標資訊"/>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">指標 SQL</label>
+                <textarea class="form-control" name="example-textarea-input" rows="6" placeholder="請輸入指標 SQL"></textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">指標單位</label>
+                <input type="text" class="form-control" name="input-Token" placeholder="請輸入指標單位"/>
+            </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確認</button>
+        </div>
+    </form>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <div class="modal modal-blur fade" id="modal-edit" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title">新增指標資訊</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <form action="./" method="post" id="framework_form">
+        <div class="modal-body">
+            <div class="col mb-3">
+                <label class="form-label">指標資訊名稱</label>
+                <input type="text" class="form-control" name="input-name" value="2023 Q1銷售"/>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">指標 SQL</label>
+                <textarea class="form-control" name="example-textarea-input" rows="6" placeholder="請輸入指標 SQL">SELECT SUM(sales_revenue) AS sales from sales WHERE sales_month = '2023-01' OR sales_month = '2023-02' OR sales_month = '2023-03'</textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">指標單位</label>
+                <input type="text" class="form-control" name="input-Token" value="元"/>
+            </div>
+        <div class="modal-footer">
+            <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確認</button>
+        </div>
+    </form>
+    </div>
+</div>
+        </div>
+    </div>
 
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        const list = new List('table-default', {
-            sortClass: 'table-sort',
-            listClass: 'table-tbody',
-            valueNames: [ 'sort-table', 'sort-line', 'sort-data', 'sort-index', 'sort-total',
-                { attr: 'data-line', name: 'sort-line' },
-                { attr: 'data-data', name: 'sort-data' },
-                { attr: 'data-index', name: 'sort-index' },
-                { attr: 'data-total', name: 'sort-total' },
-            ]
-        });
-        })
-      </script>
   </body>
 </html>
