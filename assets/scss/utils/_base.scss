@@ -52,6 +52,9 @@ a {
     vertical-align: middle;
 }
 
+.page-title {
+  color: $stratos;
+}
 
 .dropdown-toggle::after {
   border-top: 0;
@@ -60,6 +63,11 @@ a {
 
 .icon {
   fill: none;
+}
+
+.avatar {
+  border: none;
+  box-shadow:none;
 }
 
 

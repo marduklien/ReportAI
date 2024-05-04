@@ -4,13 +4,17 @@
  # GitHub Pages Demo
   - [Demo](https://marduklien.github.io/ReportAI/)
 
-# About tabler
+# tabler Documentation
   - [tabler](https://tabler.io/)
   - [tabler Documentation](https://tabler.io/docs/getting-started)
 
-# 下拉複選表單
-  - [COREui](https://coreui.io/bootstrap/docs/forms/multi-select/)
+# Select2 下拉複選表單
+  - [Select2](https://apalfrey.github.io/select2-bootstrap-5-theme/examples/multiple-select/)
 
-# 日期選擇器
-  - [COREui](https://coreui.io/bootstrap/docs/forms/date-picker/)
+# 表單物件
+  - [tabler Form elements](https://preview.tabler.io/form-elements.html)
+
+# Icon
+  - [tabler icon]( https://tabler.io/icons/)
+ 
 

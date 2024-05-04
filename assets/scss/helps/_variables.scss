@@ -166,11 +166,11 @@ $body-emphasis-color: $dark !default;
 $color-contrast-dark: $body-color !default;
 $color-contrast-light: $light !default;
 
-$blue: #0054a6 !default;
+$blue: #8E8FFA !default;
 $azure: #4299e1 !default;
-$indigo: #4263eb !default;
+$indigo: #8696FE !default;
 $purple: #ae3ec9 !default;
-$pink: #d6336c !default;
+$pink: #FFB6D9 !default;
 $red: #d63939 !default;
 $orange: #f76707 !default;
 $yellow: #f59f00 !default;
@@ -178,19 +178,22 @@ $lime: #74b816 !default;
 $green: #2fb344 !default;
 $teal: #0ca678 !default;
 $cyan: #17a2b8 !default;
+$stratos : #010D4C!default;
 
-$color-blue: #0054a6;
+
+$color-blue: #8E8FFA;
 $color-azure: #3586c9;
-$color-indigo: #4263eb;
+$color-indigo: #8696FE;
 $color-purple: #ae3ec9;
-$color-pink: #d6336c;
-$color-red: #e73f3f;
+$color-pink: #FFB6D9;
+$color-red: #d63939;
 $color-orange: #f76707;
 $color-yellow: #f59f00;
 $color-lime: #74b816;
 $color-green: #2fb344;
 $color-teal: #0ca678;
 $color-cyan: #17a2b8;
+$color-stratos: #010D4C;
 
 $text-secondary: $gray-600 !default;
 $text-secondary-light: $gray-500 !default;
