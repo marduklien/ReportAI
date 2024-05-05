@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>戰情室 - Report AI</title>
-    <script type="module" crossorigin src="/ReportAI/assets/all-d129fd92.js"></script>
-    <link rel="stylesheet" href="/ReportAI/assets/all-1341c887.css">
+    <script type="module" crossorigin src="/ReportAI/assets/all-1236d8d6.js"></script>
+    <link rel="stylesheet" href="/ReportAI/assets/all-5767310b.css">
   </head>
   <body>
     <header class="navbar navbar-expand-md d-print-none" >
@@ -22,9 +22,10 @@
     <div class="navbar-nav flex-row order-md-last">
       <div class="nav-item dropdown">
         <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
+          <div class="text-indigo fs-3 me-2">15,432,765筆</div>
           <div class="d-none d-xl-block ps-2">
-            <div>王大明</div>
-            <div class="mt-1 small text-secondary dropdown-toggle">總經理</div>
+            <div class="fs-1">王大明</div>
+            <div class="mt-2 fs-2 text-secondary dropdown-toggle">總經理</div>
           </div>
         </a>
         <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
@@ -165,38 +166,61 @@
             <div class="row row-cards">
 
 				<div class="col-lg-6 col-xl-6">
-					<h2 class="mb-3">不同年齡段男性與女性消費者人數</h2>
 					<div class="card">
-					  <div class="card-body">
-						<div id="chart-1"></div>
-					  </div>
+						<div class="card-header d-flex justify-content-between mb-4">
+							<h2 class="mb-3 text-secondary">不同年齡段男性與女性消費者人數</h2>
+							<button class="btn btn-primary" type="button" data-bs-toggle="collapse" 
+							data-bs-target="#collapseChart_1" aria-expanded="false" aria-controls="collapseChart_1">
+								查詢
+							</button>
+						</div>
+						<div class="collapse" id="collapseChart_1">
+							<div class="card-body">
+								<div id="chart-1"></div>
+							</div>
+						</div>
 					</div>
-				  </div>
+				</div>
 
-				  <div class="col-lg-6 col-xl-6">
-					<h2 class="mb-3">不同年齡段與性別在銷貨收入關聯性</h2>
+				<div class="col-lg-6 col-xl-6">
 					<div class="card">
-					  <div class="card-body">
-						<div id="chart-2"></div>
-					  </div>
+						<div class="card-header d-flex justify-content-between mb-4">
+							<h2 class="mb-3 text-secondary">不同年齡段與性別在銷貨收入關聯性</h2>
+							<button class="btn btn-primary" type="button" data-bs-toggle="collapse" 
+							data-bs-target="#collapseChart_2" aria-expanded="false" aria-controls="collapseChart_2">
+								查詢
+							</button>
+						</div>
+						<div class="collapse" id="collapseChart_2">
+							<div class="card-body">
+								<div id="chart-2"></div>
+							</div>
+						</div>
 					</div>
-				  </div>
+				</div>
 
-				  <div class="col-lg-6 col-xl-6">
-					<h2 class="mb-3">各別區域銷貨毛利</h2>
+				<div class="col-lg-6 col-xl-6">
 					<div class="card">
-					  <div class="card-body">
-						<div id="chart-3"></div>
-					  </div>
+						<div class="card-header d-flex justify-content-between mb-4">
+							<h2 class="mb-3 text-secondary">各別區域銷貨毛利</h2>
+							<button class="btn btn-primary" type="button" data-bs-toggle="collapse" 
+							data-bs-target="#collapseChart_3" aria-expanded="false" aria-controls="collapseChart_3">
+								查詢
+							</button>
+						</div>
+						<div class="collapse" id="collapseChart_3">
+							<div class="card-body">
+								<div id="chart-3"></div>
+							</div>
+						</div>
 					</div>
-				  </div>
+				</div>
 
             </div>
           </div>
         </div>
       </div>
     </div>
-    
 
     <footer class="footer footer-transparent d-print-none">
     <div class="container-xl">
