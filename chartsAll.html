@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>戰情室 - Report AI</title>
-    <script type="module" crossorigin src="/ReportAI/assets/all-1236d8d6.js"></script>
-    <link rel="stylesheet" href="/ReportAI/assets/all-5767310b.css">
+    <script type="module" crossorigin src="/ReportAI/assets/all-093b4996.js"></script>
+    <link rel="stylesheet" href="/ReportAI/assets/all-fb44ab8a.css">
   </head>
-  <body>
-    <header class="navbar navbar-expand-md d-print-none" >
+  <body data-bs-theme="dark">
+    <div class="page">
+		<header class="navbar navbar-expand-md d-print-none" >
   <div class="container-xl">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -22,10 +23,10 @@
     <div class="navbar-nav flex-row order-md-last">
       <div class="nav-item dropdown">
         <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
-          <div class="text-indigo fs-3 me-2">15,432,765筆</div>
-          <div class="d-none d-xl-block ps-2">
-            <div class="fs-1">王大明</div>
-            <div class="mt-2 fs-2 text-secondary dropdown-toggle">總經理</div>
+          <div class="d-none d-xl-block text-light fs-3 me-2">15,432,765筆</div>
+          <div class="d-block d-xl-block ps-2">
+            <div class="fs-3 fs-sm-1">王大明</div>
+            <div class="mt-2 fs-4 fs-sm-2 text-light dropdown-toggle">總經理</div>
           </div>
         </a>
         <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
@@ -42,28 +43,28 @@
       <div class="container-xl">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="./diagram.html" >
+            <a class="nav-link btn btn-ghost-primary" href="./diagram.html" >
               <span class="nav-link-title">
                 關聯表
               </span>
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link" href="./chatMessage.html" >
+            <a class="nav-link btn btn-ghost-primary" href="./chatMessage.html" >
               <span class="nav-link-title">
                 資訊查詢
               </span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./charts.html" >
+            <a class="nav-link btn btn-ghost-primary" href="./charts.html" >
               <span class="nav-link-title">
                 戰情室
               </span>
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#navbar-extra" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
+            <a class="nav-link dropdown-toggle btn btn-ghost-primary" href="#navbar-extra" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
               <span class="nav-link-title">
                 管理
               </span>
@@ -85,7 +86,7 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#navbar-layout" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
+            <a class="nav-link dropdown-toggle btn btn-ghost-primary" href="#navbar-layout" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
               <span class="nav-link-title">
                 績效
               </span>
@@ -107,14 +108,14 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./event.html" >
+            <a class="nav-link btn btn-ghost-primary" href="./event.html" >
               <span class="nav-link-title">
                 事件
               </span>
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#navbar-help" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
+            <a class="nav-link dropdown-toggle btn btn-ghost-primary" href="#navbar-help" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
               <span class="nav-link-title">
                 戰情室報表範例
               </span>
@@ -138,16 +139,14 @@
               <span class="input-icon-addon">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
               </span>
-              <input type="text" value="" class="form-control" placeholder="搜尋…" aria-label="Search in website">
+              <input type="text" value="" class="form-control border-gradient border-gradient-purple" placeholder="搜尋…" aria-label="Search in website">
             </div>
           </form>
         </div>
       </div>
     </div>
   </div>
-</header>
-    <div class="page">
-      <div class="page-wrapper">
+</header>      <div class="page-wrapper">
       <!-- Page header -->
       <div class="page-header d-print-none">
         <div class="container-xl">
@@ -388,22 +387,19 @@
           </div>
         </div>
       </div>
-    </div>
-    
-
-    <footer class="footer footer-transparent d-print-none">
+	  <footer class="footer footer-transparent d-print-none">
     <div class="container-xl">
       <div class="row align-items-center">
           <ul class="list-inline list-inline-dots mb-0">
             <li class="d-flex flex-column flex-sm-row justify-content-center text-center">
               <span> Copyright &copy; 2024 &nbsp;</span>
-              <a href="https://www.yusung.com.tw/" class="link-secondary" target="_blank">宇菘科技&紘宇顧問管理有限公司</a>
+              <a href="https://www.yusung.com.tw/" class="link-light" target="_blank">宇菘科技&紘宇顧問管理有限公司</a>
               <span>&nbsp; All rights reserved.</span>
             </li>
           </ul>
       </div>
     </div>
-  </footer>
+  </footer>    </div>
     
     <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/libs/apexcharts/dist/apexcharts.min.js" defer></script>
     <script>

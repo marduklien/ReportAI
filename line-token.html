@@ -7,11 +7,10 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-flags.min.css"> -->
 
     <title>Line Notify - Report AI</title>
-    <script type="module" crossorigin src="/ReportAI/assets/all-1236d8d6.js"></script>
-    <link rel="stylesheet" href="/ReportAI/assets/all-5767310b.css">
+    <script type="module" crossorigin src="/ReportAI/assets/all-093b4996.js"></script>
+    <link rel="stylesheet" href="/ReportAI/assets/all-fb44ab8a.css">
   </head>
-  <body>
-
+  <body data-bs-theme="dark">
     <div class="page">
       <header class="navbar navbar-expand-md d-print-none" >
   <div class="container-xl">
@@ -26,10 +25,10 @@
     <div class="navbar-nav flex-row order-md-last">
       <div class="nav-item dropdown">
         <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
-          <div class="text-indigo fs-3 me-2">15,432,765筆</div>
-          <div class="d-none d-xl-block ps-2">
-            <div class="fs-1">王大明</div>
-            <div class="mt-2 fs-2 text-secondary dropdown-toggle">總經理</div>
+          <div class="d-none d-xl-block text-light fs-3 me-2">15,432,765筆</div>
+          <div class="d-block d-xl-block ps-2">
+            <div class="fs-3 fs-sm-1">王大明</div>
+            <div class="mt-2 fs-4 fs-sm-2 text-light dropdown-toggle">總經理</div>
           </div>
         </a>
         <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
@@ -46,28 +45,28 @@
       <div class="container-xl">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="./diagram.html" >
+            <a class="nav-link btn btn-ghost-primary" href="./diagram.html" >
               <span class="nav-link-title">
                 關聯表
               </span>
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link" href="./chatMessage.html" >
+            <a class="nav-link btn btn-ghost-primary" href="./chatMessage.html" >
               <span class="nav-link-title">
                 資訊查詢
               </span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./charts.html" >
+            <a class="nav-link btn btn-ghost-primary" href="./charts.html" >
               <span class="nav-link-title">
                 戰情室
               </span>
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#navbar-extra" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
+            <a class="nav-link dropdown-toggle btn btn-ghost-primary" href="#navbar-extra" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
               <span class="nav-link-title">
                 管理
               </span>
@@ -89,7 +88,7 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#navbar-layout" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
+            <a class="nav-link dropdown-toggle btn btn-ghost-primary" href="#navbar-layout" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
               <span class="nav-link-title">
                 績效
               </span>
@@ -111,14 +110,14 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./event.html" >
+            <a class="nav-link btn btn-ghost-primary" href="./event.html" >
               <span class="nav-link-title">
                 事件
               </span>
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#navbar-help" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
+            <a class="nav-link dropdown-toggle btn btn-ghost-primary" href="#navbar-help" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
               <span class="nav-link-title">
                 戰情室報表範例
               </span>
@@ -142,7 +141,7 @@
               <span class="input-icon-addon">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
               </span>
-              <input type="text" value="" class="form-control" placeholder="搜尋…" aria-label="Search in website">
+              <input type="text" value="" class="form-control border-gradient border-gradient-purple" placeholder="搜尋…" aria-label="Search in website">
             </div>
           </form>
         </div>
@@ -171,8 +170,8 @@
         <!-- Page body -->
         <div class="page-body">
           <div class="container-xl">
-            <div class="table-responsive border">
-                <table class="table table-hover table-vcenter">
+            <div id="table-default" class="table-responsive border-0 border-gradient-purple-bottom pb-4">
+              <table class="table table-hover table-vcenter table-dark">
                   <thead>
                     <tr>
                       <th>名稱</th>
@@ -182,17 +181,17 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>測試群組</td>
-                      <td class="text-secondary">UjLp1eLk9v4WTwze4pk0WhZTTUKhwjk0kh0DhPOZZBo</td>
-                      <td class="text-secondary">
+                      <td class="text-yellow">測試群組</td>
+                      <td>UjLp1eLk9v4WTwze4pk0WhZTTUKhwjk0kh0DhPOZZBo</td>
+                      <td>
                         <div class="btn-list">
                             <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                 編輯
                             </a>
-                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                            <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-danger">
                                 刪除
                             </a>
-                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-test">
+                            <a href="#" class="btn btn-cyan" data-bs-toggle="modal" data-bs-target="#modal-test">
                                 測試
                             </a>
                           </div>
@@ -206,7 +205,7 @@
           <div class="container-xl">
             <div class="row row-cards">
                 <div class="col-12">
-                  <div class="card border-top-0">
+                  <div class="card border-top-0 bg-transparent border-0">
                     <div class="card-body">
                       <ul class="pagination d-flex justify-content-center">
                         <li class="page-item disabled">
@@ -241,7 +240,7 @@
           <ul class="list-inline list-inline-dots mb-0">
             <li class="d-flex flex-column flex-sm-row justify-content-center text-center">
               <span> Copyright &copy; 2024 &nbsp;</span>
-              <a href="https://www.yusung.com.tw/" class="link-secondary" target="_blank">宇菘科技&紘宇顧問管理有限公司</a>
+              <a href="https://www.yusung.com.tw/" class="link-light" target="_blank">宇菘科技&紘宇顧問管理有限公司</a>
               <span>&nbsp; All rights reserved.</span>
             </li>
           </ul>
@@ -251,9 +250,9 @@
     <!-- modal -->
     <div class="modal modal-blur fade" id="modal-new" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title">新增</h5>
+          <div class="modal-content border-0 border-rounded-gradient">
+  <div class="modal-header border-0">
+      <h5 class="modal-title text-indigo">新增</h5>
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
     <div class="modal-body">
@@ -269,7 +268,7 @@
             <input type="text" class="form-control" name="input-Token" placeholder="請輸入Line Token"/>
         </div>
     </div>
-    <div class="modal-footer">
+    <div class="modal-footer border-0">
       <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
       <button type="button" class="btn btn-purple" data-bs-dismiss="modal">確認</button>
     </div>
@@ -279,10 +278,9 @@
 
     <div class="modal modal-blur fade" id="modal-edit" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-          
-<div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title">編輯</h5>
+          <div class="modal-content border-0 border-rounded-gradient">
+  <div class="modal-header border-0">
+      <h5 class="modal-title text-indigo">編輯</h5>
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
     <div class="modal-body">
@@ -298,8 +296,8 @@
             <input type="text" class="form-control" name="input-Token" value="UjLp1eLk9v4WTwze4pk0WhZTTUKhwjk0kh0DhPOZZBo"/>
         </div>
 </div>
-    <div class="modal-footer">
-      <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
+<div class="modal-footer border-0">
+  <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
       <button type="button" class="btn btn-purple" data-bs-dismiss="modal">確認</button>
     </div>
   </form>
@@ -308,14 +306,13 @@
 
     <div class="modal modal-blur fade" id="modal-danger" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
-          <div class="modal-content">
-    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-content border-0 border-rounded-gradient">
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     <div class="modal-status bg-danger"></div>
     <div class="modal-body text-center py-4">
-      <!-- Download SVG icon from http://tabler-icons.io/i/alert-triangle -->
       <svg xmlns="http://www.w3.org/2000/svg" class="icon mb-2 text-danger icon-lg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.24 3.957l-8.422 14.06a1.989 1.989 0 0 0 1.7 2.983h16.845a1.989 1.989 0 0 0 1.7 -2.983l-8.423 -14.06a1.989 1.989 0 0 0 -3.4 0z" /><path d="M12 9v4" /><path d="M12 17h.01" /></svg>
       <h3 class="mb-3">刪除確認警告</h3>
-      <div class="text-secondary">刪除確認?</div>
+      <div class="text-light">刪除確認?</div>
     </div>
     <div class="modal-footer">
       <div class="w-100">
@@ -335,15 +332,15 @@
 
     <div class="modal modal-blur fade" id="modal-test" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title">測試</h5>
+          <div class="modal-content border-0 border-rounded-gradient">
+  <div class="modal-header border-0">
+      <h5 class="modal-title text-indigo">測試</h5>
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
     <div class="modal-body">
         Line Notify 測試
     </div>
-    <div class="modal-footer">
+    <div class="modal-footer border-0">
       <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
       <button type="button" class="btn btn-purple" data-bs-dismiss="modal">確認</button>
     </div>
