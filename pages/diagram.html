@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <title>關聯表 - Report AI</title>
   </head>
-  <body>
+  <body data-bs-theme="dark">
     <div class="page">
       <%- include('./layout/header'); -%>
       <div class="page-wrapper">
@@ -25,87 +25,87 @@
         <!-- Page body -->
         <div class="page-body">
           <div class="container-xl">
-                <div id="table-default" class="table-responsive border">
-                    <table class="table table-hover table-vcenter">
+            <div id="table-default" class="table-responsive border-0 border-gradient-purple-bottom pb-4">
+              <table class="table table-hover table-vcenter table-dark">
                       <thead>
                         <tr>
-                          <th><button class="table-sort" data-sort="sort-table">表名</button></th>
-                          <th><button class="table-sort" data-sort="sort-line">行數</button></th>
-                          <th><button class="table-sort" data-sort="sort-data">數據大小(MB)</button></th>
-                          <th><button class="table-sort" data-sort="sort-index">索引大小(MB)</button></th>
-                          <th><button class="table-sort" data-sort="sort-total">總大小(MB)</button></th>
+                          <th class="text-indigo"><button class="table-sort" data-sort="sort-table">表名</button></th>
+                          <th class="text-indigo"><button class="table-sort" data-sort="sort-line">行數</button></th>
+                          <th class="text-indigo"><button class="table-sort" data-sort="sort-data">數據大小(MB)</button></th>
+                          <th class="text-indigo"><button class="table-sort" data-sort="sort-index">索引大小(MB)</button></th>
+                          <th class="text-indigo"><button class="table-sort" data-sort="sort-total">總大小(MB)</button></th>
                         </tr>
                       </thead>
                       <tbody class="table-tbody">
                         <tr>
-                            <td class="text-primary sort-table">trans_master</td>
-                            <td class="text-secondary sort-line" data-line="3824513">3824513</td>
-                            <td class="text-secondary sort-data" data-data="904.01">904.01</td>
-                            <td class="text-secondary sort-index" data-index="223.36">223.36</td>
-                            <td class="text-secondary sort-total" data-total="1127.364">1127.364</td>
+                            <td class="text-yellow sort-table">trans_master</td>
+                            <td class="sort-line" data-line="3824513">3824513</td>
+                            <td class="sort-data" data-data="904.01">904.01</td>
+                            <td class="sort-index" data-index="223.36">223.36</td>
+                            <td class="sort-total" data-total="1127.364">1127.364</td>
                         </tr>
                         <tr>
-                            <td class="text-primary sort-table">trans_2017</td>
-                            <td class="text-secondary sort-line" data-line="3824063">3824063</td>
-                            <td class="text-secondary sort-data" data-data="508.1">508.1</td>
-                            <td class="text-secondary sort-index" data-index="109.09">109.09</td>
-                            <td class="text-secondary sort-total" data-total="617.19">617.19</td>
+                            <td class="text-yellow sort-table">trans_2017</td>
+                            <td class="sort-line" data-line="3824063">3824063</td>
+                            <td class="sort-data" data-data="508.1">508.1</td>
+                            <td class="sort-index" data-index="109.09">109.09</td>
+                            <td class="sort-total" data-total="617.19">617.19</td>
                         </tr>
                         <tr>
-                            <td class="text-primary sort-table">trans_game_info_master</td>
-                            <td class="text-secondary sort-line" data-line="3824063">3824063</td>
-                            <td class="text-secondary sort-data" data-data="353.88">353.88</td>
-                            <td class="text-secondary sort-index" data-index="127.46">127.46</td>
-                            <td class="text-secondary sort-total" data-total="481.34">481.34</td>
+                            <td class="text-yellow sort-table">trans_game_info_master</td>
+                            <td class="sort-line" data-line="3824063">3824063</td>
+                            <td class="sort-data" data-data="353.88">353.88</td>
+                            <td class="sort-index" data-index="127.46">127.46</td>
+                            <td class="sort-total" data-total="481.34">481.34</td>
                         </tr>
                         <tr>
-                            <td class="text-primary sort-table">trans_game_info_2017</td>
-                            <td class="text-secondary sort-line" data-line="3824063">3824063</td>
-                            <td class="text-secondary sort-data" data-data="70.02">70.02</td>
-                            <td class="text-secondary sort-index" data-index="25.43">25.43</td>
-                            <td class="text-secondary sort-total" data-total="95.45">95.45</td>
+                            <td class="text-yellow sort-table">trans_game_info_2017</td>
+                            <td class="sort-line" data-line="3824063">3824063</td>
+                            <td class="sort-data" data-data="70.02">70.02</td>
+                            <td class="sort-index" data-index="25.43">25.43</td>
+                            <td class="sort-total" data-total="95.45">95.45</td>
                         </tr>
                         <tr>
-                            <td class="text-primary sort-table">coupon_trans_pin</td>
-                            <td class="text-secondary sort-line" data-line="31297">31297</td>
-                            <td class="text-secondary sort-data" data-data="2.98">2.98</td>
-                            <td class="text-secondary sort-index" data-index="0.67">0.67</td>
-                            <td class="text-secondary sort-total" data-total="3.65">3.65</td>
+                            <td class="text-yellow sort-table">coupon_trans_pin</td>
+                            <td class="sort-line" data-line="31297">31297</td>
+                            <td class="sort-data" data-data="2.98">2.98</td>
+                            <td class="sort-index" data-index="0.67">0.67</td>
+                            <td class="sort-total" data-total="3.65">3.65</td>
                         </tr>
                         <tr>
-                            <td class="text-primary sort-table">user</td>
-                            <td class="text-secondary sort-line" data-line="3637">3637</td>
-                            <td class="text-secondary sort-data" data-data="0.78">0.78</td>
-                            <td class="text-secondary sort-index" data-index="0.3">0.3</td>
-                            <td class="text-secondary sort-total" data-total="1.08">1.08</td>
+                            <td class="text-yellow sort-table">user</td>
+                            <td class="sort-line" data-line="3637">3637</td>
+                            <td class="sort-data" data-data="0.78">0.78</td>
+                            <td class="sort-index" data-index="0.3">0.3</td>
+                            <td class="sort-total" data-total="1.08">1.08</td>
                         </tr>
                         <tr>
-                            <td class="text-primary sort-table">trans_bonus</td>
-                            <td class="text-secondary sort-line" data-line="2937">2937</td>
-                            <td class="text-secondary sort-data" data-data="0.78">0.78</td>
-                            <td class="text-secondary sort-index" data-index="0.3">0.3</td>
-                            <td class="text-secondary sort-total" data-total="1.08">1.08</td>
+                            <td class="text-yellow sort-table">trans_bonus</td>
+                            <td class="sort-line" data-line="2937">2937</td>
+                            <td class="sort-data" data-data="0.78">0.78</td>
+                            <td class="sort-index" data-index="0.3">0.3</td>
+                            <td class="sort-total" data-total="1.08">1.08</td>
                         </tr>
                         <tr>
-                            <td class="text-primary sort-table">coupon_master</td>
-                            <td class="text-secondary sort-line" data-line="2010">2010</td>
-                            <td class="text-secondary sort-data" data-data="4.02">4.02</td>
-                            <td class="text-secondary sort-index" data-index="0.8">0.8</td>
-                            <td class="text-secondary sort-total" data-total="4.82">4.82</td>
+                            <td class="text-yellow sort-table">coupon_master</td>
+                            <td class="sort-line" data-line="2010">2010</td>
+                            <td class="sort-data" data-data="4.02">4.02</td>
+                            <td class="sort-index" data-index="0.8">0.8</td>
+                            <td class="sort-total" data-total="4.82">4.82</td>
                         </tr>
                         <tr>
-                            <td class="text-primary sort-table">v_item_category</td>
-                            <td class="text-secondary sort-line" data-line="1516">1516</td>
-                            <td class="text-secondary sort-data" data-data="1.8">1.8</td>
-                            <td class="text-secondary sort-index" data-index="0.36">0.36</td>
-                            <td class="text-secondary sort-total" data-total="2.16">2.16</td>
+                            <td class="text-yellow sort-table">v_item_category</td>
+                            <td class="sort-line" data-line="1516">1516</td>
+                            <td class="sort-data" data-data="1.8">1.8</td>
+                            <td class="sort-index" data-index="0.36">0.36</td>
+                            <td class="sort-total" data-total="2.16">2.16</td>
                         </tr>
                         <tr>
-                            <td class="text-primary sort-table">payment_agent</td>
-                            <td class="text-secondary sort-line" data-line="1121">1121</td>
-                            <td class="text-secondary sort-data" data-data="1.02">1.02</td>
-                            <td class="text-secondary sort-index" data-index="0.3">0.3</td>
-                            <td class="text-secondary sort-total" data-total="1.32">1.32</td>
+                            <td class="text-yellow sort-table">payment_agent</td>
+                            <td class="sort-line" data-line="1121">1121</td>
+                            <td class="sort-data" data-data="1.02">1.02</td>
+                            <td class="sort-index" data-index="0.3">0.3</td>
+                            <td class="sort-total" data-total="1.32">1.32</td>
                         </tr>
                       </tbody>
                     </table>
@@ -115,7 +115,7 @@
           <div class="container-xl">
             <div class="row row-cards">
                 <div class="col-12">
-                  <div class="card border-top-0">
+                  <div class="card border-top-0 bg-transparent border-0">
                     <div class="card-body">
                       <ul class="pagination d-flex justify-content-center">
                         <li class="page-item disabled">

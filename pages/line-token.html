@@ -8,8 +8,7 @@
 
     <title>Line Notify - Report AI</title>
   </head>
-  <body>
-
+  <body data-bs-theme="dark">
     <div class="page">
       <%- include('./layout/header'); -%>
       <div class="page-wrapper">
@@ -34,8 +33,8 @@
         <!-- Page body -->
         <div class="page-body">
           <div class="container-xl">
-            <div class="table-responsive border">
-                <table class="table table-hover table-vcenter">
+            <div id="table-default" class="table-responsive border-0 border-gradient-purple-bottom pb-4">
+              <table class="table table-hover table-vcenter table-dark">
                   <thead>
                     <tr>
                       <th>名稱</th>
@@ -45,17 +44,17 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>測試群組</td>
-                      <td class="text-secondary">UjLp1eLk9v4WTwze4pk0WhZTTUKhwjk0kh0DhPOZZBo</td>
-                      <td class="text-secondary">
+                      <td class="text-yellow">測試群組</td>
+                      <td>UjLp1eLk9v4WTwze4pk0WhZTTUKhwjk0kh0DhPOZZBo</td>
+                      <td>
                         <div class="btn-list">
                             <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                 編輯
                             </a>
-                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-danger">
+                            <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-danger">
                                 刪除
                             </a>
-                            <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#modal-test">
+                            <a href="#" class="btn btn-cyan" data-bs-toggle="modal" data-bs-target="#modal-test">
                                 測試
                             </a>
                           </div>
@@ -69,7 +68,7 @@
           <div class="container-xl">
             <div class="row row-cards">
                 <div class="col-12">
-                  <div class="card border-top-0">
+                  <div class="card border-top-0 bg-transparent border-0">
                     <div class="card-body">
                       <ul class="pagination d-flex justify-content-center">
                         <li class="page-item disabled">

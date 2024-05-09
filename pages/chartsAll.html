@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>戰情室 - Report AI</title>
   </head>
-  <body>
-    <%- include('./layout/header'); -%>
-
+  <body data-bs-theme="dark">
     <div class="page">
+		<%- include('./layout/header'); -%>
       <div class="page-wrapper">
       <!-- Page header -->
       <div class="page-header d-print-none">
@@ -251,11 +250,8 @@
           </div>
         </div>
       </div>
+	  <%- include('./layout/footer'); -%>
     </div>
-    
-
-    <%- include('./layout/footer'); -%>
-
     <script type="module" src="../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/libs/apexcharts/dist/apexcharts.min.js" defer></script>
     <script>

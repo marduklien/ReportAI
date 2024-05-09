@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
     <title>角色管理 - Report AI</title>
   </head>
-  <body>
+  <body data-bs-theme="dark">
     <div class="page">
       <%- include('./layout/header'); -%>
       <div class="page-wrapper">
@@ -34,22 +34,22 @@
         <!-- Page body -->
         <div class="page-body">
           <div class="container-xl">
-            <div class="table-responsive border">
-                <table class="table table-hover table-vcenter">
+            <div id="table-default" class="table-responsive border-0 border-gradient-purple-bottom pb-4">
+              <table class="table table-hover table-vcenter table-dark">
                   <thead>
                     <tr>
-                      <th>名稱</th>
-                      <th>使用者列表</th>
-                      <th>指標列表</th>
-                      <th>Table列表</th>
+                      <th class="text-indigo">名稱</th>
+                      <th class="text-indigo">使用者列表</th>
+                      <th class="text-indigo">指標列表</th>
+                      <th class="text-indigo">Table列表</th>
                       <th></th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>主管</td>
-                      <td class="text-secondary">總經理</td>
-                      <td class="text-secondary">
+                      <td class="text-yellow">主管</td>
+                      <td>總經理</td>
+                      <td>
                         <ul class="ps-0">
                             <li>2023 Q1焦點產品銷售</li>
                             <li>2023 Q1銷售</li>
@@ -76,8 +76,8 @@
                             <li>逾期帳款率（Accounts Receivable Overdue Percentage）</li>
                         </ul>
                       </td>
-                      <td class="text-secondary">charge content_bonus</td>
-                      <td class="text-secondary">
+                      <td>charge content_bonus</td>
+                      <td>
                         <div class="btn-list">
                             <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                 編輯
@@ -86,16 +86,16 @@
                       </td>
                     </tr>
                     <tr>
-                        <td>高階主管</td>
-                        <td class="text-secondary"></td>
-                        <td class="text-secondary">
+                        <td class="text-yellow">高階主管</td>
+                        <td></td>
+                        <td>
                           <ul class="ps-0">
                               <li>2023 Q1焦點產品銷售</li>
                               <li>2023 Q1銷售</li>
                           </ul>
                         </td>
-                        <td class="text-secondary">charge content_bonus</td>
-                        <td class="text-secondary">
+                        <td>charge content_bonus</td>
+                        <td>
                           <div class="btn-list">
                               <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                   編輯
@@ -104,16 +104,16 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>經銷事業處主管</td>
-                        <td class="text-secondary">江處長</td>
-                        <td class="text-secondary">
+                        <td class="text-yellow">經銷事業處主管</td>
+                        <td>江處長</td>
+                        <td>
                           <ul class="ps-0">
                               <li>2023 Q1焦點產品銷售</li>
                               <li>2023 Q1銷售</li>
                           </ul>
                         </td>
-                        <td class="text-secondary">charge content_bonus</td>
-                        <td class="text-secondary">
+                        <td>charge content_bonus</td>
+                        <td>
                           <div class="btn-list">
                               <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                   編輯
@@ -122,16 +122,16 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>醫院事業處主管</td>
-                        <td class="text-secondary">任經理</td>
-                        <td class="text-secondary">
+                        <td class="text-yellow">醫院事業處主管</td>
+                        <td>任經理</td>
+                        <td>
                           <ul class="ps-0">
                               <li>2023 Q1焦點產品銷售</li>
                               <li>2023 Q1銷售</li>
                           </ul>
                         </td>
-                        <td class="text-secondary">charge content_bonus</td>
-                        <td class="text-secondary">
+                        <td>charge content_bonus</td>
+                        <td>
                           <div class="btn-list">
                               <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                   編輯
@@ -140,22 +140,22 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>診所事業處、國貿主管</td>
-                        <td class="text-secondary">
+                        <td class="text-yellow">診所事業處、國貿主管</td>
+                        <td>
                             <ul>
                                 <li>古副理</li>
                                 <li>楊經理</li>
                                 <li>王經理</li>
                             </ul>
                         </td>
-                        <td class="text-secondary">
+                        <td>
                           <ul>
                               <li>2023 Q1焦點產品銷售</li>
                               <li>2023 Q1銷售</li>
                           </ul>
                         </td>
-                        <td class="text-secondary">charge content_bonus</td>
-                        <td class="text-secondary">
+                        <td>charge content_bonus</td>
+                        <td>
                           <div class="btn-list">
                               <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                   編輯
@@ -164,16 +164,16 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>生產事業處主管</td>
-                        <td class="text-secondary">副廠長</td>
-                        <td class="text-secondary">
+                        <td class="text-yellow">生產事業處主管</td>
+                        <td>副廠長</td>
+                        <td>
                           <ul class="ps-0">
                               <li>2023 Q1焦點產品銷售</li>
                               <li>2023 Q1銷售</li>
                           </ul>
                         </td>
-                        <td class="text-secondary">charge content_bonus</td>
-                        <td class="text-secondary">
+                        <td>charge content_bonus</td>
+                        <td>
                           <div class="btn-list">
                               <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                   編輯
@@ -182,22 +182,22 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>行政管理單位	</td>
-                        <td class="text-secondary">
+                        <td class="text-yellow">行政管理單位</td>
+                        <td>
                             <ul>
                                 <li>劉處長</li>
                                 <li>柯處長</li>
                                 <li>謝經理</li>
                             </ul>
                         </td>
-                        <td class="text-secondary">
+                        <td>
                           <ul>
                               <li>2023 Q1焦點產品銷售</li>
                               <li>2023 Q1銷售</li>
                           </ul>
                         </td>
-                        <td class="text-secondary">charge content_bonus</td>
-                        <td class="text-secondary">
+                        <td>charge content_bonus</td>
+                        <td>
                           <div class="btn-list">
                               <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                   編輯
@@ -213,7 +213,7 @@
           <div class="container-xl">
             <div class="row row-cards">
                 <div class="col-12">
-                  <div class="card border-top-0">
+                  <div class="card border-top-0 bg-transparent border-0">
                     <div class="card-body">
                       <ul class="pagination d-flex justify-content-center">
                         <li class="page-item disabled">

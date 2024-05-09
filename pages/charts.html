@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>戰情室 - Report AI</title>
   </head>
-  <body>
-    <%- include('./layout/header'); -%>
-
+  <body data-bs-theme="dark">
     <div class="page">
+		<%- include('./layout/header'); -%>
       <div class="page-wrapper">
       <!-- Page header -->
       <div class="page-header d-print-none">
@@ -29,9 +28,9 @@
             <div class="row row-cards">
 
 				<div class="col-lg-6 col-xl-6">
-					<div class="card">
-						<div class="card-header d-flex justify-content-between mb-4">
-							<h2 class="mb-3 text-secondary">不同年齡段男性與女性消費者人數</h2>
+					<div class="card border-0 border-rounded-gradient">
+						<div class="card-header border-0 d-flex justify-content-between mb-4">
+							<h2 class="mb-3 text-light">不同年齡段男性與女性消費者人數</h2>
 							<button class="btn btn-primary" type="button" data-bs-toggle="collapse" 
 							data-bs-target="#collapseChart_1" aria-expanded="false" aria-controls="collapseChart_1">
 								查詢
@@ -46,9 +45,9 @@
 				</div>
 
 				<div class="col-lg-6 col-xl-6">
-					<div class="card">
-						<div class="card-header d-flex justify-content-between mb-4">
-							<h2 class="mb-3 text-secondary">不同年齡段與性別在銷貨收入關聯性</h2>
+					<div class="card border-0 border-rounded-gradient">
+						<div class="card-header border-0 d-flex justify-content-between mb-4">
+							<h2 class="mb-3 text-light">不同年齡段與性別在銷貨收入關聯性</h2>
 							<button class="btn btn-primary" type="button" data-bs-toggle="collapse" 
 							data-bs-target="#collapseChart_2" aria-expanded="false" aria-controls="collapseChart_2">
 								查詢
@@ -63,9 +62,9 @@
 				</div>
 
 				<div class="col-lg-6 col-xl-6">
-					<div class="card">
-						<div class="card-header d-flex justify-content-between mb-4">
-							<h2 class="mb-3 text-secondary">各別區域銷貨毛利</h2>
+					<div class="card border-0 border-rounded-gradient">
+						<div class="card-header border-0 d-flex justify-content-between mb-4">
+							<h2 class="mb-3 text-light">各別區域銷貨毛利</h2>
 							<button class="btn btn-primary" type="button" data-bs-toggle="collapse" 
 							data-bs-target="#collapseChart_3" aria-expanded="false" aria-controls="collapseChart_3">
 								查詢
@@ -83,9 +82,8 @@
           </div>
         </div>
       </div>
+	  <%- include('./layout/footer'); -%>
     </div>
-
-    <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/libs/apexcharts/dist/apexcharts.min.js" defer></script>
@@ -94,6 +92,7 @@
 		document.addEventListener("DOMContentLoaded", function () {
 			window.ApexCharts && (new ApexCharts(document.getElementById('chart-1'), {
 				chart: {
+					background: 'transparent',
 					type: "bar",
 					fontFamily: 'inherit',
 					height: 340,
@@ -104,6 +103,9 @@
 					animations: {
 						enabled: true
 					},
+				},
+				theme: {
+					mode: 'dark', 
 				},
 				plotOptions: {
 					bar: {
@@ -145,7 +147,6 @@
 					axisBorder: {
 						show: false,
 					},
-					// type: 'datetime',
 				},
 				yaxis: {
 					labels: {
@@ -155,7 +156,7 @@
 				labels: [
 					'0-20', '21-30', '31-40', '41-50', '51-60', '61-70', '71-80'
 				],
-				colors: [tabler.getColor("indigo"), tabler.getColor("pink")],
+				colors: [tabler.getColor("primary"), tabler.getColor("pink")],
 				legend: {
 					show: true,
 				},
@@ -167,6 +168,7 @@
 		document.addEventListener("DOMContentLoaded", function () {
 			window.ApexCharts && (new ApexCharts(document.getElementById('chart-2'), {
 				chart: {
+					background: 'transparent',
 					type: "bar",
 					fontFamily: 'inherit',
 					height: 340,
@@ -177,6 +179,9 @@
 					animations: {
 						enabled: true
 					},
+				},
+				theme: {
+					mode: 'dark', 
 				},
 				plotOptions: {
 					bar: {
@@ -213,7 +218,7 @@
 						padding: 0,
 					},
 					tooltip: {
-						enabled: false
+						enabled: false,
 					},
 					axisBorder: {
 						show: false,
@@ -228,7 +233,7 @@
 				labels: [
 					'0-20', '21-30', '31-40', '41-50', '51-60', '61-70', '71-80'
 				],
-				colors: [tabler.getColor("indigo"), tabler.getColor("pink")],
+				colors: [tabler.getColor("primary"), tabler.getColor("pink")],
 				legend: {
 					show: true,
 				},
@@ -240,6 +245,8 @@
 	document.addEventListener("DOMContentLoaded", function () {
 		window.ApexCharts && (new ApexCharts(document.getElementById('chart-3'), {
 			chart: {
+				background: 'transparent',
+				colors:"#f2e2ff",
 				type: "bar",
 				fontFamily: 'inherit',
 				height: 340,
@@ -250,6 +257,9 @@
 				animations: {
 					enabled: true
 				},
+			},
+			theme: {
+				mode: 'dark', 
 			},
 			plotOptions: {
 				bar: {
@@ -288,7 +298,6 @@
 				axisBorder: {
 					show: false,
 				},
-				// type: 'datetime',
 			},
 			yaxis: {
 				labels: {
@@ -298,7 +307,7 @@
 			labels: [
 				'中部', '北部', '南部', '外島', '東部'
 			],
-			colors: [tabler.getColor("indigo")],
+			colors: [tabler.getColor("primary")],
 			legend: {
 				show: true,
 			},

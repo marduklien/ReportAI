@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <title>績效指標 - Report AI</title>
   </head>
-  <body>
+  <body data-bs-theme="dark">
     <div class="page">
       <%- include('./layout/header'); -%>
       <div class="page-wrapper">
@@ -31,19 +31,19 @@
         <!-- Page body -->
         <div class="page-body">
           <div class="container-xl">
-            <div class="table-responsive border">
-                <table class="table table-hover table-vcenter">
+            <div id="table-default" class="table-responsive border-0 border-gradient-purple-bottom pb-4">
+              <table class="table table-hover table-vcenter table-dark">
                   <thead>
                     <tr>
-                      <th>名稱</th>
-                      <th>資訊指標</th>
+                      <th class="text-indigo">名稱</th>
+                      <th class="text-indigo">資訊指標</th>
                       <th></th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="col-3">銷售營收</td>
-                      <td class="text-secondary col-7">
+                      <td class="col-3 text-yellow">銷售營收</td>
+                      <td class="col-7">
                         <ul>
                             <li>2023 Q1焦點產品銷售</li>
                             <li>2023 Q1銷售</li>
@@ -55,7 +55,7 @@
                             <li>2023 Q4銷售</li>
                         </ul>
                       </td>
-                      <td class="text-secondary col-1">
+                      <td class="col-1">
                         <div class="btn-list">
                             <a href="./moduleName.html" class="btn btn-purple">
                                 查看
@@ -64,8 +64,8 @@
                       </td>
                     </tr>
                     <tr>
-                      <td class="col-3">存貨統計</td>
-                      <td class="text-secondary col-7">
+                      <td class="col-3 text-yellow">存貨統計</td>
+                      <td class="col-7">
                         <ul>
                           <li>安全庫存水平（Safety Stock Level）</li>
                           <li>平均庫存週期（Average Inventory Days）</li>
@@ -74,7 +74,7 @@
                           <li>缺貨率（Stockout Rate）</li>
                         </ul>
                       </td>
-                      <td class="text-secondary col-1">
+                      <td class="col-1">
                         <div class="btn-list">
                             <a href="./moduleName.html" class="btn btn-purple">
                                 查看
@@ -83,8 +83,8 @@
                       </td>
                     </tr>
                     <tr>
-                      <td class="col-3">生產排程</td>
-                      <td class="text-secondary col-7">
+                      <td class="col-3 text-yellow">生產排程</td>
+                      <td class="col-7">
                         <ul>
                           <li>交貨時間（Lead Time）</li>
                           <li>周轉時間（Lead Time）</li>
@@ -92,7 +92,7 @@
                           <li>產能利用率（Capacity Utilization）</li>
                         </ul>
                       </td>
-                      <td class="text-secondary col-1">
+                      <td class="col-1">
                         <div class="btn-list">
                             <a href="./moduleName.html" class="btn btn-purple">
                                 查看
@@ -101,8 +101,8 @@
                       </td>
                     </tr>
                     <tr>
-                      <td class="col-3">應收帳款</td>
-                      <td class="text-secondary col-7">
+                      <td class="col-3 text-yellow">應收帳款</td>
+                      <td class="col-7">
                         <ul>
                           <li>帳齡分析（Aging of Accounts Receivable</li>
                           <li>平均收款週期（Average Collection Period）</li>
@@ -110,7 +110,7 @@
                           <li>逾期帳款率（Accounts Receivable Overdue Percentage）</li>
                         </ul>
                       </td>
-                      <td class="text-secondary">
+                      <td class="">
                         <div class="btn-list">
                             <a href="./moduleName.html" class="btn btn-purple">
                                 查看
@@ -119,14 +119,14 @@
                       </td>
                     </tr>
                     <tr>
-                      <td class="col-3">合約管理</td>
-                      <td class="text-secondary col-7">
+                      <td class="col-3 text-yellow">合約管理</td>
+                      <td class="col-7">
                         <ul>
                           <li>合約履行率（Contract Compliance）</li>
                           <li>合約達成率（Contract Attainment）</li>
                         </ul>
                       </td>
-                      <td class="text-secondary col-1">
+                      <td class="col-1">
                         <div class="btn-list">
                             <a href="./moduleName.html" class="btn btn-purple">
                                 查看
@@ -142,7 +142,7 @@
           <div class="container-xl">
             <div class="row row-cards">
                 <div class="col-12">
-                  <div class="card border-top-0">
+                  <div class="card border-top-0 bg-transparent border-0">
                     <div class="card-body">
                       <ul class="pagination d-flex justify-content-center">
                         <li class="page-item disabled">
@@ -173,8 +173,6 @@
       </div>
       <%- include('./layout/footer'); -%>
     </div>
-
     <script type="module" src="../main.js"></script>
-
   </body>
 </html>

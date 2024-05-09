@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <title>資訊查詢 - Report AI</title>
   </head>
-  <body >
-
+  <body data-bs-theme="dark">
     <div class="page">
       <%- include('./layout/header'); -%>
       <div class="page-wrapper">
@@ -26,83 +25,93 @@
         <!-- Page body -->
         <div class="page-body">
           <div class="container-xl">
-            <div class="card">
+            <div class="card border-top-0 bg-transparent border-0 border-gradient-purple-bottom p-2">
               <div class="row g-0">
                 <div class="col-12 col-lg-5 col-xl-3 border-end">
-                  <div class="card-header d-none d-md-block">
+                  <div class="card-header border-0 d-none d-md-block">
                     <div class="input-icon">
                       <span class="input-icon-addon">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
                       </span>
-                      <input type="text" value="" class="form-control" placeholder="搜尋…" aria-label="Search" />
+                      <input type="text" value="" class="form-control border-gradient border-gradient-purple" placeholder="搜尋…" aria-label="Search" />
                     </div>
                   </div>
-                  <div class="card-body p-0 scrollable" style="max-height: 35rem">
+                  <div class="card-body scrollable p-2" style="max-height: 35rem">
                     <div class="nav flex-column nav-pills" role="tablist">
-                      <a href="#chat-1" class="nav-link text-start mw-100 p-3 active" id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="true">
+                      <a href="#chat-1" class="nav-link text-start mw-100 p-3 btn btn-ghost-primary mb-4 active" 
+                      id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="true">
                         <div class="row align-items-center flex-fill">
                           <div class="col text-body">
                             <div>商品與城市關係</div>
                           </div>
                         </div>
                       </a>
-                      <a href="#chat-1" class="nav-link text-start mw-100 p-3" id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false">
+                      <a href="#chat-1" class="nav-link text-start mw-100 p-3 btn btn-ghost-primary mb-4 border-0 border-rounded-gradient-bubble" 
+                      id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false">
                         <div class="row align-items-center flex-fill">
                           <div class="col text-body">
-                            <div>不同年齡段與性別在銷貨收入關聯性</div>
+                            <div class="d-flex flex-wrap justify-content-start">不同年齡段與性別在銷貨收入關聯性</div>
                           </div>
                         </div>
                       </a>
-                      <a href="#chat-1" class="nav-link text-start mw-100 p-3" id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false">
+                      <a href="#chat-1" class="nav-link text-start mw-100 p-3 btn btn-ghost-primary mb-4 border-0 border-rounded-gradient-bubble" 
+                      id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false">
                         <div class="row align-items-center flex-fill">
                           <div class="col text-body">
                             <div>根據上述加上銷貨毛利</div>
                           </div>
                         </div>
                       </a>
-                      <a href="#chat-1" class="nav-link text-start mw-100 p-3" id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false">
+                      <a href="#chat-1" class="nav-link text-start mw-100 p-3 btn btn-ghost-primary mb-4 border-rounded-gradient-bubble" 
+                      id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false">
                         <div class="row align-items-center flex-fill">
                           <div class="col text-body">
                             <div>各別城市銷貨毛利</div>
                           </div>
                         </div>
                       </a>
-                      <a href="#chat-1" class="nav-link text-start mw-100 p-3" id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false">
+                      <a href="#chat-1" class="nav-link text-start mw-100 p-3 btn btn-ghost-primary mb-4 border-rounded-gradient-bubble" 
+                      id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false">
                         <div class="row align-items-center flex-fill">
                           <div class="col text-body">
                             <div>今年的銷貨收入</div>
                           </div>
                         </div>
                       </a>
-                      <a href="#chat-1" class="nav-link text-start mw-100 p-3" id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false">
+                      <a href="#chat-1" class="nav-link text-start mw-100 p-3 btn btn-ghost-primary mb-4 border-rounded-gradient-bubble" 
+                      id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false">
                         <div class="row align-items-center flex-fill">
                           <div class="col text-body">
                             <div>幫我查去年每個月的營業額</div>
                           </div>
                         </div>
                       </a>
-                      <a href="#chat-1" class="nav-link text-start mw-100 p-3" id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false">
+                      <a href="#chat-1" class="nav-link text-start mw-100 p-3 btn btn-ghost-primary mb-4 border-rounded-gradient-bubble" 
+                      id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false">
                         <div class="row align-items-center flex-fill">
                           <div class="col text-body">
                             <div>依據上個查詢結果 幫我加上每個月毛利</div>
                           </div>
                         </div>
                       </a>
-                      <a href="#chat-1" class="nav-link text-start mw-100 p-3" id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false">
+                      <a href="#chat-1" class="nav-link text-start mw-100 p-3 btn btn-ghost-primary mb-4 border-rounded-gradient-bubble" 
+                      id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false">
                         <div class="row align-items-center flex-fill">
                           <div class="col text-body">
                             <div>可以幫我查詢這個月最暢銷的十個商品</div>
                           </div>
                         </div>
                       </a>
-                      <a href="#chat-1" class="nav-link text-start mw-100 p-3" id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false">
+                      <a href="#chat-1" class="nav-link text-start mw-100 p-3 btn btn-ghost-primary mb-4 border-rounded-gradient-bubble" 
+                      id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false">
                         <div class="row align-items-center flex-fill">
                           <div class="col text-body">
                             <div>依據上次結果 將會員等級放X軸</div>
                           </div>
                         </div>
                       </a>
-                      <a href="#chat-1" class="nav-link text-start mw-100 p-3" id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false">
+                      <a href="#chat-1" class="nav-link text-start mw-100 p-3 btn btn-ghost-primary mb-4 border-rounded-gradient-bubble" 
+                      id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false">
                         <div class="row align-items-center flex-fill">
                           <div class="col text-body">
                             <div>我想查詢會員與商品名稱間的關係</div>
@@ -185,7 +194,7 @@
                                 <div class="chat-bubble-body">
                                   <p>這裡是 商品與城市關係的結果</p>
                                   <div class="mt-2">
-                                    <img src="../assets/images/hfje3sv2i.png" alt="">
+                                    <img src="../assets/images/lsosdwms.png" alt="">
                                   </div>
                                 </div>
                               </div>
@@ -219,7 +228,7 @@
                             <div class="col-auto">
                               <div class="chat-bubble">
                                 <div class="chat-bubble-body">
-                                  <p class="text-secondary text-italic">typing<span class="animated-dots"></span></p>
+                                  <p class="text-light text-italic">typing<span class="animated-dots"></span></p>
                                 </div>
                               </div>
                             </div>
@@ -228,9 +237,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card-footer">
+                  <div class="card-footer bg-transparent border-0">
                     <div class="input-group input-group-flat">
-                      <input type="text" class="form-control" autocomplete="off" placeholder="請輸入問題" />
+                      <input type="text" class="form-control border-gradient border-gradient-purple" autocomplete="off" placeholder="請輸入問題" />
                       <span class="input-group-text">
 
                       </span>
@@ -243,15 +252,10 @@
           </div>
         </div>
       </div>
-
       <%- include('./layout/footer'); -%>
-
     </div>
     <!-- Libs JS -->
     <!-- Tabler Core -->
     <script type="module" src="../main.js"></script>
-
-    <!-- <script src="./dist/js/tabler.min.js?1692870487" defer></script>
-    <script src="./dist/js/demo.min.js?1692870487" defer></script> -->
   </body>
 </html>

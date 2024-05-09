@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
     <title>績效目標 - Report AI</title>
   </head>
-  <body>
-
+  <body data-bs-theme="dark">
     <div class="page">
       <%- include('./layout/header'); -%>
       <div class="page-wrapper">
@@ -35,47 +33,46 @@
         <!-- Page body -->
         <div class="page-body">
           <div class="container-xl">
-            <div class="table-responsive border">
-                <table class="table table-hover table-vcenter">
+            <div id="table-default" class="table-responsive border-0 border-gradient-purple-bottom pb-4">
+              <table class="table table-hover table-vcenter table-dark">
                   <thead>
                     <tr>
-                      <th>績效目標名稱</th>
-                      <th>績效指標名稱</th>
-                      <th>目標值</th>
-                      <th>績效指標快取值</th>
-                      <th>觸發條件</th>
-                      <th>監控日期</th>
-                      <th>通知期間</th>
-                      <th>事件管理人</th>
-                      <th>傳送群組</th>
-                      <th>是否啟用</th>
+                      <th class="text-indigo">績效目標名稱</th>
+                      <th class="text-indigo">績效指標名稱</th>
+                      <th class="text-indigo">目標值</th>
+                      <th class="text-indigo">績效指標快取值</th>
+                      <th class="text-indigo">觸發條件</th>
+                      <th class="text-indigo">監控日期</th>
+                      <th class="text-indigo">通知期間</th>
+                      <th class="text-indigo">事件管理人</th>
+                      <th class="text-indigo">傳送群組</th>
+                      <th class="text-indigo">是否啟用</th>
                       <th></th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>2023 Q1銷售營收</td>
-                      <td class="text-secondary">2023 Q1銷售</td>
-                      <td class="text-secondary">126,705,169 元</td>
-                      <td class="text-secondary">113,004,359 元</td>
-                      <td class="text-secondary">低於目標值通知</td>
-                      <td class="text-secondary">2023-01-01&nbsp;至 &nbsp;2023-03-31</td>
-                      <td class="text-secondary">三分法</td>
-                      <td class="text-secondary">總經理</td>
-                      <td class="text-secondary">測試群組</td>
-                      <td class="text-secondary">啟用</td>
-                      <td class="text-secondary">
+                    <tr class="border-0">
+                      <td class="text-yellow">2023 Q1銷售營收</td>
+                      <td class="text-light">2023 Q1銷售</td>
+                      <td class="text-light">126,705,169 元</td>
+                      <td class="text-light">113,004,359 元</td>
+                      <td class="text-light">低於目標值通知</td>
+                      <td class="text-light">2023-01-01&nbsp;至 &nbsp;2023-03-31</td>
+                      <td class="text-light">三分法</td>
+                      <td class="text-light">總經理</td>
+                      <td class="text-light">測試群組</td>
+                      <td class="text-light">啟用</td>
+                      <td class="">
                         <div class="btn-list">
                           <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-edit">
                             修改
                             </a>
-                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-Notice">
+                            <a href="#" class="btn btn-cyan" data-bs-toggle="modal" data-bs-target="#modal-Notice">
                               現況通知
                             </a>
                           </div>
                       </td>
                     </tr>
-
                   </tbody>
                 </table>
               </div>
@@ -84,7 +81,7 @@
           <div class="container-xl">
             <div class="row row-cards">
                 <div class="col-12">
-                  <div class="card border-top-0">
+                  <div class="card border-top-0 bg-transparent border-0">
                     <div class="card-body">
                       <ul class="pagination d-flex justify-content-center">
                         <li class="page-item disabled">

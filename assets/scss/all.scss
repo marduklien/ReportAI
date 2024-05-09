@@ -5,8 +5,9 @@
 
 @import "../../node_modules/bootstrap/scss/functions";
 @import "./helps/variables";
+@import "./helps/variables-dark";
 
-@import "./../node_modules/@tabler/core/src/scss/tabler";
+@import "../../node_modules/@tabler/core/src/scss/tabler";
 //@import "../../node_modules/bootstrap";
 
 // tabler icons
@@ -20,7 +21,9 @@
 @import url('https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-vendors.min.css');
 // tom-select
 @import url('https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.bootstrap5.min.css');
-
+// select2
+@import "../../node_modules/select2-bootstrap-5-theme/dist/select2-bootstrap-5-theme.css";
+// @import "../../node_modules/select2-bootstrap-5-theme/src/select2-bootstrap-5-theme.scss";
 
 // 變數
 //@import './utils/variables';

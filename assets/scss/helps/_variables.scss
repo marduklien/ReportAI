@@ -3,8 +3,8 @@ $prefix: "tblr-" !default;
 // BASE CONFIG
 $enable-social-colors: true !default;
 $enable-extra-colors: true !default;
-$enable-gradients: false !default;
-$enable-shadows: true !default;
+$enable-gradients: true !default;
+$enable-shadows: false !default;
 $enable-navbar-vertical: true !default;
 $enable-dark-mode: true !default;
 $enable-negative-margins: false !default;
@@ -152,7 +152,7 @@ $black: #000000 !default;
 $white: #ffffff !default;
 
 $light: $gray-50 !default;
-$dark: $gray-800 !default;
+$dark: #241734 !default;
 
 $bg-surface: var(--#{$prefix}white) !default;
 $bg-surface-secondary: var(--#{$prefix}gray-100) !default;
@@ -168,23 +168,21 @@ $color-contrast-light: $light !default;
 
 $blue: #8E8FFA !default;
 $azure: #4299e1 !default;
-$indigo: #8696FE !default;
+$indigo: #bd89ff !default;
 $purple: #ae3ec9 !default;
 $pink: #FFB6D9 !default;
 $red: #d63939 !default;
 $orange: #f76707 !default;
-$yellow: #f59f00 !default;
+$yellow: #F6E9B2 !default;
 $lime: #74b816 !default;
 $green: #2fb344 !default;
 $teal: #0ca678 !default;
 $cyan: #17a2b8 !default;
-$stratos : #010D4C!default;
-
 
 $color-blue: #8E8FFA;
 $color-azure: #3586c9;
 $color-indigo: #8696FE;
-$color-purple: #ae3ec9;
+$color-purple: #7806EA;
 $color-pink: #FFB6D9;
 $color-red: #d63939;
 $color-orange: #f76707;
@@ -223,6 +221,7 @@ $success: $green !default;
 $info: $azure !default;
 $warning: $orange !default;
 $danger: $red !default;
+
 
 $link-color: $primary !default;
 

@@ -8,11 +8,11 @@
 }
 
 body {
-   color: $primary;
+   color: $light;
    font-family: 'Noto Sans TC', sans-serif;
    font-size: 16px;
    font-weight: normal;
-  //  background-color: $lightgray
+   background: linear-gradient(to bottom,  rgb(9,0,18) 0%,rgb(153,15,132) 100%) fixed;
 }
 
 
@@ -36,9 +36,8 @@ a {
     display: block;
     color: $gray-900;
     text-decoration: none;
-  
     &:hover {
-      color: $success;
+      color: $yellow;
     }
   }
 
@@ -51,6 +50,7 @@ a {
     text-align: left;
     vertical-align: middle;
 }
+
 
 // scrollbar
 ::-webkit-scrollbar {
@@ -70,7 +70,7 @@ a {
 
 
 .page-title {
-  color: $stratos;
+  color: $gray-50;
 }
 
 .dropdown-toggle::after {
@@ -87,10 +87,6 @@ a {
   box-shadow:none;
 }
 
-
-.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-  background-color: #F1EAFF;
-}
 
 // 下拉框樣式
 .select2-container--bootstrap-5 .select2-selection--multiple .select2-selection__rendered .select2-selection__choice {
