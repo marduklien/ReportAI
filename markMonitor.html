@@ -153,26 +153,18 @@
   </div>
 </header>
 
-
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    // 获取当前页面的 HTML 文件名（不包括路径）
+  document.addEventListener("DOMContentLoaded", function() {
     var currentPage = window.location.pathname.split('/').pop();
 
-    // 获取所有导航链接
     var navLinks = document.querySelectorAll('#nav .nav-link, #nav .dropdown-item');
-    var navLinks = document.querySelectorAll('#nav .dropdown-item');
 
-    // 遍历导航链接
     navLinks.forEach(function(link) {
-        // 获取链接的目标 HTML 文件名
-        var targetPage = link.getAttribute('data-path').split('/').pop();
+        var targetPage = link.getAttribute('href').split('/').pop(); //注意這裡獲取連結的屬性為 href，而不是 data-path
 
-        // 如果当前页面与目标页面相同，则设置链接为活动状态
         if (currentPage === targetPage) {
             link.classList.add('active');
             
-            // 如果链接是下拉菜单中的子项，则也要设置其父级菜单为活动状态
             var dropdownParent = link.closest('.dropdown');
             if (dropdownParent) {
                 dropdownParent.querySelector('.dropdown-toggle').classList.add('active');
@@ -180,8 +172,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
-</script>
-      <div class="page-wrapper">
+</script>      <div class="page-wrapper">
         <!-- Page header -->
         <div class="page-header d-print-none">
           <div class="container-xl">
