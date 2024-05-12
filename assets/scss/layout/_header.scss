@@ -15,3 +15,23 @@
 .nav-link-title:hover {
   color: #FFF;
 }
+
+.nav-item > a:hover {
+  color: #FFF !important;
+  background-color: #6C9BCF;
+}
+
+.nav-item > a.active {
+  color: #FFF !important;
+  background-color: #6C9BCF;
+}
+
+.dropdown-item:hover {
+  color: #FFF !important;
+  background-color: #6C9BCF;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #2824a1 !important;
+  background-color: #a5c8ef;
+}
