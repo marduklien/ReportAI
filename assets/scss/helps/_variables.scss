@@ -166,7 +166,7 @@ $body-emphasis-color: $dark !default;
 $color-contrast-dark: $body-color !default;
 $color-contrast-light: $light !default;
 
-$blue: #8E8FFA !default;
+$blue: #2E3188 !default;
 $azure: #4299e1 !default;
 $indigo: #bd89ff !default;
 $purple: #ae3ec9 !default;
@@ -215,7 +215,7 @@ $hover-bg: rgba(var(--#{$prefix}text-secondary-rgb), 0.04) !default;
 $disabled-bg: var(--#{$prefix}bg-surface-secondary) !default;
 $disabled-color: var(--#{$prefix}gray-300) !default;
 
-$primary: $purple !default; //$blue
+$primary: $blue !default; 
 $secondary: $text-secondary !default;
 $success: $green !default;
 $info: $azure !default;
@@ -226,7 +226,7 @@ $danger: $red !default;
 $link-color: $primary !default;
 
 $theme-colors: (
-  "primary": $purple,
+  "primary": $primary,
   "secondary": $text-secondary,
   "success": $success,
   "info": $info,

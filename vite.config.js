@@ -28,7 +28,11 @@ export default defineConfig({
   base: '/ReportAI/',
   plugins: [
     liveReload(['./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html']),
-    ViteEjsPlugin(),
+    ViteEjsPlugin({
+        // 底下可以自定義變數
+        //pages: './pages/**/*.html',
+        //name: 'currentPage',
+      }),
     moveOutputPlugin(),
   ],
   server: {

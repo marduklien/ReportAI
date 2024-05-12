@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-TW">
   <head>
@@ -5,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <title>事件 - Report AI</title>
+    <link href="https://s.udn.com.tw/static/font-icons/css/fontello.css" rel="stylesheet" type="text/css">
   </head>
-  <body data-bs-theme="dark">
+  <body>
     <div class="page">
       <%- include('./layout/header'); -%>
       <div class="page-wrapper">
@@ -27,109 +29,109 @@
         <!-- Page body -->
         <div class="page-body">
           <div class="container-xl">
-                <div id="table-default" class="table-responsive border-0 border-gradient-purple-bottom">
-                    <table class="table table-hover table-vcenter table-dark">
+                <div id="table-default" class="table-responsive border-0 border-gradient-blue-bottom">
+                    <table class="table table-hover table-vcenter">
                       <thead>
                         <tr>
-                          <th><button class="table-sort text-indigo" data-sort="sort-name">事件名稱</button></th>
-                          <th><button class="table-sort text-indigo" data-sort="sort-trigger">觸發日期</button></th>
-                          <th><button class="table-sort text-indigo" data-sort="sort-type">監控指標</button></th>
-                          <th><button class="table-sort text-indigo" data-sort="sort-score">狀態</button></th>
-                          <th><button class="table-sort text-indigo" data-sort="sort-date">最新回覆時間</button></th>
-                          <th><button class="table-sort text-indigo" data-sort="sort-quantity">回覆數量</button></th>
-                          <th><button class="table-sort text-indigo" data-sort="sort-content">回覆內容</button></th>
+                          <th><button class="table-sort text-primary" data-sort="sort-name">事件名稱</button></th>
+                          <th><button class="table-sort text-primary" data-sort="sort-trigger">觸發日期</button></th>
+                          <th><button class="table-sort text-primary" data-sort="sort-type">監控指標</button></th>
+                          <th><button class="table-sort text-primary" data-sort="sort-score">狀態</button></th>
+                          <th><button class="table-sort text-primary" data-sort="sort-date">最新回覆時間</button></th>
+                          <th><button class="table-sort text-primary" data-sort="sort-quantity">回覆數量</button></th>
+                          <th><button class="table-sort text-primary" data-sort="sort-content">回覆內容</button></th>
                         </tr>
                       </thead>
                       <tbody class="table-tbody">
                         <tr>
-                            <td class="text-primary-dark sort-name">2023第一季總營收第一期未達目標 97%</td>
-                            <td class="text-light sort-trigger" data-trigger="20230201">2023-02-01</td>
-                            <td class="text-light sort-type">2023 Q1銷售營收</td>
-                            <td class="text-light sort-score"><span class="badge bg-orange text-orange-fg">處理中</span></td>
-                            <td class="text-light sort-date" ata-date="20240327102056">2024-03-27 10:20:56</td>
-                            <td class="text-light sort-quantity text-center" data-quantity="1">1</td>
-                            <td class="text-light sort-content"><a href="./eventManageId.html" class="btn btn-primary w-50">查看</td>
+                            <td class="text-primary sort-name">2023第一季總營收第一期未達目標 97%</td>
+                            <td class="text-secondary sort-trigger" data-trigger="20230201">2023-02-01</td>
+                            <td class="text-secondary sort-type">2023 Q1銷售營收</td>
+                            <td class="text-secondary sort-score"><span class="badge bg-orange text-orange-fg">處理中</span></td>
+                            <td class="text-secondary sort-date" ata-date="20240327102056">2024-03-27 10:20:56</td>
+                            <td class="text-secondary sort-quantity text-center" data-quantity="1">1</td>
+                            <td class="text-secondary sort-content"><a href="./eventManageId.html" class="btn btn-primary w-50">查看</td>
                         </tr>
                         <tr>
-                            <td class="text-primary-dark sort-name">2023第一季總營收第二期未達目標 88%</td>
-                            <td class="text-light sort-trigger" data-trigger="20230301">2023-03-01</td>
-                            <td class="text-light sort-type">2023 Q1銷售營收</td>
-                            <td class="text-light sort-score"><span class="badge bg-red text-red-fg">已完成</span></td>
-                            <td class="text-light sort-date" ata-date="20240327102848">2024-03-27 10:28:48</td>
-                            <td class="text-light sort-quantity text-center" data-quantity="2">2</td>
-                            <td class="text-light sort-content"><a href="./eventManageId.html" class="btn btn-primary w-50">查看</td>
+                            <td class="text-primary sort-name">2023第一季總營收第二期未達目標 88%</td>
+                            <td class="text-secondary sort-trigger" data-trigger="20230301">2023-03-01</td>
+                            <td class="text-secondary sort-type">2023 Q1銷售營收</td>
+                            <td class="text-secondary sort-score"><span class="badge bg-red text-red-fg">已完成</span></td>
+                            <td class="text-secondary sort-date" ata-date="20240327102848">2024-03-27 10:28:48</td>
+                            <td class="text-secondary sort-quantity text-center" data-quantity="2">2</td>
+                            <td class="text-secondary sort-content"><a href="./eventManageId.html" class="btn btn-primary w-50">查看</td>
                         </tr>
                         <tr>
-                            <td class="text-primary-dark sort-name">2023第一季總營收未達目標	</td>
-                            <td class="text-light sort-trigger" data-trigger="20230401">2023-04-01</td>
-                            <td class="text-light sort-type">2023 Q1銷售營收</td>
-                            <td class="text-light sort-score"><span class="badge bg-orange text-orange-fg">處理中</span></td>
-                            <td class="text-light sort-date" ata-date="20240326102056">2024-03-26 10:20:56</td>
-                            <td class="text-light sort-quantity text-center" data-quantity="3">3</td>
-                            <td class="text-light sort-content"><a href="./eventManageId.html" class="btn btn-primary w-50">查看</td>
+                            <td class="text-primary sort-name">2023第一季總營收未達目標	</td>
+                            <td class="text-secondary sort-trigger" data-trigger="20230401">2023-04-01</td>
+                            <td class="text-secondary sort-type">2023 Q1銷售營收</td>
+                            <td class="text-secondary sort-score"><span class="badge bg-orange text-orange-fg">處理中</span></td>
+                            <td class="text-secondary sort-date" ata-date="20240326102056">2024-03-26 10:20:56</td>
+                            <td class="text-secondary sort-quantity text-center" data-quantity="3">3</td>
+                            <td class="text-secondary sort-content"><a href="./eventManageId.html" class="btn btn-primary w-50">查看</td>
                         </tr>
                         <tr>
-                            <td class="text-primary-dark sort-name">2023第一季焦點產品總營收第二期未達目標 88%</td>
-                            <td class="text-light sort-trigger" data-trigger="20230501">2023-05-01</td>
-                            <td class="text-light sort-type">2023 Q1銷售營收</td>
-                            <td class="text-light sort-score"><span class="badge bg-red text-red-fg">已完成</span></td>
-                            <td class="text-light sort-date" ata-date="20240325102848">2024-03-25 10:28:48</td>
-                            <td class="text-light sort-quantity text-center" data-quantity="4">4</td>
-                            <td class="text-light sort-content"><a href="./eventManageId.html" class="btn btn-primary w-50">查看</td>
+                            <td class="text-primary sort-name">2023第一季焦點產品總營收第二期未達目標 88%</td>
+                            <td class="text-secondary sort-trigger" data-trigger="20230501">2023-05-01</td>
+                            <td class="text-secondary sort-type">2023 Q1銷售營收</td>
+                            <td class="text-secondary sort-score"><span class="badge bg-red text-red-fg">已完成</span></td>
+                            <td class="text-secondary sort-date" ata-date="20240325102848">2024-03-25 10:28:48</td>
+                            <td class="text-secondary sort-quantity text-center" data-quantity="4">4</td>
+                            <td class="text-secondary sort-content"><a href="./eventManageId.html" class="btn btn-primary w-50">查看</td>
                         </tr>
                         <tr>
-                            <td class="text-primary-dark sort-name">2023第一季焦點產品總營收未達目標</td>
-                            <td class="text-light sort-trigger" data-trigger="20230601">2023-06-01</td>
-                            <td class="text-light sort-type">2023 Q1銷售營收</td>
-                            <td class="text-light sort-score"><span class="badge bg-orange text-orange-fg">處理中</span></td>
-                            <td class="text-light sort-date" ata-date="20240324102056">2024-03-24 10:20:56</td>
-                            <td class="text-light sort-quantity text-center" data-quantity="5">5</td>
-                            <td class="text-light sort-content"><a href="./eventManageId.html" class="btn btn-primary w-50">查看</td>
+                            <td class="text-primary sort-name">2023第一季焦點產品總營收未達目標</td>
+                            <td class="text-secondary sort-trigger" data-trigger="20230601">2023-06-01</td>
+                            <td class="text-secondary sort-type">2023 Q1銷售營收</td>
+                            <td class="text-secondary sort-score"><span class="badge bg-orange text-orange-fg">處理中</span></td>
+                            <td class="text-secondary sort-date" ata-date="20240324102056">2024-03-24 10:20:56</td>
+                            <td class="text-secondary sort-quantity text-center" data-quantity="5">5</td>
+                            <td class="text-secondary sort-content"><a href="./eventManageId.html" class="btn btn-primary w-50">查看</td>
                         </tr>
                         <tr>
-                            <td class="text-primary-dark sort-name">2023第二季總營收第一期未達目標 70%</td>
-                            <td class="text-light sort-trigger" data-trigger="20230701">2023-07-01</td>
-                            <td class="text-light sort-type">2023 Q1銷售營收</td>
-                            <td class="text-light sort-score"><span class="badge bg-orange text-orange-fg">處理中</span></td>
-                            <td class="text-light sort-date" ata-date="20240323102056">2024-03-23 10:20:56</td>
-                            <td class="text-light sort-quantity text-center" data-quantity="6">6</td>
-                            <td class="text-light sort-content"><a href="./eventManageId.html" class="btn btn-primary w-50">查看</td>
+                            <td class="text-primary sort-name">2023第二季總營收第一期未達目標 70%</td>
+                            <td class="text-secondary sort-trigger" data-trigger="20230701">2023-07-01</td>
+                            <td class="text-secondary sort-type">2023 Q1銷售營收</td>
+                            <td class="text-secondary sort-score"><span class="badge bg-orange text-orange-fg">處理中</span></td>
+                            <td class="text-secondary sort-date" ata-date="20240323102056">2024-03-23 10:20:56</td>
+                            <td class="text-secondary sort-quantity text-center" data-quantity="6">6</td>
+                            <td class="text-secondary sort-content"><a href="./eventManageId.html" class="btn btn-primary w-50">查看</td>
                         </tr>
                         <tr>
-                            <td class="text-primary-dark sort-name">2023第二季總營收第二期未達目標 70%</td>
-                            <td class="text-light sort-trigger" data-trigger="20230801">2023-08-01</td>
-                            <td class="text-light sort-type">2023 Q1銷售營收</td>
-                            <td class="text-light sort-score"><span class="badge bg-red text-red-fg">已完成</span></td>
-                            <td class="text-light sort-date" ata-date="20240322102848">2024-03-23 10:28:48</td>
-                            <td class="text-light sort-quantity text-center" data-quantity="7">7</td>
-                            <td class="text-light sort-content"><a href="./eventManageId.html" class="btn btn-primary w-50">查看</td>
+                            <td class="text-primary sort-name">2023第二季總營收第二期未達目標 70%</td>
+                            <td class="text-secondary sort-trigger" data-trigger="20230801">2023-08-01</td>
+                            <td class="text-secondary sort-type">2023 Q1銷售營收</td>
+                            <td class="text-secondary sort-score"><span class="badge bg-red text-red-fg">已完成</span></td>
+                            <td class="text-secondary sort-date" ata-date="20240322102848">2024-03-23 10:28:48</td>
+                            <td class="text-secondary sort-quantity text-center" data-quantity="7">7</td>
+                            <td class="text-secondary sort-content"><a href="./eventManageId.html" class="btn btn-primary w-50">查看</td>
                         </tr>
                         <tr>
-                            <td class="text-primary-dark sort-name">2023第二季總營收未達目標</td>
-                            <td class="text-light sort-trigger" data-trigger="20230901">2023-09-01</td>
-                            <td class="text-light sort-type">2023 Q1銷售營收</td>
-                            <td class="text-light sort-score"><span class="badge bg-orange text-orange-fg">處理中</span></td>
-                            <td class="text-light sort-date" ata-date="20240321102056">2024-03-21 10:20:56</td>
-                            <td class="text-light sort-quantity text-center" data-quantity="8">8</td>
-                            <td class="text-light sort-content"><a href="./eventManageId.html" class="btn btn-primary w-50">查看</td>
+                            <td class="text-primary sort-name">2023第二季總營收未達目標</td>
+                            <td class="text-secondary sort-trigger" data-trigger="20230901">2023-09-01</td>
+                            <td class="text-secondary sort-type">2023 Q1銷售營收</td>
+                            <td class="text-secondary sort-score"><span class="badge bg-orange text-orange-fg">處理中</span></td>
+                            <td class="text-secondary sort-date" ata-date="20240321102056">2024-03-21 10:20:56</td>
+                            <td class="text-secondary sort-quantity text-center" data-quantity="8">8</td>
+                            <td class="text-secondary sort-content"><a href="./eventManageId.html" class="btn btn-primary w-50">查看</td>
                         </tr>
                         <tr>
-                            <td class="text-primary-dark sort-name">2023第二季焦點產品總營收第一期未達目標 89%</td>
-                            <td class="text-light sort-trigger" data-trigger="20231001">2023-10-01</td>
-                            <td class="text-light sort-type">2023 Q1銷售營收</td>
-                            <td class="text-light sort-score"><span class="badge bg-red text-red-fg">已完成</span></td>
-                            <td class="text-light sort-date" ata-date="20240320102848">2024-03-20 10:28:48</td>
-                            <td class="text-light sort-quantity text-center" data-quantity="9">9</td>
-                            <td class="text-light sort-content"><a href="./eventManageId.html" class="btn btn-primary w-50">查看</td>
+                            <td class="text-primary sort-name">2023第二季焦點產品總營收第一期未達目標 89%</td>
+                            <td class="text-secondary sort-trigger" data-trigger="20231001">2023-10-01</td>
+                            <td class="text-secondary sort-type">2023 Q1銷售營收</td>
+                            <td class="text-secondary sort-score"><span class="badge bg-red text-red-fg">已完成</span></td>
+                            <td class="text-secondary sort-date" ata-date="20240320102848">2024-03-20 10:28:48</td>
+                            <td class="text-secondary sort-quantity text-center" data-quantity="9">9</td>
+                            <td class="text-secondary sort-content"><a href="./eventManageId.html" class="btn btn-primary w-50">查看</td>
                         </tr>
                         <tr>
-                            <td class="text-primary-dark sort-name">2024第三季總營收第一期未達目標 66.8%</td>
-                            <td class="text-light sort-trigger" data-trigger="20231101">2023-0112-01</td>
-                            <td class="text-light sort-type">2023 Q1銷售營收</td>
-                            <td class="text-light sort-score"><span class="badge bg-orange text-orange-fg">處理中</span></td>
-                            <td class="text-light sort-date" ata-date="20240319102056">2024-03-19 10:20:56</td>
-                            <td class="text-light sort-quantity text-center" data-quantity="10">10</td>
-                            <td class="text-light sort-content"><a href="./eventManageId.html" class="btn btn-primary w-50">查看</td>
+                            <td class="text-primary sort-name">2024第三季總營收第一期未達目標 66.8%</td>
+                            <td class="text-secondary sort-trigger" data-trigger="20231101">2023-0112-01</td>
+                            <td class="text-secondary sort-type">2023 Q1銷售營收</td>
+                            <td class="text-secondary sort-score"><span class="badge bg-orange text-orange-fg">處理中</span></td>
+                            <td class="text-secondary sort-date" ata-date="20240319102056">2024-03-19 10:20:56</td>
+                            <td class="text-secondary sort-quantity text-center" data-quantity="10">10</td>
+                            <td class="text-secondary sort-content"><a href="./eventManageId.html" class="btn btn-primary w-50">查看</td>
                         </tr>
                       </tbody>
                     </table>
@@ -139,7 +141,7 @@
           <div class="container-xl">
             <div class="row row-cards">
                 <div class="col-12">
-                  <div class="card border-top-0 bg-transparent">
+                  <div class="card border-0 bg-transparent">
                     <div class="card-body">
                       <ul class="pagination d-flex justify-content-center">
                         <li class="page-item disabled">
@@ -169,6 +171,16 @@
       </div>
       <%- include('./layout/footer'); -%>
     </div>
+
+    <div class="go-to-top" id="backtop">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-up icon" width="24" height="24" 
+        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 15 12 9 18 15"></polyline></svg>
+      </a>
+    </div>
+
+
 
     <script type="module" src="../main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>

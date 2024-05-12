@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
     <title>目標管理 - Report AI</title>
   </head>
-  <body data-bs-theme="dark">
+  <body>
     <div class="page">
       <%- include('./layout/header'); -%>
       <div class="page-wrapper">
@@ -28,26 +28,26 @@
         <!-- Page body -->
         <div class="page-body">
           <div class="container-xl">
-            <div id="table-default" class="table-responsive border-0 border-gradient-purple-bottom pb-4">
-              <table class="table table-hover table-vcenter table-dark">
+            <div id="table-default" class="table-responsive border-0 border-gradient-blue-bottom pb-4">
+              <table class="table table-hover table-vcenter text-secondary">
                   <thead>
                     <tr>
-                      <th class="text-indigo">問題</th>
+                      <th class="text-primary">問題</th>
                       <th></th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="col-8 text-yellow">今年的銷貨收入</td>
+                      <td class="col-8 text-primary">今年的銷貨收入</td>
                       <td class="col-4">
                         <div class="btn-list">
-                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                 編輯
                             </a>
                             <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-danger">
                                 刪除
                             </a>
-                            <a href="#" class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#modal-type">
+                            <a href="#" class="btn btn-azure" data-bs-toggle="modal" data-bs-target="#modal-type">
                                 類型修改
                             </a>
                             <a href="#" class="btn btn-cyan" data-bs-toggle="modal" data-bs-target="#modal-Notice">
@@ -57,16 +57,16 @@
                       </td>
                     </tr>
                     <tr>
-                        <td class="col-8 text-yellow">今年的銷貨毛利</td>
+                        <td class="col-8 text-primary">今年的銷貨毛利</td>
                         <td class="col-4">
                           <div class="btn-list">
-                              <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                   編輯
                               </a>
                               <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-danger">
                                   刪除
                               </a>
-                              <a href="#" class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#modal-type">
+                              <a href="#" class="btn btn-azure" data-bs-toggle="modal" data-bs-target="#modal-type">
                                 類型修改
                             </a>
                             <a href="#" class="btn btn-cyan" data-bs-toggle="modal" data-bs-target="#modal-Notice">
@@ -139,7 +139,13 @@
           <%- include('./layout/modal-notice'); -%>
         </div>
     </div>
-
+    <div class="go-to-top" id="backtop">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-up icon" width="24" height="24" 
+        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 15 12 9 18 15"></polyline></svg>
+      </a>
+    </div>
     <script type="module" src="../main.js"></script>
     <!-- 下拉複選 -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script>
@@ -169,5 +175,36 @@
         allowClear :true,
       });
     </script>
+        <!-- 日期選擇 -->
+        <script>
+          // @formatter:off
+          document.addEventListener("DOMContentLoaded", function () {
+            window.Litepicker && (new Litepicker({
+              element: document.getElementById('datepicker-icon-start'),
+              buttonText: {
+                previousMonth: `
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>`,
+                nextMonth: `
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>`,
+              },
+            }));
+          });
+          // @formatter:on
+        </script>
+        <script>
+          // @formatter:off
+          document.addEventListener("DOMContentLoaded", function () {
+            window.Litepicker && (new Litepicker({
+              element: document.getElementById('datepicker-icon-end'),
+              buttonText: {
+                previousMonth: `
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>`,
+                nextMonth: `
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>`,
+              },
+            }));
+          });
+          // @formatter:on
+        </script>
   </body>
 </html>

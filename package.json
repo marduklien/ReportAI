@@ -23,6 +23,7 @@
     "apexcharts": "^3.49.0",
     "autosize": "^6.0.1",
     "bootstrap": "^5.2.3",
+    "express": "^4.19.2",
     "gh-pages": "^5.0.0",
     "glob": "^10.2.2",
     "list.js": "^2.3.1",

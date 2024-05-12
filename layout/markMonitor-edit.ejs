@@ -1,6 +1,6 @@
 <div class="modal-content border-0 border-rounded-gradient">
   <div class="modal-header">
-      <h5 class="modal-title text-indigo">編輯</h5>
+      <h5 class="modal-title text-primary">編輯</h5>
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
     <div class="modal-body">
@@ -69,28 +69,38 @@
             <label class="form-label">發送日期(1-28)</label>
             <input type="text" class="form-control" name="input-name" value="1"/>
         </div>
-        <!-- 監控日期 -->
-        <div class="mb-3">
-            <div>監控日期</div>
-            <div class="d-flex flex-column flex-sm-row justify-content-start">
-                <div class="input-icon col-12 col-sm-6 d-flex flex-column flex-sm-row align-item-center mb-3 mb-sm-0">
-                    <div class="form-label col-12 col-sm-4 d-flex justify-content-start align-self-center mb-2 mb-sm-0">
-                        監控開始日期
-                    </div>
-                    <div class="col-12 col-sm-8">
-                        <div data-coreui-locale="en-tw" data-coreui-placeholder="開始日期" data-coreui-toggle="date-picker" dir="rtl"></div>
-                    </div>
-                </div>
-                <div class="input-icon col-12 col-sm-6 d-flex flex-column flex-sm-row justify-content-star align-sm-item-center ps-sm-2">
-                    <div class="form-label col-12 col-sm-4 d-flex justify-content-start align-self-center mb-2 mb-sm-0">
-                        監控結束日期
-                    </div>
-                    <div class="col-12 col-sm-8">
-                        <div data-coreui-locale="en-tw" data-coreui-placeholder="結束日期" data-coreui-toggle="date-picker"></div>
-                    </div>
-                </div>      
-            </div>
-        </div>
+            <!-- 監控日期 -->
+            <div class="mb-3">
+              <div>監控日期</div>
+              <div class="d-flex flex-column flex-sm-row justify-content-start">
+                  <div class="input-icon col-12 col-sm-6 d-flex flex-column flex-sm-row align-item-center mb-3 mb-sm-0">
+                      <div class="form-label col-12 col-sm-4 d-flex justify-content-start align-self-center mb-2 mb-sm-0">
+                          監控開始日期
+                      </div>
+                      <div class="col-12 col-sm-8">
+                          <div class="input-icon">
+                              <span class="input-icon-addon">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"></path><path d="M16 3v4"></path><path d="M8 3v4"></path><path d="M4 11h16"></path><path d="M11 15h1"></path><path d="M12 15v3"></path></svg>
+                              </span>
+                              <input class="form-control" placeholder="選擇日期" id="datepicker-icon-start" value="">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="input-icon col-12 col-sm-6 d-flex flex-column flex-sm-row justify-content-star align-sm-item-center ps-sm-2">
+                      <div class="form-label col-12 col-sm-4 d-flex justify-content-start align-self-center mb-2 mb-sm-0">
+                          監控結束日期
+                      </div>
+                      <div class="col-12 col-sm-8">
+                          <div class="input-icon">
+                              <span class="input-icon-addon">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"></path><path d="M16 3v4"></path><path d="M8 3v4"></path><path d="M4 11h16"></path><path d="M11 15h1"></path><path d="M12 15v3"></path></svg>
+                                </span>
+                              <input class="form-control " placeholder="選擇日期" id="datepicker-icon-end" value="">
+                          </div>
+                      </div>
+                  </div>      
+              </div>
+          </div>
         <!-- 是否啟用 -->
         <div class="mb-3">
             <div class="form-label">是否啟用</div>
@@ -107,7 +117,7 @@
         </div>
         <!-- 今年銷貨收入 -->
         <div class="table-responsive border-0 border-gradient-purple-bottom pb-3">
-          <table class="table table-hover table-vcenter table-dark">
+          <table class="table table-hover table-vcenter text-primary">
               <thead>
               <tr>
                   <th>今年銷貨收入</th>
@@ -116,16 +126,20 @@
               <tbody>
               <tr>
                   <td>110,277,736</td>
-                  <td>110,277,736</td>
-                  <td>110,277,736</td>
               </tr>
+              <tr>
+                  <td>110,277,736</td>
+            </tr>
+            <tr>
+                <td>110,277,736</td>
+            </tr>
               </tbody>
           </table>
           </div>
     </div>
-    <div class="modal-footer">
+    <div class="modal-footer border-0">
       <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
-      <button type="button" class="btn btn-purple" data-bs-dismiss="modal">確認</button>
+      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確認</button>
     </div>
   </form>
   </div>

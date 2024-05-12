@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
   <title>首頁 - Report AI</title>
   </head>
-  <body data-bs-theme="dark">
+  <body>
     <div class="page">
       <div class="page-wrapper d-flex justify-content-center">
         <div class="page-body">
@@ -18,32 +18,33 @@
                 <div class="col-lg">
                   <div class="container-tight">
                     <div class="text-center mb-2">
-                      <a href="./charts.html" class="navbar-brand navbar-brand-autodark" role ="button">
+                      <a href="./charts.html" class="navbar-brand" role ="button">
                         <img src="/assets/images/logo.png" width="240" height="auto" alt="" class="navbar-brand-image">
                       </a>
                     </div>
-                    <div class="card card-md border-gradient border-gradient-purple">
+                    <div class="card card-md border-0 bg-gradient-blue">
                       <div class="card-body">
-                        <h2 class="h2 text-center mb-4 text-light">帳號登入</h2>
+                        <h2 class="h2 text-center mb-4 text-block">帳號登入</h2>
                         <form action="./" method="get" autocomplete="off" novalidate>
                           <div class="mb-3">
-                            <label for="user_id" class="form-label text-light">帳號</label>
-                            <input type="email" class="form-control border-gradient border-gradient-purple" placeholder="請輸入帳號" autocomplete="off" id="user_id" name="user_id">
+                            <label for="user_id" class="form-label text-primary">帳號</label>
+                            <input type="email" class="form-control border-gradient border-gradient-blue" placeholder="請輸入帳號" autocomplete="off" id="user_id" name="user_id">
                           </div>
                           <div class="mb-2">
-                            <label for="user_password"  class="form-label  text-light">密碼</label>
+                            <label for="user_password"  class="form-label text-primary">密碼</label>
+                          </div>
+                          <div class="border-gradient border-gradient-blue">
                             <div class="input-group input-group-flat">
-                              <input type="password" class="form-control border-gradient border-gradient-purple"  placeholder="請輸入密碼"  autocomplete="off" id="user_password" name="user_password">
+                              <input type="password" class="form-control"  placeholder="請輸入密碼" autocomplete="off" id="user_password" name="user_password">
                               <span class="input-group-text">
-                                <a href="#" class="link-light" title="顯示" data-bs-toggle="tooltip">
+                                <a href="#" class="link-primary" title="顯示" data-bs-toggle="tooltip">
                                   <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
                                 </a>
                               </span>
                             </div>
                           </div>
                           <div class="form-footer">
-                            <a href="./charts.html" type="submit" class="btn btn-light btn-login w-100 border-gradient border-gradient-purple">登入</a>
-                            <!-- <button type="submit" class="btn btn-primary btn-login w-100">登入</button> -->
+                            <a href="./charts.html" type="submit" class="btn btn-login w-100 border-gradient border-gradient-blue">登入</a>
                           </div>
                         </form>
                       </div>

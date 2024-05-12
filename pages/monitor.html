@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
     <title>績效目標 - Report AI</title>
   </head>
-  <body data-bs-theme="dark">
+  <body>
     <div class="page">
       <%- include('./layout/header'); -%>
       <div class="page-wrapper">
@@ -34,34 +34,34 @@
         <div class="page-body">
           <div class="container-xl">
             <div id="table-default" class="table-responsive border-0 border-gradient-purple-bottom pb-4">
-              <table class="table table-hover table-vcenter table-dark">
+              <table class="table table-hover table-vcenter text-secondary">
                   <thead>
                     <tr>
-                      <th class="text-indigo">績效目標名稱</th>
-                      <th class="text-indigo">績效指標名稱</th>
-                      <th class="text-indigo">目標值</th>
-                      <th class="text-indigo">績效指標快取值</th>
-                      <th class="text-indigo">觸發條件</th>
-                      <th class="text-indigo">監控日期</th>
-                      <th class="text-indigo">通知期間</th>
-                      <th class="text-indigo">事件管理人</th>
-                      <th class="text-indigo">傳送群組</th>
-                      <th class="text-indigo">是否啟用</th>
+                      <th class="text-primary">績效目標名稱</th>
+                      <th class="text-primary">績效指標名稱</th>
+                      <th class="text-primary">目標值</th>
+                      <th class="text-primary">績效指標快取值</th>
+                      <th class="text-primary">觸發條件</th>
+                      <th class="text-primary">監控日期</th>
+                      <th class="text-primary">通知期間</th>
+                      <th class="text-primary">事件管理人</th>
+                      <th class="text-primary">傳送群組</th>
+                      <th class="text-primary">是否啟用</th>
                       <th></th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr class="border-0">
-                      <td class="text-yellow">2023 Q1銷售營收</td>
-                      <td class="text-light">2023 Q1銷售</td>
-                      <td class="text-light">126,705,169 元</td>
-                      <td class="text-light">113,004,359 元</td>
-                      <td class="text-light">低於目標值通知</td>
-                      <td class="text-light">2023-01-01&nbsp;至 &nbsp;2023-03-31</td>
-                      <td class="text-light">三分法</td>
-                      <td class="text-light">總經理</td>
-                      <td class="text-light">測試群組</td>
-                      <td class="text-light">啟用</td>
+                      <td class="text-primary">2023 Q1銷售營收</td>
+                      <td>2023 Q1銷售</td>
+                      <td>126,705,169 元</td>
+                      <td>113,004,359 元</td>
+                      <td>低於目標值通知</td>
+                      <td>2023-01-01&nbsp;至 &nbsp;2023-03-31</td>
+                      <td>三分法</td>
+                      <td>總經理</td>
+                      <td>測試群組</td>
+                      <td>啟用</td>
                       <td class="">
                         <div class="btn-list">
                           <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-edit">
@@ -130,7 +130,13 @@
           <%- include('./layout/modal-notice'); -%>
         </div>
     </div>
-
+    <div class="go-to-top" id="backtop">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-up icon" width="24" height="24" 
+        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 15 12 9 18 15"></polyline></svg>
+      </a>
+    </div>
     <script type="module" src="../main.js"></script>
     <!-- 下拉複選 -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script>
@@ -191,7 +197,7 @@
       });
       // @formatter:on
     </script>
-        <script>
+    <script>
           // @formatter:off
           document.addEventListener("DOMContentLoaded", function () {
             window.Litepicker && (new Litepicker({
@@ -205,21 +211,21 @@
             }));
           });
           // @formatter:on
-        </script>
-        <script>
-          // @formatter:off
-          document.addEventListener("DOMContentLoaded", function () {
-            window.Litepicker && (new Litepicker({
-              element: document.getElementById('datepicker-icon-end-edit'),
-              buttonText: {
-                previousMonth: `
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>`,
-                nextMonth: `
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>`,
-              },
-            }));
-          });
-          // @formatter:on
-        </script>
-  </body>
+    </script>
+    <script>
+      // @formatter:off
+      document.addEventListener("DOMContentLoaded", function () {
+        window.Litepicker && (new Litepicker({
+          element: document.getElementById('datepicker-icon-end-edit'),
+          buttonText: {
+            previousMonth: `
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>`,
+            nextMonth: `
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>`,
+          },
+        }));
+      });
+      // @formatter:on
+    </script>
+</body>
 </html>

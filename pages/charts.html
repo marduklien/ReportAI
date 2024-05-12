@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>戰情室 - Report AI</title>
   </head>
-  <body data-bs-theme="dark">
+  <body>
     <div class="page">
 		<%- include('./layout/header'); -%>
       <div class="page-wrapper">
@@ -30,7 +30,7 @@
 				<div class="col-lg-6 col-xl-6">
 					<div class="card border-0 border-rounded-gradient">
 						<div class="card-header border-0 d-flex justify-content-between mb-4">
-							<h2 class="mb-3 text-light">不同年齡段男性與女性消費者人數</h2>
+							<h2 class="mb-3 text-primary">不同年齡段男性與女性消費者人數</h2>
 							<button class="btn btn-primary" type="button" data-bs-toggle="collapse" 
 							data-bs-target="#collapseChart_1" aria-expanded="false" aria-controls="collapseChart_1">
 								查詢
@@ -47,7 +47,7 @@
 				<div class="col-lg-6 col-xl-6">
 					<div class="card border-0 border-rounded-gradient">
 						<div class="card-header border-0 d-flex justify-content-between mb-4">
-							<h2 class="mb-3 text-light">不同年齡段與性別在銷貨收入關聯性</h2>
+							<h2 class="mb-3 text-primary">不同年齡段與性別在銷貨收入關聯性</h2>
 							<button class="btn btn-primary" type="button" data-bs-toggle="collapse" 
 							data-bs-target="#collapseChart_2" aria-expanded="false" aria-controls="collapseChart_2">
 								查詢
@@ -64,7 +64,7 @@
 				<div class="col-lg-6 col-xl-6">
 					<div class="card border-0 border-rounded-gradient">
 						<div class="card-header border-0 d-flex justify-content-between mb-4">
-							<h2 class="mb-3 text-light">各別區域銷貨毛利</h2>
+							<h2 class="mb-3 text-primary">各別區域銷貨毛利</h2>
 							<button class="btn btn-primary" type="button" data-bs-toggle="collapse" 
 							data-bs-target="#collapseChart_3" aria-expanded="false" aria-controls="collapseChart_3">
 								查詢
@@ -84,7 +84,13 @@
       </div>
 	  <%- include('./layout/footer'); -%>
     </div>
-
+    <div class="go-to-top" id="backtop">
+		<a href="#">
+		  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-up icon" width="24" height="24" 
+		  viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+		  <polyline points="6 15 12 9 18 15"></polyline></svg>
+		</a>
+	  </div>
     <script type="module" src="../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/libs/apexcharts/dist/apexcharts.min.js" defer></script>
 	<!-- chart-1 -->
@@ -92,7 +98,7 @@
 		document.addEventListener("DOMContentLoaded", function () {
 			window.ApexCharts && (new ApexCharts(document.getElementById('chart-1'), {
 				chart: {
-					background: 'transparent',
+					background: '#FFFFFF',
 					type: "bar",
 					fontFamily: 'inherit',
 					height: 340,
@@ -103,9 +109,6 @@
 					animations: {
 						enabled: true
 					},
-				},
-				theme: {
-					mode: 'dark', 
 				},
 				plotOptions: {
 					bar: {
@@ -168,7 +171,7 @@
 		document.addEventListener("DOMContentLoaded", function () {
 			window.ApexCharts && (new ApexCharts(document.getElementById('chart-2'), {
 				chart: {
-					background: 'transparent',
+					background: '#FFFFFF',
 					type: "bar",
 					fontFamily: 'inherit',
 					height: 340,
@@ -179,9 +182,6 @@
 					animations: {
 						enabled: true
 					},
-				},
-				theme: {
-					mode: 'dark', 
 				},
 				plotOptions: {
 					bar: {
@@ -245,8 +245,7 @@
 	document.addEventListener("DOMContentLoaded", function () {
 		window.ApexCharts && (new ApexCharts(document.getElementById('chart-3'), {
 			chart: {
-				background: 'transparent',
-				colors:"#f2e2ff",
+				background: '#FFFFFF',
 				type: "bar",
 				fontFamily: 'inherit',
 				height: 340,
@@ -257,9 +256,6 @@
 				animations: {
 					enabled: true
 				},
-			},
-			theme: {
-				mode: 'dark', 
 			},
 			plotOptions: {
 				bar: {

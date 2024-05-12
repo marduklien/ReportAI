@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>戰情室 - Report AI</title>
   </head>
-  <body data-bs-theme="dark">
+  <body>
     <div class="page">
 		<%- include('./layout/header'); -%>
       <div class="page-wrapper">
@@ -252,6 +252,13 @@
       </div>
 	  <%- include('./layout/footer'); -%>
     </div>
+	<div class="go-to-top" id="backtop">
+		<a href="#">
+		  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-up icon" width="24" height="24" 
+		  viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+		  <polyline points="6 15 12 9 18 15"></polyline></svg>
+		</a>
+	  </div>
     <script type="module" src="../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/libs/apexcharts/dist/apexcharts.min.js" defer></script>
     <script>

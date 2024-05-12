@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
     <title>使用者管理 - Report AI</title>
   </head>
-  <body data-bs-theme="dark">
+  <body>
     <%- include('./layout/header'); -%>
     <div class="page">
       <div class="page-wrapper">
@@ -23,7 +23,7 @@
                 </h2>
               </div>
               <div class="col-auto ms-auto d-print-none">
-                <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-new">
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-new">
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
                  新增
                 </a>
@@ -34,30 +34,30 @@
         <!-- Page body -->
         <div class="page-body">
           <div class="container-xl">
-            <div id="table-default" class="table-responsive border-0 border-gradient-purple-bottom pb-4">
-              <table class="table table-hover table-vcenter table-dark">
+            <div id="table-default" class="table-responsive border-0 border-gradient-blue-bottom pb-4">
+              <table class="table table-hover table-vcenter text-secondary">
                   <thead>
                     <tr>
-                      <th class="text-indigo">帳號</th>
-                      <th class="text-indigo">暱稱</th>
-                      <th class="text-indigo">信箱</th>
-                      <th class="text-indigo">部門</th>
-                      <th class="text-indigo">角色列表</th>
-                      <th class="text-indigo">停權</th>
+                      <th class="text-primary">帳號</th>
+                      <th class="text-primary">暱稱</th>
+                      <th class="text-primary">信箱</th>
+                      <th class="text-primary">部門</th>
+                      <th class="text-primary">角色列表</th>
+                      <th class="text-primary">停權</th>
                       <th></th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>wang@aimedicine.com.tw</td>
+                      <td class="text-primary">wang@aimedicine.com.tw</td>
                       <td>王經理</td>
                       <td>wang@aimedicine.com.tw</td>
                       <td>診所事業處</td>
                       <td>診所事業處、國貿主管</td>
-                      <td class="text-pink">鎖定</td>
+                      <td class="text-red">鎖定</td>
                       <td>
                         <div class="btn-list">
-                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                 編輯
                             </a>
                             <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-danger">
@@ -67,15 +67,15 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>andy@aimedicine.com.tw</td>
+                      <td class="text-primary">andy@aimedicine.com.tw</td>
                       <td>任經理</td>
                       <td>andy@aimedicine.com.tw</td>
                       <td>醫院事業處</td>
                       <td>醫院事業處主管</td>
-                      <td>未鎖定</td>
+                      <td class="text-azure">未鎖定</td>
                       <td>
                         <div class="btn-list">
-                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                 編輯
                             </a>
                             <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-danger">
@@ -85,15 +85,15 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>admin@gmail.com</td>
+                      <td class="text-primary">admin@gmail.com</td>
                       <td>總經理</td>
                       <td>admin@gmail.com</td>
                       <td>管理部門</td>
                       <td>主管</td>
-                      <td>未鎖定</td>
+                      <td class="text-azure">未鎖定</td>
                       <td>
                         <div class="btn-list">
-                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                 編輯
                             </a>
                             <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-danger">
@@ -103,15 +103,15 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>demi@aimedicine.com.tw</td>
+                      <td class="text-primary">demi@aimedicine.com.tw</td>
                       <td>江處長</td>
                       <td>demi@aimedicine.com.tw</td>
                       <td>經銷事業處</td>
                       <td>經銷事業處主管</td>
-                      <td>未鎖定</td>
+                      <td class="text-azure">未鎖定</td>
                       <td>
                         <div class="btn-list">
-                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                 編輯
                             </a>
                             <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-danger">
@@ -121,15 +121,15 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>elva@aimedicine.com.tw</td>
+                      <td class="text-primary">elva@aimedicine.com.tw</td>
                       <td>謝經理</td>
                       <td>elva@aimedicine.com.tw</td>
                       <td>管理總部</td>
                       <td>行政管理單位</td>
-                      <td>未鎖定</td>
+                      <td class="text-azure">未鎖定</td>
                       <td>
                         <div class="btn-list">
-                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                 編輯
                             </a>
                             <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-danger">
@@ -139,15 +139,15 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>ShunAnHsiao@aimedicine.com.tw</td>
+                      <td class="text-primary">ShunAnHsiao@aimedicine.com.tw</td>
                       <td>副廠長</td>
                       <td>ShunAnHsiao@aimedicine.com.tw</td>
                       <td>生產事業處</td>
                       <td>生產事業處主管</td>
-                      <td>未鎖定</td>
+                      <td class="text-azure">未鎖定</td>
                       <td>
                         <div class="btn-list">
-                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                 編輯
                             </a>
                             <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-danger">
@@ -157,15 +157,15 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>jessica@aimedicine.com.tw</td>
+                      <td class="text-primary">jessica@aimedicine.com.tw</td>
                       <td>劉處長</td>
                       <td>jessica@aimedicine.com.tw</td>
                       <td>總經理室</td>
                       <td>行政管理單位</td>
-                      <td>未鎖定</td>
+                      <td class="text-azure">未鎖定</td>
                       <td>
                         <div class="btn-list">
-                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                 編輯
                             </a>
                             <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-danger">
@@ -175,15 +175,15 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>frankko@aimedicine.com.tw</td>
+                      <td class="text-primary">frankko@aimedicine.com.tw</td>
                       <td>柯處長</td>
                       <td>frankko@aimedicine.com.tw</td>
                       <td>管理總部</td>
                       <td>行政管理單位</td>
-                      <td>未鎖定</td>
+                      <td class="text-azure">未鎖定</td>
                       <td>
                         <div class="btn-list">
-                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                 編輯
                             </a>
                             <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-danger">
@@ -193,15 +193,15 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>bosen.yang@aimedicine.com.tw</td>
+                      <td class="text-primary">bosen.yang@aimedicine.com.tw</td>
                       <td>楊經理</td>
                       <td>bosen.yang@aimedicine.com.tw</td>
                       <td>診所事業處</td>
                       <td>診所事業處、國貿主管</td>
-                      <td>未鎖定</td>
+                      <td class="text-azure">未鎖定</td>
                       <td>
                         <div class="btn-list">
-                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                 編輯
                             </a>
                             <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-danger">
@@ -211,15 +211,15 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>k8819576@aimedicine.com.tw</td>
+                      <td class="text-primary">k8819576@aimedicine.com.tw</td>
                       <td>古副理</td>
                       <td>k8819576@aimedicine.com.tw</td>
                       <td>國貿</td>
                       <td>診所事業處、國貿主管</td>
-                      <td>未鎖定</td>
+                      <td class="text-azure">未鎖定</td>
                       <td>
                         <div class="btn-list">
-                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                 編輯
                             </a>
                             <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-danger">
@@ -285,7 +285,13 @@
           <%- include('./layout/modal-del'); -%>
         </div>
     </div>
-
+    <div class="go-to-top" id="backtop">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-up icon" width="24" height="24" 
+        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 15 12 9 18 15"></polyline></svg>
+      </a>
+    </div>
     <script type="module" src="../main.js"></script>
     <!-- 下拉複選 -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script>

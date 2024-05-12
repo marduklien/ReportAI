@@ -8,7 +8,7 @@
 
     <title>Line Notify - Report AI</title>
   </head>
-  <body data-bs-theme="dark">
+  <body>
     <div class="page">
       <%- include('./layout/header'); -%>
       <div class="page-wrapper">
@@ -22,7 +22,7 @@
                 </h2>
               </div>
               <div class="col-auto ms-auto d-print-none">
-                <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-new">
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-new">
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
                   新增
                 </a>
@@ -33,22 +33,22 @@
         <!-- Page body -->
         <div class="page-body">
           <div class="container-xl">
-            <div id="table-default" class="table-responsive border-0 border-gradient-purple-bottom pb-4">
-              <table class="table table-hover table-vcenter table-dark">
+            <div id="table-default" class="table-responsive border-0 border-gradient-blue-bottom pb-4">
+              <table class="table table-hover table-vcenter">
                   <thead>
                     <tr>
-                      <th>名稱</th>
-                      <th>Line Token</th>
+                      <th class="text-primary">名稱</th>
+                      <th class="text-primary">Line Token</th>
                       <th></th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="text-yellow">測試群組</td>
-                      <td>UjLp1eLk9v4WTwze4pk0WhZTTUKhwjk0kh0DhPOZZBo</td>
+                      <td class="text-primary">測試群組</td>
+                      <td class="text-secondary">UjLp1eLk9v4WTwze4pk0WhZTTUKhwjk0kh0DhPOZZBo</td>
                       <td>
                         <div class="btn-list">
-                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                 編輯
                             </a>
                             <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-danger">
@@ -123,7 +123,13 @@
           <%- include('./layout/linetoken-test'); -%>
         </div>
     </div>
-
+    <div class="go-to-top" id="backtop">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-up icon" width="24" height="24" 
+        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 15 12 9 18 15"></polyline></svg>
+      </a>
+    </div>
     <script type="module" src="../main.js"></script>
   </body>
 </html>

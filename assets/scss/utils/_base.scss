@@ -12,7 +12,7 @@ body {
    font-family: 'Noto Sans TC', sans-serif;
    font-size: 16px;
    font-weight: normal;
-   background: linear-gradient(to bottom,  rgb(9,0,18) 0%,rgb(153,15,132) 100%) fixed;
+   background: linear-gradient(to bottom, #D2E3FD 0%, #d6e4f5 40% , #FFFFFF 100%) fixed;
 }
 
 
@@ -44,6 +44,7 @@ a {
   img {
     max-width: 100%;
     height: auto;
+    vertical-align: middle;
   }
 
   th, td {
@@ -70,7 +71,7 @@ a {
 
 
 .page-title {
-  color: $gray-50;
+  color: $primary;
 }
 
 .dropdown-toggle::after {
@@ -82,44 +83,35 @@ a {
   fill: none;
 }
 
-.avatar {
-  border: none;
-  box-shadow:none;
+
+.go-to-top {
+  background: #2e3188;
+  position: fixed;
+  right: 10px;
+  bottom: 100px;
+  display: flex;
+  width:  48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  cursor: pointer;
+  z-index: 90;
+  opacity: 1;
 }
 
-
-// 下拉框樣式
-.select2-container--bootstrap-5 .select2-selection--multiple .select2-selection__rendered .select2-selection__choice {
-  background-color: #F1EAFF;
+.go-to-top a {
+  color: #fff;
 }
 
-.select2-container--bootstrap-5 .select2-dropdown .select2-results__options .select2-results__option.select2-results__option--selected, .select2-container--bootstrap-5 .select2-dropdown .select2-results__options .select2-results__option[aria-selected=true]:not(.select2-results__option--highlighted) {
-  color: #333;
-  background-color: #DFCCFB;
+.go-to-top .icon {
+  width:  36px;
+  height: 36px;
 }
 
-.select2-container--bootstrap-5 .select2-selection {
-  border-color: #dadfe5;
-}
-
-.select2-container--bootstrap-5.select2-container--focus .select2-selection, .select2-container--bootstrap-5.select2-container--open .select2-selection {
-  border-color: #DFCCFB;
-  box-shadow: 0 0 0 .25rem rgba(215,159,228,0.6);
- }
-
-.select2-container--bootstrap-5 .select2-selection--multiple .select2-selection__clear, .select2-container--bootstrap-5 .select2-selection--single .select2-selection__clear {
-  width: 1.25rem;
-  height: 1.25rem;
-  border: 0;
-}
-
-.select2-container--bootstrap-5 .select2-dropdown {
-  z-index: 1056;
-  overflow: hidden;
-  color: #333;
-  background-color: #fff;
-  border-color: #dadfe5;
-  border-radius: 0.25rem;
-  // border-top: none;
-  // box-shadow: 0 0 0 .25rem rgba(215,159,228,0.6);
+.icon {
+  width: 1.0666666667em;
+  height: 1.0666666667em;
+  stroke-width: 1.5;
+  vertical-align: -.2em;
 }

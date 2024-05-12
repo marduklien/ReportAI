@@ -3,7 +3,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
+    <h1 class="navbar-brand d-none-navbar-horizontal pe-0 pe-md-3">
       <a href="./index.html">
         <img src="../assets/images/logo.png" width="110" height="32" alt="Report AI" title="Report AI" class="navbar-brand-image">
       </a>
@@ -11,10 +11,10 @@
     <div class="navbar-nav flex-row order-md-last">
       <div class="nav-item dropdown">
         <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
-          <div class="d-none d-xl-block text-light fs-3 me-2">15,432,765筆</div>
+          <div class="d-none d-xl-block text-primary fs-3 me-2">15,432,765筆</div>
           <div class="d-block d-xl-block ps-2">
-            <div class="fs-3 fs-sm-1">王大明</div>
-            <div class="mt-2 fs-4 fs-sm-2 text-light dropdown-toggle">總經理</div>
+            <div class="fs-3 fs-sm-1 text-black">王大明</div>
+            <div class="mt-2 fs-4 fs-sm-2 text-primary dropdown-toggle">總經理</div>
           </div>
         </a>
         <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
@@ -29,30 +29,31 @@
   <div class="collapse navbar-collapse" id="navbar-menu">
     <div class="navbar">
       <div class="container-xl">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" id="nav">
           <li class="nav-item">
-            <a class="nav-link btn btn-ghost-primary" href="./diagram.html" >
-              <span class="nav-link-title">
-                關聯表
-              </span>
+            <a class="nav-link btn btn-ghost-primary" href="./diagram.html" aria-current="page">
+                <span class="nav-link-title">
+                    關聯表
+                </span>
             </a>
-          </li>
+        </li>
           <li class="nav-item dropdown">
-            <a class="nav-link btn btn-ghost-primary" href="./chatMessage.html" >
+            <a class="nav-link btn btn-ghost-primary" href="./chatMessage.html" aria-current="page">
               <span class="nav-link-title">
                 資訊查詢
               </span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-ghost-primary" href="./charts.html" >
+            <a class="nav-link btn btn-ghost-primary" href="./charts.html" aria-current="page">
               <span class="nav-link-title">
                 戰情室
               </span>
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle btn btn-ghost-primary" href="#navbar-extra" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
+            <a class="nav-link dropdown-toggle btn btn-ghost-primary" href="#navbar-extra" data-bs-toggle="dropdown" 
+            data-bs-auto-close="outside" role="button" aria-expanded="false"  aria-current="page">
               <span class="nav-link-title">
                 管理
               </span>
@@ -60,13 +61,13 @@
             <div class="dropdown-menu">
               <div class="dropdown-menu-columns">
                 <div class="dropdown-menu-column">
-                  <a class="dropdown-item" href="./auth.html">
+                  <a class="dropdown-item" href="./auth.html" aria-current="page">
                    使用者管理
                   </a>
-                  <a class="dropdown-item" href="./role.html">
+                  <a class="dropdown-item" href="./role.html" aria-current="page">
                     角色管理
                   </a>
-                  <a class="dropdown-item" href="./line-token.html">
+                  <a class="dropdown-item" href="./line-token.html" aria-current="page">
                     Line Notify
                   </a>
                 </div>
@@ -74,7 +75,8 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle btn btn-ghost-primary" href="#navbar-layout" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
+            <a class="nav-link dropdown-toggle btn btn-ghost-primary" href="#navbar-layout" data-bs-toggle="dropdown" 
+            data-bs-auto-close="outside" role="button" aria-expanded="false" aria-current="page">
               <span class="nav-link-title">
                 績效
               </span>
@@ -82,13 +84,13 @@
             <div class="dropdown-menu">
               <div class="dropdown-menu-columns">
                 <div class="dropdown-menu-column">
-                  <a class="dropdown-item" href="./markMonitor.html">
+                  <a class="dropdown-item" href="./markMonitor.html" aria-current="page">
                     目標管理
                   </a>
-                  <a class="dropdown-item" href="./module.html">
+                  <a class="dropdown-item" href="./module.html" aria-current="page">
                     績效指標
                   </a>
-                  <a class="dropdown-item" href="./monitor.html">
+                  <a class="dropdown-item" href="./monitor.html" aria-current="page">
                     績效目標
                   </a>
                 </div>
@@ -96,26 +98,27 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-ghost-primary" href="./event.html" >
+          <a class="nav-link btn btn-ghost-primary" href="event.html" aria-current="page">
               <span class="nav-link-title">
                 事件
               </span>
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle btn btn-ghost-primary" href="#navbar-help" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
+            <a class="nav-link dropdown-toggle btn btn-ghost-primary" href="#navbar-help" data-bs-toggle="dropdown" 
+            data-bs-auto-close="outside" role="button" aria-expanded="false"  aria-current="page">
               <span class="nav-link-title">
                 戰情室報表範例
               </span>
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="#" aria-current="page">
                大樓電力儲蓄3D圖
               </a>
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="#" aria-current="page">
                 目標達成率分析
               </a>
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="#" aria-current="page">
                 各區銷售管理效益圖
               </a>
             </div>
@@ -127,7 +130,7 @@
               <span class="input-icon-addon">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
               </span>
-              <input type="text" value="" class="form-control border-gradient border-gradient-purple" placeholder="搜尋…" aria-label="Search in website">
+              <input type="text" value="" class="form-control border-gradient border-gradient-blue" placeholder="搜尋…" aria-label="Search in website">
             </div>
           </form>
         </div>
