@@ -7,17 +7,17 @@
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
     <title>目標管理 - Report AI</title>
-    <script type="module" crossorigin src="/ReportAI/assets/all-093b4996.js"></script>
-    <link rel="stylesheet" href="/ReportAI/assets/all-fb44ab8a.css">
+    <script type="module" crossorigin src="/ReportAI/assets/main-8b438739.js"></script>
+    <link rel="stylesheet" href="/ReportAI/assets/main-0b0800d0.css">
   </head>
-  <body data-bs-theme="dark">
+  <body>
     <div class="page">
       <header class="navbar navbar-expand-md d-print-none" >
   <div class="container-xl">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
+    <h1 class="navbar-brand d-none-navbar-horizontal pe-0 pe-md-3">
       <a href="./index.html">
         <img src="/ReportAI/assets/logo-941be46b.png" width="110" height="32" alt="Report AI" title="Report AI" class="navbar-brand-image">
       </a>
@@ -25,10 +25,10 @@
     <div class="navbar-nav flex-row order-md-last">
       <div class="nav-item dropdown">
         <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
-          <div class="d-none d-xl-block text-light fs-3 me-2">15,432,765筆</div>
+          <div class="d-none d-xl-block text-primary fs-3 me-2">15,432,765筆</div>
           <div class="d-block d-xl-block ps-2">
-            <div class="fs-3 fs-sm-1">王大明</div>
-            <div class="mt-2 fs-4 fs-sm-2 text-light dropdown-toggle">總經理</div>
+            <div class="fs-3 fs-sm-1 text-black">王大明</div>
+            <div class="mt-2 fs-4 fs-sm-2 text-primary dropdown-toggle">總經理</div>
           </div>
         </a>
         <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
@@ -43,30 +43,31 @@
   <div class="collapse navbar-collapse" id="navbar-menu">
     <div class="navbar">
       <div class="container-xl">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" id="nav">
           <li class="nav-item">
-            <a class="nav-link btn btn-ghost-primary" href="./diagram.html" >
-              <span class="nav-link-title">
-                關聯表
-              </span>
+            <a class="nav-link btn btn-ghost-primary" href="./diagram.html" aria-current="page">
+                <span class="nav-link-title">
+                    關聯表
+                </span>
             </a>
-          </li>
+        </li>
           <li class="nav-item dropdown">
-            <a class="nav-link btn btn-ghost-primary" href="./chatMessage.html" >
+            <a class="nav-link btn btn-ghost-primary" href="./chatMessage.html" aria-current="page">
               <span class="nav-link-title">
                 資訊查詢
               </span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-ghost-primary" href="./charts.html" >
+            <a class="nav-link btn btn-ghost-primary" href="./charts.html" aria-current="page">
               <span class="nav-link-title">
                 戰情室
               </span>
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle btn btn-ghost-primary" href="#navbar-extra" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
+            <a class="nav-link dropdown-toggle btn btn-ghost-primary" href="#navbar-extra" data-bs-toggle="dropdown" 
+            data-bs-auto-close="outside" role="button" aria-expanded="false"  aria-current="page">
               <span class="nav-link-title">
                 管理
               </span>
@@ -74,13 +75,13 @@
             <div class="dropdown-menu">
               <div class="dropdown-menu-columns">
                 <div class="dropdown-menu-column">
-                  <a class="dropdown-item" href="./auth.html">
+                  <a class="dropdown-item" href="./auth.html" aria-current="page">
                    使用者管理
                   </a>
-                  <a class="dropdown-item" href="./role.html">
+                  <a class="dropdown-item" href="./role.html" aria-current="page">
                     角色管理
                   </a>
-                  <a class="dropdown-item" href="./line-token.html">
+                  <a class="dropdown-item" href="./line-token.html" aria-current="page">
                     Line Notify
                   </a>
                 </div>
@@ -88,7 +89,8 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle btn btn-ghost-primary" href="#navbar-layout" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
+            <a class="nav-link dropdown-toggle btn btn-ghost-primary" href="#navbar-layout" data-bs-toggle="dropdown" 
+            data-bs-auto-close="outside" role="button" aria-expanded="false" aria-current="page">
               <span class="nav-link-title">
                 績效
               </span>
@@ -96,13 +98,13 @@
             <div class="dropdown-menu">
               <div class="dropdown-menu-columns">
                 <div class="dropdown-menu-column">
-                  <a class="dropdown-item" href="./markMonitor.html">
+                  <a class="dropdown-item" href="./markMonitor.html" aria-current="page">
                     目標管理
                   </a>
-                  <a class="dropdown-item" href="./module.html">
+                  <a class="dropdown-item" href="./module.html" aria-current="page">
                     績效指標
                   </a>
-                  <a class="dropdown-item" href="./monitor.html">
+                  <a class="dropdown-item" href="./monitor.html" aria-current="page">
                     績效目標
                   </a>
                 </div>
@@ -110,26 +112,27 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-ghost-primary" href="./event.html" >
+          <a class="nav-link btn btn-ghost-primary" href="event.html" aria-current="page">
               <span class="nav-link-title">
                 事件
               </span>
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle btn btn-ghost-primary" href="#navbar-help" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
+            <a class="nav-link dropdown-toggle btn btn-ghost-primary" href="#navbar-help" data-bs-toggle="dropdown" 
+            data-bs-auto-close="outside" role="button" aria-expanded="false"  aria-current="page">
               <span class="nav-link-title">
                 戰情室報表範例
               </span>
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="#" aria-current="page">
                大樓電力儲蓄3D圖
               </a>
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="#" aria-current="page">
                 目標達成率分析
               </a>
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="#" aria-current="page">
                 各區銷售管理效益圖
               </a>
             </div>
@@ -141,14 +144,15 @@
               <span class="input-icon-addon">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
               </span>
-              <input type="text" value="" class="form-control border-gradient border-gradient-purple" placeholder="搜尋…" aria-label="Search in website">
+              <input type="text" value="" class="form-control border-gradient border-gradient-blue" placeholder="搜尋…" aria-label="Search in website">
             </div>
           </form>
         </div>
       </div>
     </div>
   </div>
-</header>      <div class="page-wrapper">
+</header>
+      <div class="page-wrapper">
         <!-- Page header -->
         <div class="page-header d-print-none">
           <div class="container-xl">
@@ -165,26 +169,26 @@
         <!-- Page body -->
         <div class="page-body">
           <div class="container-xl">
-            <div id="table-default" class="table-responsive border-0 border-gradient-purple-bottom pb-4">
-              <table class="table table-hover table-vcenter table-dark">
+            <div id="table-default" class="table-responsive border-0 border-gradient-blue-bottom pb-4">
+              <table class="table table-hover table-vcenter text-secondary">
                   <thead>
                     <tr>
-                      <th class="text-indigo">問題</th>
+                      <th class="text-primary">問題</th>
                       <th></th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="col-8 text-yellow">今年的銷貨收入</td>
+                      <td class="col-8 text-primary">今年的銷貨收入</td>
                       <td class="col-4">
                         <div class="btn-list">
-                            <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                 編輯
                             </a>
                             <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-danger">
                                 刪除
                             </a>
-                            <a href="#" class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#modal-type">
+                            <a href="#" class="btn btn-azure" data-bs-toggle="modal" data-bs-target="#modal-type">
                                 類型修改
                             </a>
                             <a href="#" class="btn btn-cyan" data-bs-toggle="modal" data-bs-target="#modal-Notice">
@@ -194,16 +198,16 @@
                       </td>
                     </tr>
                     <tr>
-                        <td class="col-8 text-yellow">今年的銷貨毛利</td>
+                        <td class="col-8 text-primary">今年的銷貨毛利</td>
                         <td class="col-4">
                           <div class="btn-list">
-                              <a href="#" class="btn btn-purple" data-bs-toggle="modal" data-bs-target="#modal-edit">
+                              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-edit">
                                   編輯
                               </a>
                               <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-danger">
                                   刪除
                               </a>
-                              <a href="#" class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#modal-type">
+                              <a href="#" class="btn btn-azure" data-bs-toggle="modal" data-bs-target="#modal-type">
                                 類型修改
                             </a>
                             <a href="#" class="btn btn-cyan" data-bs-toggle="modal" data-bs-target="#modal-Notice">
@@ -255,7 +259,7 @@
           <ul class="list-inline list-inline-dots mb-0">
             <li class="d-flex flex-column flex-sm-row justify-content-center text-center">
               <span> Copyright &copy; 2024 &nbsp;</span>
-              <a href="https://www.yusung.com.tw/" class="link-light" target="_blank">宇菘科技&紘宇顧問管理有限公司</a>
+              <a href="https://www.yusung.com.tw/" class="link-primary" target="_blank">宇菘科技&紘宇顧問管理有限公司</a>
               <span>&nbsp; All rights reserved.</span>
             </li>
           </ul>
@@ -268,7 +272,7 @@
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
           <div class="modal-content border-0 border-rounded-gradient">
   <div class="modal-header">
-      <h5 class="modal-title text-indigo">編輯</h5>
+      <h5 class="modal-title text-primary">編輯</h5>
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
     <div class="modal-body">
@@ -337,28 +341,38 @@
             <label class="form-label">發送日期(1-28)</label>
             <input type="text" class="form-control" name="input-name" value="1"/>
         </div>
-        <!-- 監控日期 -->
-        <div class="mb-3">
-            <div>監控日期</div>
-            <div class="d-flex flex-column flex-sm-row justify-content-start">
-                <div class="input-icon col-12 col-sm-6 d-flex flex-column flex-sm-row align-item-center mb-3 mb-sm-0">
-                    <div class="form-label col-12 col-sm-4 d-flex justify-content-start align-self-center mb-2 mb-sm-0">
-                        監控開始日期
-                    </div>
-                    <div class="col-12 col-sm-8">
-                        <div data-coreui-locale="en-tw" data-coreui-placeholder="開始日期" data-coreui-toggle="date-picker" dir="rtl"></div>
-                    </div>
-                </div>
-                <div class="input-icon col-12 col-sm-6 d-flex flex-column flex-sm-row justify-content-star align-sm-item-center ps-sm-2">
-                    <div class="form-label col-12 col-sm-4 d-flex justify-content-start align-self-center mb-2 mb-sm-0">
-                        監控結束日期
-                    </div>
-                    <div class="col-12 col-sm-8">
-                        <div data-coreui-locale="en-tw" data-coreui-placeholder="結束日期" data-coreui-toggle="date-picker"></div>
-                    </div>
-                </div>      
-            </div>
-        </div>
+            <!-- 監控日期 -->
+            <div class="mb-3">
+              <div>監控日期</div>
+              <div class="d-flex flex-column flex-sm-row justify-content-start">
+                  <div class="input-icon col-12 col-sm-6 d-flex flex-column flex-sm-row align-item-center mb-3 mb-sm-0">
+                      <div class="form-label col-12 col-sm-4 d-flex justify-content-start align-self-center mb-2 mb-sm-0">
+                          監控開始日期
+                      </div>
+                      <div class="col-12 col-sm-8">
+                          <div class="input-icon">
+                              <span class="input-icon-addon">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"></path><path d="M16 3v4"></path><path d="M8 3v4"></path><path d="M4 11h16"></path><path d="M11 15h1"></path><path d="M12 15v3"></path></svg>
+                              </span>
+                              <input class="form-control" placeholder="選擇日期" id="datepicker-icon-start" value="">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="input-icon col-12 col-sm-6 d-flex flex-column flex-sm-row justify-content-star align-sm-item-center ps-sm-2">
+                      <div class="form-label col-12 col-sm-4 d-flex justify-content-start align-self-center mb-2 mb-sm-0">
+                          監控結束日期
+                      </div>
+                      <div class="col-12 col-sm-8">
+                          <div class="input-icon">
+                              <span class="input-icon-addon">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"></path><path d="M16 3v4"></path><path d="M8 3v4"></path><path d="M4 11h16"></path><path d="M11 15h1"></path><path d="M12 15v3"></path></svg>
+                                </span>
+                              <input class="form-control " placeholder="選擇日期" id="datepicker-icon-end" value="">
+                          </div>
+                      </div>
+                  </div>      
+              </div>
+          </div>
         <!-- 是否啟用 -->
         <div class="mb-3">
             <div class="form-label">是否啟用</div>
@@ -375,7 +389,7 @@
         </div>
         <!-- 今年銷貨收入 -->
         <div class="table-responsive border-0 border-gradient-purple-bottom pb-3">
-          <table class="table table-hover table-vcenter table-dark">
+          <table class="table table-hover table-vcenter text-primary">
               <thead>
               <tr>
                   <th>今年銷貨收入</th>
@@ -384,16 +398,20 @@
               <tbody>
               <tr>
                   <td>110,277,736</td>
-                  <td>110,277,736</td>
-                  <td>110,277,736</td>
               </tr>
+              <tr>
+                  <td>110,277,736</td>
+            </tr>
+            <tr>
+                <td>110,277,736</td>
+            </tr>
               </tbody>
           </table>
           </div>
     </div>
-    <div class="modal-footer">
+    <div class="modal-footer border-0">
       <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
-      <button type="button" class="btn btn-purple" data-bs-dismiss="modal">確認</button>
+      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確認</button>
     </div>
   </form>
   </div>
@@ -407,10 +425,10 @@
     <div class="modal-status bg-danger"></div>
     <div class="modal-body text-center py-4">
       <svg xmlns="http://www.w3.org/2000/svg" class="icon mb-2 text-danger icon-lg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.24 3.957l-8.422 14.06a1.989 1.989 0 0 0 1.7 2.983h16.845a1.989 1.989 0 0 0 1.7 -2.983l-8.423 -14.06a1.989 1.989 0 0 0 -3.4 0z" /><path d="M12 9v4" /><path d="M12 17h.01" /></svg>
-      <h3 class="mb-3">刪除確認警告</h3>
-      <div class="text-light">刪除確認?</div>
+      <h3 class="mb-3 text-black">刪除確認警告</h3>
+      <div class="text-red">刪除確認?</div>
     </div>
-    <div class="modal-footer">
+    <div class="modal-footer border-0">
       <div class="w-100">
         <div class="row">
           <div class="col"><a href="#" class="btn w-100" data-bs-dismiss="modal">
@@ -430,7 +448,7 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content border-0 border-rounded-gradient">
     <div class="modal-header">
-      <h5 class="modal-title text-indigo">編輯</h5>
+      <h5 class="modal-title text-primary">編輯</h5>
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
     <div class="modal-body">
@@ -455,15 +473,15 @@
                     <input type="text" class="form-control" name="example-text-input" placeholder="請輸入取代文字">
                 </div>
                 <div class="col-6">
-                    <a href="#" class="btn btn-purple">
+                    <a href="#" class="btn btn-primary">
                         新增
                     </a>
                 </div>
             </div>
         </div>
         <!-- 名稱 -->
-        <div class="table-responsive border-0 border-gradient-purple-bottom pb-3">
-            <table class="table table-hover table-vcenter table-dark">
+        <div class="table-responsive border-0 border-gradient-blue-bottom pb-3">
+            <table class="table table-hover table-vcenter text-secondary">
                 <thead>
                 <tr>
                     <th>名稱</th>
@@ -472,16 +490,20 @@
                 <tbody>
                 <tr>
                     <td>取代文字</td>
+                </tr>
+                <tr>
                     <td>取代文字</td>
+                </tr>
+                <tr>
                     <td>取代文字</td>
                 </tr>
                 </tbody>
             </table>
             </div>
     </div>
-    <div class="modal-footer">
+    <div class="modal-footer border-0">
       <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
-      <button type="button" class="btn btn-purple" data-bs-dismiss="modal">確認</button>
+      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確認</button>
     </div>
     </form>
 </div>
@@ -492,7 +514,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content border-0 border-rounded-gradient">
   <div class="modal-header border-0">
-      <h5 class="modal-title text-indigo">現況通知</h5>
+      <h5 class="modal-title text-primary">現況通知</h5>
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
     <div class="modal-body">
@@ -500,11 +522,17 @@
     </div>
     <div class="modal-footer border-0">
       <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
-      <button type="button" class="btn btn-purple" data-bs-dismiss="modal">確認</button>
+      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確認</button>
     </div>
   </div>        </div>
     </div>
-
+    <div class="go-to-top" id="backtop">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-up icon" width="24" height="24" 
+        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 15 12 9 18 15"></polyline></svg>
+      </a>
+    </div>
     
     <!-- 下拉複選 -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script>
@@ -534,5 +562,36 @@
         allowClear :true,
       });
     </script>
+        <!-- 日期選擇 -->
+        <script>
+          // @formatter:off
+          document.addEventListener("DOMContentLoaded", function () {
+            window.Litepicker && (new Litepicker({
+              element: document.getElementById('datepicker-icon-start'),
+              buttonText: {
+                previousMonth: `
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>`,
+                nextMonth: `
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>`,
+              },
+            }));
+          });
+          // @formatter:on
+        </script>
+        <script>
+          // @formatter:off
+          document.addEventListener("DOMContentLoaded", function () {
+            window.Litepicker && (new Litepicker({
+              element: document.getElementById('datepicker-icon-end'),
+              buttonText: {
+                previousMonth: `
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>`,
+                nextMonth: `
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>`,
+              },
+            }));
+          });
+          // @formatter:on
+        </script>
   </body>
 </html>
