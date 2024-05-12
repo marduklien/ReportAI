@@ -7,8 +7,8 @@
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
     <title>績效目標 - Report AI</title>
-    <script type="module" crossorigin src="/ReportAI/assets/main-8b438739.js"></script>
-    <link rel="stylesheet" href="/ReportAI/assets/main-0b0800d0.css">
+    <script type="module" crossorigin src="/ReportAI/assets/main-5b4526f2.js"></script>
+    <link rel="stylesheet" href="/ReportAI/assets/main-3b2be60a.css">
   </head>
   <body>
     <div class="page">
@@ -45,29 +45,29 @@
       <div class="container-xl">
         <ul class="navbar-nav" id="nav">
           <li class="nav-item">
-            <a class="nav-link btn btn-ghost-primary" href="./diagram.html" aria-current="page">
+            <a class="nav-link" href="./diagram.html" data-path="./diagram.html">
                 <span class="nav-link-title">
                     關聯表
                 </span>
             </a>
         </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link btn btn-ghost-primary" href="./chatMessage.html" aria-current="page">
+          <li class="nav-item">
+            <a class="nav-link" href="./chatMessage.html" data-path="./chatMessage.html">
               <span class="nav-link-title">
                 資訊查詢
               </span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-ghost-primary" href="./charts.html" aria-current="page">
+            <a class="nav-link" href="./charts.html" data-path="./charts.html">
               <span class="nav-link-title">
                 戰情室
               </span>
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle btn btn-ghost-primary" href="#navbar-extra" data-bs-toggle="dropdown" 
-            data-bs-auto-close="outside" role="button" aria-expanded="false"  aria-current="page">
+            <a class="nav-link dropdown-toggle" href="#navbar-extra" data-bs-toggle="dropdown" 
+            data-bs-auto-close="outside" role="button" aria-expanded="false">
               <span class="nav-link-title">
                 管理
               </span>
@@ -75,13 +75,13 @@
             <div class="dropdown-menu">
               <div class="dropdown-menu-columns">
                 <div class="dropdown-menu-column">
-                  <a class="dropdown-item" href="./auth.html" aria-current="page">
+                  <a class="dropdown-item" href="./auth.html" data-path="./auth.html">
                    使用者管理
                   </a>
-                  <a class="dropdown-item" href="./role.html" aria-current="page">
+                  <a class="dropdown-item" href="./role.html" data-path="./role.html">
                     角色管理
                   </a>
-                  <a class="dropdown-item" href="./line-token.html" aria-current="page">
+                  <a class="dropdown-item" href="./line-token.html" data-path="./line-token.html">
                     Line Notify
                   </a>
                 </div>
@@ -89,8 +89,8 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle btn btn-ghost-primary" href="#navbar-layout" data-bs-toggle="dropdown" 
-            data-bs-auto-close="outside" role="button" aria-expanded="false" aria-current="page">
+            <a class="nav-link dropdown-toggle" href="#navbar-layout" data-bs-toggle="dropdown" 
+            data-bs-auto-close="outside" role="button" aria-expanded="false">
               <span class="nav-link-title">
                 績效
               </span>
@@ -98,13 +98,13 @@
             <div class="dropdown-menu">
               <div class="dropdown-menu-columns">
                 <div class="dropdown-menu-column">
-                  <a class="dropdown-item" href="./markMonitor.html" aria-current="page">
+                  <a class="dropdown-item" href="./markMonitor.html" data-path="./markMonitor.html">
                     目標管理
                   </a>
-                  <a class="dropdown-item" href="./module.html" aria-current="page">
+                  <a class="dropdown-item" href="./module.html" data-path="./module.html">
                     績效指標
                   </a>
-                  <a class="dropdown-item" href="./monitor.html" aria-current="page">
+                  <a class="dropdown-item" href="./monitor.html" data-path="./monitor.html">
                     績效目標
                   </a>
                 </div>
@@ -112,27 +112,27 @@
             </div>
           </li>
           <li class="nav-item">
-          <a class="nav-link btn btn-ghost-primary" href="event.html" aria-current="page">
+          <a class="nav-link" href="./event.html" data-path="./event.html">
               <span class="nav-link-title">
                 事件
               </span>
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle btn btn-ghost-primary" href="#navbar-help" data-bs-toggle="dropdown" 
-            data-bs-auto-close="outside" role="button" aria-expanded="false"  aria-current="page">
+            <a class="nav-link dropdown-toggle" href="#navbar-help" data-bs-toggle="dropdown" 
+            data-bs-auto-close="outside" role="button" aria-expanded="false">
               <span class="nav-link-title">
                 戰情室報表範例
               </span>
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#" aria-current="page">
+              <a class="dropdown-item" href="#" data-path="#">
                大樓電力儲蓄3D圖
               </a>
-              <a class="dropdown-item" href="#" aria-current="page">
+              <a class="dropdown-item" href="#" data-path="#">
                 目標達成率分析
               </a>
-              <a class="dropdown-item" href="#" aria-current="page">
+              <a class="dropdown-item" href="./chartsAll.html" data-path="./chartsAll.html">
                 各區銷售管理效益圖
               </a>
             </div>
@@ -152,6 +152,35 @@
     </div>
   </div>
 </header>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 获取当前页面的 HTML 文件名（不包括路径）
+    var currentPage = window.location.pathname.split('/').pop();
+
+    // 获取所有导航链接
+    var navLinks = document.querySelectorAll('#nav .nav-link, #nav .dropdown-item');
+    var navLinks = document.querySelectorAll('#nav .dropdown-item');
+
+    // 遍历导航链接
+    navLinks.forEach(function(link) {
+        // 获取链接的目标 HTML 文件名
+        var targetPage = link.getAttribute('data-path').split('/').pop();
+
+        // 如果当前页面与目标页面相同，则设置链接为活动状态
+        if (currentPage === targetPage) {
+            link.classList.add('active');
+            
+            // 如果链接是下拉菜单中的子项，则也要设置其父级菜单为活动状态
+            var dropdownParent = link.closest('.dropdown');
+            if (dropdownParent) {
+                dropdownParent.querySelector('.dropdown-toggle').classList.add('active');
+            }
+        }
+    });
+});
+</script>
       <div class="page-wrapper">
         <!-- Page header -->
         <div class="page-header d-print-none">
