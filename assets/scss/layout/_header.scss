@@ -9,7 +9,7 @@
 }
 
 .nav-link {
-  color: $primary;
+  color: #FFF;
 }
 
 .nav-link-title:hover {
@@ -18,17 +18,17 @@
 
 #nav .nav-item > a:hover {
   color: #FFF !important;
-  background-color: #6C9BCF;
+  background-color: #2E3188;
 }
 
 #nav .nav-item > a.active {
   color: #FFF !important;
-  background-color: #6C9BCF;
+  background-color: #2E3188;
 }
 
 #nav .dropdown-item:hover {
   color: #FFF !important;
-  background-color: #6C9BCF;
+  background-color: #2E3188;
 }
 
 #nav .dropdown-item.active, .dropdown-item:active {
