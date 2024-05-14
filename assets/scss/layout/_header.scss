@@ -8,6 +8,10 @@
   height: 4rem;
 }
 
+.brand-image-dark {
+  filter: brightness(0) invert(1);
+}
+
 .nav-link {
   color: #FFF;
 }

@@ -10,6 +10,7 @@ import "./node_modules/@tabler/core/dist/libs/tom-select/dist/js/tom-select.comp
 import "./assets/scss/all.scss";
 
 
+
 // Get the button
 let mybutton = document.getElementById("backtop");
 window.onscroll = function() {scrollFunction()};

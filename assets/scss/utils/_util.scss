@@ -1,23 +1,28 @@
 //零件
 .form-control {
     font-size: 1em;
+    padding: 0.3rem 0.6rem;
 }
 
 .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: $primary;
+    color: $gray-600;
+    font-weight: 500;
     opacity: 1; /* Firefox */
 }
 
 .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: $primary;
+    color: $gray-600;
+    font-weight: 500;
 }
 
 .form-control::-ms-input-placeholder { /* Microsoft Edge */
-    color: $primary;
+    color: $gray-600;
+    font-weight: 500;
 }
 
 .input-icon-addon {
-    color: $primary;
+    color: $gray-600;
+    font-weight: 500;
 }
 
 .form-control:focus {
@@ -26,7 +31,7 @@
 }
 
 .input-group-flat .input-group-text {
-    background: #dfe9f5;
+    //background: transparent;
 }
 
 .form-check-input {
@@ -37,9 +42,6 @@
     background-color:#dfe9f5;
 }
 
-.form-control {
-    background-color:#dfe9f5;
-}
 
 textarea {
     background-color:#dfe9f5;
@@ -59,8 +61,6 @@ textarea {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #FFF;
-    background-color:#dfe9f5;
     border: 1px solid #ced4da;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -156,6 +156,10 @@ textarea {
     white-space: nowrap;
 }
 
+.thead {
+background: #bbcbeb;
+}
+
 thead, tbody, tfoot, tr, td, th {
     border:none
 }
@@ -174,6 +178,60 @@ thead, tbody, tfoot, tr, td, th {
 .table thead th {
     font: 1em sans-serif;
 }
+
+//table fliter
+.myInput {
+    width: 75%;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+
+  .filterButton {
+    width: 10%;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .clearButton {
+    width: 10%;
+    display: inline-block;
+    cursor: pointer;
+    visibility: hidden;
+  }
+
+  .header input {
+    width: 70%;
+  }
+
+  .clearButton svg,
+  .filterButton svg {
+    vertical-align: middle;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-menu a {
+    color: black;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-menu a:hover {
+    color: #FFF;
+    background-color: #0d71c2;
+  }
+
+  .dropdown.show .dropdown-menu {
+    background-color: #dfe9f5;
+    display: block;
+  }
 
 //漸層色框
 

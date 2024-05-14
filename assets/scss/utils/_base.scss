@@ -8,11 +8,14 @@
 }
 
 body {
-   color: $light;
-   font-family: 'Noto Sans TC', sans-serif;
-   font-size: 16px;
-   font-weight: normal;
-   background: linear-gradient(to bottom, #008ad2 0%, #11caf1 40% , #FFFFFF 100%) fixed;
+    color: $light;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    background-image: url(../../assets/images/bg-kv.png) ,linear-gradient(to bottom, #008ad2 0%, #11caf1 40% , #FFFFFF 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
@@ -69,9 +72,9 @@ a {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 
-
 .page-title {
   color: $primary;
+  font-weight: 500;
 }
 
 .dropdown-toggle::after {
