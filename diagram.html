@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <title>關聯表 - Report AI</title>
-    <script type="module" crossorigin src="/ReportAI/assets/main-518094d2.js"></script>
-    <link rel="stylesheet" href="/ReportAI/assets/main-a04f7192.css">
+    <script type="module" crossorigin src="/ReportAI/assets/main-a7a4766c.js"></script>
+    <link rel="stylesheet" href="/ReportAI/assets/main-728e2f4c.css">
   </head>
   <body>
     <div class="page">
@@ -15,7 +15,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <h1 class="navbar-brand d-none-navbar-horizontal pe-0 pe-md-3">
+    <h1 class="navbar-brand d-none-navbar-horizontal brand-image-dark pe-0 pe-md-3">
       <a href="./index.html">
         <img src="/ReportAI/assets/logo-941be46b.png" width="110" height="32" alt="Report AI" title="Report AI" class="navbar-brand-image">
       </a>
@@ -136,7 +136,7 @@
             </div>
           </li>
         </ul>
-        <div class="my-2 my-md-0 flex-grow-1 flex-md-grow-0 order-first order-md-last">
+        <!-- <div class="my-2 my-md-0 flex-grow-1 flex-md-grow-0 order-first order-md-last">
           <form action="./" method="get" autocomplete="off" novalidate>
             <div class="input-icon">
               <span class="input-icon-addon">
@@ -145,7 +145,7 @@
               <input type="text" value="" class="form-control border-gradient border-gradient-blue" placeholder="搜尋…" aria-label="Search in website">
             </div>
           </form>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -176,7 +176,7 @@
             <div class="container-xl">
                 <div class="row g-2 align-items-center">
                 <div class="col">
-                    <h2 class="page-title">
+                    <h2 class="page-title text-white">
                     關聯表
                     </h2>
                 </div>
@@ -186,91 +186,216 @@
         <!-- Page body -->
         <div class="page-body">
           <div class="container-xl">
+
             <div id="table-default" class="table-responsive border-0 border-gradient-blue-bottom pb-4">
-              <table class="table table-hover table-vcenter">
-                      <thead>
-                        <tr>
-                          <th class="text-primary"><button class="table-sort" data-sort="sort-table">表名</button></th>
-                          <th class="text-primary"><button class="table-sort" data-sort="sort-line">行數</button></th>
-                          <th class="text-primary"><button class="table-sort" data-sort="sort-data">數據大小(MB)</button></th>
-                          <th class="text-primary"><button class="table-sort" data-sort="sort-index">索引大小(MB)</button></th>
-                          <th class="text-primary"><button class="table-sort" data-sort="sort-total">總大小(MB)</button></th>
-                        </tr>
-                      </thead>
-                      <tbody class="table-tbody">
-                        <tr>
-                            <td class="text-primary sort-table">trans_master</td>
-                            <td class="text-secondary sort-line" data-line="3824513">3824513</td>
-                            <td class="text-secondary sort-data" data-data="904.01">904.01</td>
-                            <td class="text-secondary sort-index" data-index="223.36">223.36</td>
-                            <td class="text-secondary sort-total" data-total="1127.364">1127.364</td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary sort-table">trans_2017</td>
-                            <td class="text-secondary sort-line" data-line="3824063">3824063</td>
-                            <td class="text-secondary sort-data" data-data="508.1">508.1</td>
-                            <td class="text-secondary sort-index" data-index="109.09">109.09</td>
-                            <td class="text-secondary sort-total" data-total="617.19">617.19</td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary sort-table">trans_game_info_master</td>
-                            <td class="text-secondary sort-line" data-line="3824063">3824063</td>
-                            <td class="text-secondary sort-data" data-data="353.88">353.88</td>
-                            <td class="text-secondary sort-index" data-index="127.46">127.46</td>
-                            <td class="text-secondary sort-total" data-total="481.34">481.34</td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary sort-table">trans_game_info_2017</td>
-                            <td class="text-secondary sort-line" data-line="3824063">3824063</td>
-                            <td class="text-secondary sort-data" data-data="70.02">70.02</td>
-                            <td class="text-secondary sort-index" data-index="25.43">25.43</td>
-                            <td class="text-secondary sort-total" data-total="95.45">95.45</td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary sort-table">coupon_trans_pin</td>
-                            <td class="text-secondary sort-line" data-line="31297">31297</td>
-                            <td class="text-secondary sort-data" data-data="2.98">2.98</td>
-                            <td class="text-secondary sort-index" data-index="0.67">0.67</td>
-                            <td class="text-secondary sort-total" data-total="3.65">3.65</td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary sort-table">user</td>
-                            <td class="text-secondary sort-line" data-line="3637">3637</td>
-                            <td class="text-secondary sort-data" data-data="0.78">0.78</td>
-                            <td class="text-secondary sort-index" data-index="0.3">0.3</td>
-                            <td class="text-secondary sort-total" data-total="1.08">1.08</td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary sort-table">trans_bonus</td>
-                            <td class="text-secondary sort-line" data-line="2937">2937</td>
-                            <td class="text-secondary sort-data" data-data="0.78">0.78</td>
-                            <td class="text-secondary sort-index" data-index="0.3">0.3</td>
-                            <td class="text-secondary sort-total" data-total="1.08">1.08</td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary sort-table">coupon_master</td>
-                            <td class="text-secondary sort-line" data-line="2010">2010</td>
-                            <td class="text-secondary sort-data" data-data="4.02">4.02</td>
-                            <td class="text-secondary sort-index" data-index="0.8">0.8</td>
-                            <td class="text-secondary sort-total" data-total="4.82">4.82</td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary sort-table">v_item_category</td>
-                            <td class="text-secondary sort-line" data-line="1516">1516</td>
-                            <td class="text-secondary sort-data" data-data="1.8">1.8</td>
-                            <td class="text-secondary sort-index" data-index="0.36">0.36</td>
-                            <td class="text-secondary sort-total" data-total="2.16">2.16</td>
-                        </tr>
-                        <tr>
-                            <td class="text-primary sort-table">payment_agent</td>
-                            <td class="text-secondary sort-line" data-line="1121">1121</td>
-                            <td class="text-secondary sort-data" data-data="1.02">1.02</td>
-                            <td class="text-secondary sort-index" data-index="0.3">0.3</td>
-                            <td class="text-secondary sort-total" data-total="1.32">1.32</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+              <table class="table table-hover table-vcenter" id="myTable">
+                <thead>
+                <tr>
+                    <th class="text-primary"><button class="table-sort" data-sort="sort-table">表名</button></th>
+                    <th class="text-primary"><button class="table-sort" data-sort="sort-line">行數</button></th>
+                    <th class="text-primary"><button class="table-sort" data-sort="sort-data">數據大小(MB)</button></th>
+                    <th class="text-primary"><button class="table-sort" data-sort="sort-index">索引大小(MB)</button></th>
+                    <th class="text-primary"><button class="table-sort" data-sort="sort-total">總大小(MB)</button></th>
+                </tr>
+                <tr class="searchRow text-secondary">
+                  <th class="bg-white">
+                    <div class="d-flex justify-content-between">
+                      <input type="text" class="myInput form-control bg-white" onkeyup="setFilter(this, 0)" placeholder="搜尋表名" title="搜尋表名">
+                      <a href="#" class="filterButton align-self-center text-secondary ms-2" data-bs-toggle="dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter switch-icon-a">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227z" />
+                        </svg>
+                      </a>
+                      <a href="#" class="clearButton align-self-center text-red ms-2" onclick="clearFilter(0, event)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter-off switch-icon-b">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M8 4h12v2.172a2 2 0 0 1 -.586 1.414l-3.914 3.914m-.5 3.5v4l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227" />
+                          <path d="M3 3l18 18" />
+                        </svg>
+                      </a>
+                      <div class="dropdown-menu  dropdown-menu-arrow">
+                        <a class="dropdown-item" href="#">a到z</a>
+                        <a class="dropdown-item" href="#">z到a</a>
+                        <div class="dropdown-divider my-0"></div>
+                        <a class="dropdown-item" href="#" onclick="clearFilter(0, event)">清除</a>
+                      </div>
+                    </div>
+                  </th>
+                  <th class="bg-white">
+                    <div class="d-flex justify-content-between">
+                      <input type="text" class="myInput form-control bg-white" onkeyup="setFilter(this, 1)" placeholder="搜尋行數" title="搜尋行數">
+                      <a href="#" class="filterButton align-self-center text-secondary ms-2" data-bs-toggle="dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter switch-icon-a">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227z" />
+                        </svg>
+                      </a>
+                      <a href="#" class="clearButton align-self-center text-red ms-2" onclick="clearFilter(1, event)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter-off switch-icon-b">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M8 4h12v2.172a2 2 0 0 1 -.586 1.414l-3.914 3.914m-.5 3.5v4l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227" />
+                          <path d="M3 3l18 18" />
+                        </svg>
+                      </a>
+                      <div class="dropdown-menu  dropdown-menu-arrow">
+                        <a class="dropdown-item" href="#">小到大</a>
+                        <a class="dropdown-item" href="#">大到小</a>
+                        <div class="dropdown-divider my-0"></div>
+                        <a class="dropdown-item" href="#" onclick="clearFilter(1, event)">清除</a>
+                      </div>
+                    </div>
+                  </th>
+                  <th class="bg-white">
+                    <div class="d-flex justify-content-between">
+                      <input type="text" class="myInput form-control bg-white" onkeyup="setFilter(this, 2)" placeholder="數據大小" title="數據大小">
+                      <a href="#" class="filterButton align-self-center text-secondary ms-2" data-bs-toggle="dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter switch-icon-a">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227z" />
+                        </svg>
+                      </a>
+                      <a href="#" class="clearButton align-self-center text-red ms-2" onclick="clearFilter(2, event)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter-off switch-icon-b">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M8 4h12v2.172a2 2 0 0 1 -.586 1.414l-3.914 3.914m-.5 3.5v4l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227" />
+                          <path d="M3 3l18 18" />
+                        </svg>
+                      </a>
+                      <div class="dropdown-menu  dropdown-menu-arrow">
+                        <a class="dropdown-item" href="#">小到大</a>
+                        <a class="dropdown-item" href="#">大到小</a>
+                        <div class="dropdown-divider my-0"></div>
+                        <a class="dropdown-item" href="#" onclick="clearFilter(2, event)">清除</a>
+                      </div>
+                    </div>
+                  </th>
+                  <th class="bg-white">
+                    <div class="d-flex justify-content-between">
+                      <input type="text" class="myInput form-control bg-white" onkeyup="setFilter(this, 3)" placeholder="索引大小" title="索引大小">
+                      <a href="#" class="filterButton align-self-center text-secondary ms-2" data-bs-toggle="dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter switch-icon-a">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227z" />
+                        </svg>
+                      </a>
+                      <a href="#" class="clearButton align-self-center text-red ms-2" onclick="clearFilter(3, event)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter-off switch-icon-b">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M8 4h12v2.172a2 2 0 0 1 -.586 1.414l-3.914 3.914m-.5 3.5v4l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227" />
+                          <path d="M3 3l18 18" />
+                        </svg>
+                      </a>
+                      <div class="dropdown-menu  dropdown-menu-arrow">
+                        <a class="dropdown-item" href="#">小到大</a>
+                        <a class="dropdown-item" href="#">大到小</a>
+                        <div class="dropdown-divider my-0"></div>
+                        <a class="dropdown-item" href="#" onclick="clearFilter(3, event)">清除</a>
+                      </div>
+                    </div>
+                  </th>
+                  <th class="bg-white">
+                    <div class="d-flex justify-content-between">
+                      <input type="text" class="myInput form-control bg-white" onkeyup="setFilter(this, 4)" placeholder="總大小" title="總大小">
+                      <a href="#" class="filterButton align-self-center text-secondary ms-2" data-bs-toggle="dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter switch-icon-a">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227z" />
+                        </svg>
+                      </a>
+                      <a href="#" class="clearButton align-self-center text-red ms-2" onclick="clearFilter(4, event)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-filter-off switch-icon-b">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M8 4h12v2.172a2 2 0 0 1 -.586 1.414l-3.914 3.914m-.5 3.5v4l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227" />
+                          <path d="M3 3l18 18" />
+                        </svg>
+                      </a>
+                      <div class="dropdown-menu  dropdown-menu-arrow">
+                        <a class="dropdown-item" href="#">由小到大</a>
+                        <a class="dropdown-item" href="#">由大到小</a>
+                        <div class="dropdown-divider my-0"></div>
+                        <a class="dropdown-item" href="#" onclick="clearFilter(4, event)">清除</a>
+                      </div>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+                <tbody class="table-tbody">
+                  <tr>
+                    <td class="text-primary sort-table">trans_master</td>
+                    <td class="text-secondary sort-line" data-line="3824513">3824513</td>
+                    <td class="text-secondary sort-data" data-data="904.01">904.01</td>
+                    <td class="text-secondary sort-index" data-index="223.36">223.36</td>
+                    <td class="text-secondary sort-total" data-total="1127.364">1127.364</td>
+                  </tr>
+                  <tr>
+                    <td class="text-primary sort-table">trans_2017</td>
+                    <td class="text-secondary sort-line" data-line="3824063">3824063</td>
+                    <td class="text-secondary sort-data" data-data="508.1">508.1</td>
+                    <td class="text-secondary sort-index" data-index="109.09">109.09</td>
+                    <td class="text-secondary sort-total" data-total="617.19">617.19</td>
+                  </tr>
+                  <tr>
+                    <td class="text-primary sort-table">trans_game_info_master</td>
+                    <td class="text-secondary sort-line" data-line="3824063">3824063</td>
+                    <td class="text-secondary sort-data" data-data="353.88">353.88</td>
+                    <td class="text-secondary sort-index" data-index="127.46">127.46</td>
+                    <td class="text-secondary sort-total" data-total="481.34">481.34</td>
+                  </tr>
+                  <tr>
+                    <td class="text-primary sort-table">trans_game_info_2017</td>
+                    <td class="text-secondary sort-line" data-line="3824063">3824063</td>
+                    <td class="text-secondary sort-data" data-data="70.02">70.02</td>
+                    <td class="text-secondary sort-index" data-index="25.43">25.43</td>
+                    <td class="text-secondary sort-total" data-total="95.45">95.45</td>
+                  </tr>
+                  <tr>
+                    <td class="text-primary sort-table">coupon_trans_pin</td>
+                    <td class="text-secondary sort-line" data-line="31297">31297</td>
+                    <td class="text-secondary sort-data" data-data="2.98">2.98</td>
+                    <td class="text-secondary sort-index" data-index="0.67">0.67</td>
+                    <td class="text-secondary sort-total" data-total="3.65">3.65</td>
+                  </tr>
+                  <tr>
+                    <td class="text-primary sort-table">user</td>
+                    <td class="text-secondary sort-line" data-line="3637">3637</td>
+                    <td class="text-secondary sort-data" data-data="0.78">0.78</td>
+                    <td class="text-secondary sort-index" data-index="0.3">0.3</td>
+                    <td class="text-secondary sort-total" data-total="1.08">1.08</td>
+                  </tr>
+                  <tr>
+                    <td class="text-primary sort-table">trans_bonus</td>
+                    <td class="text-secondary sort-line" data-line="2937">2937</td>
+                    <td class="text-secondary sort-data" data-data="0.78">0.78</td>
+                    <td class="text-secondary sort-index" data-index="0.3">0.3</td>
+                    <td class="text-secondary sort-total" data-total="1.08">1.08</td>
+                  </tr>
+                  <tr>
+                    <td class="text-primary sort-table">coupon_master</td>
+                    <td class="text-secondary sort-line" data-line="2010">2010</td>
+                    <td class="text-secondary sort-data" data-data="4.02">4.02</td>
+                    <td class="text-secondary sort-index" data-index="0.8">0.8</td>
+                    <td class="text-secondary sort-total" data-total="4.82">4.82</td>
+                  </tr>
+                  <tr>
+                    <td class="text-primary sort-table">v_item_category</td>
+                    <td class="text-secondary sort-line" data-line="1516">1516</td>
+                    <td class="text-secondary sort-data" data-data="1.8">1.8</td>
+                    <td class="text-secondary sort-index" data-index="0.36">0.36</td>
+                    <td class="text-secondary sort-total" data-total="2.16">2.16</td>
+                  </tr>
+                  <tr>
+                    <td class="text-primary sort-table">payment_agent</td>
+                    <td class="text-secondary sort-line" data-line="1121">1121</td>
+                    <td class="text-secondary sort-data" data-data="1.02">1.02</td>
+                    <td class="text-secondary sort-index" data-index="0.3">0.3</td>
+                    <td class="text-secondary sort-total" data-total="1.32">1.32</td>
+                  </tr>
+                </tbody>
+            
+              </table>
+            </div>
+
           </div>
           <!-- Pagination -->
           <div class="container-xl">
@@ -279,9 +404,8 @@
                   <div class="card border-top-0 bg-transparent border-0">
                     <div class="card-body">
                       <ul class="pagination d-flex justify-content-center">
-                        <li class="page-item disabled">
+                        <li class="page-item me-2 disabled">
                           <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
-                            <!-- Download SVG icon from http://tabler-icons.io/i/chevron-left -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
                             上一頁
                           </a>
@@ -291,9 +415,9 @@
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
                         <li class="page-item"><a class="page-link" href="#">4</a></li>
                         <li class="page-item"><a class="page-link" href="#">5</a></li>
-                        <li class="page-item">
+                        <li class="page-item ms-2">
                           <a class="page-link" href="#">
-                            下一頁 <!-- Download SVG icon from http://tabler-icons.io/i/chevron-right -->
+                            下一頁
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
                           </a>
                         </li>
@@ -341,6 +465,57 @@
             ]
         });
         })
+      </script>
+
+      <script>
+        var filters = ["", "", ""]; // 根據列數初始化過濾器數組
+
+function setFilter(element, index) {
+  filters[index] = element.value.toUpperCase();
+  filterTable();
+
+  const clearButton = element.nextElementSibling.nextElementSibling;
+  clearButton.style.visibility = element.value ? "visible" : "hidden";
+}
+
+function filterTable() {
+  var table = document.getElementById("myTable");
+  var rows = Array.from(table.getElementsByTagName("tr"));
+
+  for (var rowItr = 2; rowItr < rows.length; rowItr++) {
+    // 從第3行開始跳過表頭和搜尋行
+    var row = rows[rowItr];
+    var cells = Array.from(row.getElementsByTagName("td"));
+
+    var isRowVisible = filters.every((filter, filterIndex) => {
+      var cell = cells[filterIndex];
+      var txtValue = cell ? cell.textContent || cell.innerText : "";
+
+      return filter === "" || txtValue.toUpperCase().indexOf(filter) > -1;
+    });
+
+    row.style.display = isRowVisible ? "" : "none";
+  }
+}
+
+function toggleDropdown(button, index, event) {
+  event.preventDefault();
+  const dropdown = button.nextElementSibling.nextElementSibling; // 下拉菜單是filterButton後面兩個元素
+  dropdown.classList.toggle("show");
+}
+
+function clearFilter(index, event) {
+  event.preventDefault();
+  filters[index] = "";
+  const inputElement = document.querySelectorAll(".searchRow .myInput")[index];
+  inputElement.value = "";
+  filterTable();
+  const clearButton = inputElement.nextElementSibling.nextElementSibling;
+  clearButton.style.visibility = "hidden";
+  const dropdown = clearButton.nextElementSibling;
+  dropdown.classList.remove("show");
+}
+
       </script>
 
   </body>

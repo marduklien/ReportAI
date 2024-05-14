@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>戰情室 - Report AI</title>
-    <script type="module" crossorigin src="/ReportAI/assets/main-518094d2.js"></script>
-    <link rel="stylesheet" href="/ReportAI/assets/main-a04f7192.css">
+    <script type="module" crossorigin src="/ReportAI/assets/main-a7a4766c.js"></script>
+    <link rel="stylesheet" href="/ReportAI/assets/main-728e2f4c.css">
   </head>
   <body>
     <div class="page">
@@ -15,7 +15,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <h1 class="navbar-brand d-none-navbar-horizontal pe-0 pe-md-3">
+    <h1 class="navbar-brand d-none-navbar-horizontal brand-image-dark pe-0 pe-md-3">
       <a href="./index.html">
         <img src="/ReportAI/assets/logo-941be46b.png" width="110" height="32" alt="Report AI" title="Report AI" class="navbar-brand-image">
       </a>
@@ -136,7 +136,7 @@
             </div>
           </li>
         </ul>
-        <div class="my-2 my-md-0 flex-grow-1 flex-md-grow-0 order-first order-md-last">
+        <!-- <div class="my-2 my-md-0 flex-grow-1 flex-md-grow-0 order-first order-md-last">
           <form action="./" method="get" autocomplete="off" novalidate>
             <div class="input-icon">
               <span class="input-icon-addon">
@@ -145,7 +145,7 @@
               <input type="text" value="" class="form-control border-gradient border-gradient-blue" placeholder="搜尋…" aria-label="Search in website">
             </div>
           </form>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -176,7 +176,7 @@
         <div class="container-xl">
           <div class="row g-2 align-items-center">
             <div class="col">
-              <h2 class="page-title">
+              <h2 class="page-title text-white">
                 戰情室
               </h2>
             </div>
@@ -192,10 +192,22 @@
 					<div class="card border-0 border-rounded-gradient">
 						<div class="card-header border-0 d-flex justify-content-between mb-4">
 							<h2 class="mb-3 text-primary">不同年齡段男性與女性消費者人數</h2>
-							<button class="btn btn-primary" type="button" data-bs-toggle="collapse" 
-							data-bs-target="#collapseChart_1" aria-expanded="false" aria-controls="collapseChart_1">
-								查詢
-							</button>
+							<div class="btn-group">
+								<a href="#" class="link-secondary btn btn-danger btn-icon me-2" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="刪除" data-bs-original-title="刪除"> 
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<path d="M4 7l16 0" />
+										<path d="M10 11l0 6" />
+										<path d="M14 11l0 6" />
+										<path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+										<path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+									  </svg>
+								</a>
+								<button class="btn btn-primary" type="button" data-bs-toggle="collapse" 
+								data-bs-target="#collapseChart_1" aria-expanded="false" aria-controls="collapseChart_1">
+									查詢
+								</button>
+							</div>
 						</div>
 						<div class="collapse" id="collapseChart_1">
 							<div class="card-body">
@@ -209,10 +221,22 @@
 					<div class="card border-0 border-rounded-gradient">
 						<div class="card-header border-0 d-flex justify-content-between mb-4">
 							<h2 class="mb-3 text-primary">不同年齡段與性別在銷貨收入關聯性</h2>
-							<button class="btn btn-primary" type="button" data-bs-toggle="collapse" 
-							data-bs-target="#collapseChart_2" aria-expanded="false" aria-controls="collapseChart_2">
-								查詢
-							</button>
+							<div class="btn-group">
+								<a href="#" class="link-secondary btn btn-danger btn-icon me-2" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="刪除" data-bs-original-title="刪除"> 
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<path d="M4 7l16 0" />
+										<path d="M10 11l0 6" />
+										<path d="M14 11l0 6" />
+										<path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+										<path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+									  </svg>
+								</a>
+								<button class="btn btn-primary" type="button" data-bs-toggle="collapse" 
+								data-bs-target="#collapseChart_2" aria-expanded="false" aria-controls="collapseChart_2">
+									查詢
+								</button>
+							</div>
 						</div>
 						<div class="collapse" id="collapseChart_2">
 							<div class="card-body">
@@ -226,10 +250,22 @@
 					<div class="card border-0 border-rounded-gradient">
 						<div class="card-header border-0 d-flex justify-content-between mb-4">
 							<h2 class="mb-3 text-primary">各別區域銷貨毛利</h2>
-							<button class="btn btn-primary" type="button" data-bs-toggle="collapse" 
-							data-bs-target="#collapseChart_3" aria-expanded="false" aria-controls="collapseChart_3">
-								查詢
-							</button>
+							<div class="btn-group">
+								<a href="#" class="link-secondary btn btn-danger btn-icon me-2" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="刪除" data-bs-original-title="刪除"> 
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<path d="M4 7l16 0" />
+										<path d="M10 11l0 6" />
+										<path d="M14 11l0 6" />
+										<path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+										<path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+									  </svg>
+								</a>
+								<button class="btn btn-primary" type="button" data-bs-toggle="collapse" 
+								data-bs-target="#collapseChart_3" aria-expanded="false" aria-controls="collapseChart_3">
+									查詢
+								</button>
+							</div>
 						</div>
 						<div class="collapse" id="collapseChart_3">
 							<div class="card-body">
