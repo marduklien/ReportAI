@@ -130,16 +130,16 @@ textarea {
 // table 
 
 .table {
-    --tblr-table-color: #232f3d;
+    // --tblr-table-color: #232f3d;
     --tblr-table-bg: #F7F9FD;
     //--tblr-table-border-color: #ee00ff;
-    --tblr-table-striped-bg: #232f3d;
-    --tblr-table-striped-color: #fcfdfe;
-    --tblr-table-active-bg: #2f3a47;
-    --tblr-table-active-color: #fcfdfe;
-    --tblr-table-hover-bg: #dfe9f5; 
-    --tblr-table-hover-color: #431566;  
-    border-color: var(--tblr-table-border-color);
+    --tblr-table-striped-bg: #d8e6f6;
+   // --tblr-table-striped-color: #232f3d;
+//     --tblr-table-active-bg: #2f3a47;
+     --tblr-table-active-color: #a4d1ea;
+     --tblr-table-hover-bg: #61a1dc; 
+     --tblr-table-hover-color: #FFF;  
+//     border-color: var(--tblr-table-border-color);
 }
 
 .table thead th, .markdown > table thead th {
@@ -361,9 +361,15 @@ thead, tbody, tfoot, tr, td, th {
 
 // modal
 
-.modal {
-    color: $primary;
+.modal-dialog-scrollable .modal-content {
+    max-height: calc(100vh - 1rem);
+    overflow: scroll;
 }
+
+
+// .modal {
+//     color: $primary;
+// }
 
 .modal-status {
     height: 0 !important;

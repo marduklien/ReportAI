@@ -15,7 +15,7 @@
         <div class="container-xl">
           <div class="row g-2 align-items-center">
             <div class="col">
-              <h2 class="page-title text-white">
+              <h2 class="page-title text-primary">
                 戰情室
               </h2>
             </div>
@@ -32,7 +32,8 @@
 						<div class="card-header border-0 d-flex justify-content-between mb-4">
 								<h2 class="mb-3 text-primary">不同年齡段男性與女性消費者人數</h2>
 							<div class="d-flex justify-slef-end">
-								<a href="#" class="link-secondary btn btn-danger btn-icon me-2" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="刪除" data-bs-original-title="刪除"> 
+								<a href="#" class="link-secondary btn btn-danger btn-icon me-2" data-bs-toggle="tooltip" 
+								data-bs-placement="top" aria-label="刪除" data-bs-original-title="刪除"> 
 									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
 										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 										<path d="M4 7l16 0" />
@@ -42,8 +43,8 @@
 										<path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
 									  </svg>
 								</a>
-								<button class="btn btn-primary btn-icon" type="button" data-bs-toggle="collapse" 
-								data-bs-target="#collapseChart_1" aria-expanded="false" aria-controls="collapseChart_1">
+								<button class="btn btn-primary btn-icon" type="button" 
+								data-bs-toggle="collapse" data-bs-target="#collapseChart_1" aria-expanded="false" aria-controls="collapseChart_1">
 									<!-- 查詢 -->
 									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search">
 										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -110,7 +111,7 @@
 										<path d="M14 11l0 6" />
 										<path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
 										<path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
-									  </svg>
+									</svg>
 								</a>
 								<button class="btn btn-primary btn-icon" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChart_3" 
 								aria-expanded="false" aria-controls="collapseChart_3">
@@ -144,8 +145,11 @@
 		  <polyline points="6 15 12 9 18 15"></polyline></svg>
 		</a>
 	  </div>
+	  
+	  <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/libs/apexcharts/dist/apexcharts.min.js" defer></script>
     <script type="module" src="../main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/libs/apexcharts/dist/apexcharts.min.js" defer></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/libs/apexcharts/dist/apexcharts.min.js" defer></script> -->
+	
 	<!-- chart-1 -->
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {

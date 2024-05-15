@@ -1,15 +1,19 @@
-//import "./node_modules/@tabler/core/dist/js/tabler.min.js";
+import "./node_modules/@tabler/core/dist/js/tabler";
+import "./node_modules/@tabler/core/dist/libs/bootstrap/dist/js/bootstrap.min";
 
-// import "./node_modules/bootstrap/dist/js/bootstrap.min.js";
-//import "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+//import "./node_modules/@tabler/core/dist/libs/bootstrap/dist/js/bootstrap.bundle.min";
+
 import "./assets/js/dropdown.js";
+// import "./node_modules/apexcharts/dist/apexcharts.min";
 
-import "./node_modules/@tabler/core/dist/libs/nouislider/dist/nouislider.min.js";
+
+// import "./node_modules/@tabler/core/dist/libs/nouislider/dist/nouislider.min.js";
 import "./node_modules/@tabler/core/dist/libs/litepicker/dist/js/main.js";
 import "./node_modules/@tabler/core/dist/libs/tom-select/dist/js/tom-select.complete.min.js";
 
-import "./assets/scss/all.scss";
 
+
+import "./assets/scss/all.scss";
 
 
 // Get the button
@@ -28,8 +32,3 @@ function topFunction() {
 }
 
 
-document.addEventListener("DOMContentLoaded", (event) => {
-  // Enable BS Tooltips 
-  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-});
