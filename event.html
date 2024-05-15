@@ -7,37 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <title>事件 - Report AI</title>
     <link href="https://s.udn.com.tw/static/font-icons/css/fontello.css" rel="stylesheet" type="text/css">
-    <script type="module" crossorigin src="/ReportAI/assets/main-3d41cc7c.js"></script>
-    <link rel="stylesheet" href="/ReportAI/assets/main-e320b930.css">
+    <script type="module" crossorigin src="/ReportAI/assets/main-0817a085.js"></script>
+    <link rel="stylesheet" href="/ReportAI/assets/main-5e284077.css">
   </head>
   <body>
     <div class="page">
       <header class="navbar navbar-expand-md d-print-none" >
   <div class="container-xl">
-    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" 
+    <button class="navbar-toggler text-gray-700" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" 
     aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" type="button" title="button" 
-    aria-controls="nav" aria-label="Expand navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>  -->
+
     <h1 class="navbar-brand d-none-navbar-horizontal brand-image-dark pe-0 pe-md-3">
-      <a href="./index.html">
-        <img src="/ReportAI/assets/logo-941be46b.png" width="110" height="32" alt="Report AI" title="Report AI" class="navbar-brand-image">
-      </a>
+      <!-- <a href="./index.html">
+        <img src="../assets/images/logo.png" width="110" height="32" alt="Report AI" title="Report AI" class="navbar-brand-image">
+      </a> -->
     </h1>
     <div class="navbar-nav flex-row order-md-last">
       <div class="nav-item dropdown">
         <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
-          <div class="d-none d-xl-block text-light fs-3 me-2">15,432,765筆</div>
+          <div class="d-none d-xl-block text-gray-700 fs-3 me-2">15,432,765筆</div>
           <div class="d-block d-xl-block ps-2">
-            <div class="fs-3 fs-sm-1 text-light">王大明</div>
-            <div class="mt-2 fs-4 fs-sm-2 text-light dropdown-toggle">總經理</div>
+            <div class="fs-3 fs-sm-1 text-gray-700">王大明</div>
+            <div class="mt-2 fs-4 fs-sm-2 text-gray-700 dropdown-toggle">總經理</div>
           </div>
         </a>
         <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-          <a href="./sign-in.html" class="dropdown-item">登出</a>
+          <a href="./index.html" class="dropdown-item">登出</a>
         </div>
       </div>
     </div>
@@ -45,7 +42,7 @@
 </header>
 
 <div class="navbar-expand-md">
-  <div class="collapse navbar-collapse" id="nav">
+  <div class="collapse navbar-collapse" id="navbar-menu">
     <div class="navbar">
       <div class="container-xl">
         <ul class="navbar-nav" id="nav">
@@ -166,8 +163,7 @@
     var navLinks = document.querySelectorAll('#nav .nav-link, #nav .dropdown-item');
 
     navLinks.forEach(function(link) {
-        var targetPage = link.getAttribute('href').split('/').pop(); //注意這裡獲取連結的屬性為 href，而不是 data-path
-
+        var targetPage = link.getAttribute('href').split('/').pop(); 
         if (currentPage === targetPage) {
             link.classList.add('active');
             
@@ -178,13 +174,15 @@
         }
     });
 });
-</script>      <div class="page-wrapper">
+</script>
+
+      <div class="page-wrapper">
         <!-- Page header -->
         <div class="page-header d-print-none">
           <div class="container-xl">
             <div class="row g-2 align-items-center">
               <div class="col">
-                <h2 class="page-title text-white">
+                <h2 class="page-title text-primary">
                   事件
                 </h2>
               </div>
@@ -414,7 +412,7 @@
           <ul class="list-inline list-inline-dots mb-0">
             <li class="d-flex flex-column flex-sm-row justify-content-center text-center">
               <span> Copyright &copy; 2024 &nbsp;</span>
-              <a href="https://www.yusung.com.tw/" class="link-primary" target="_blank">宇菘科技&紘宇顧問管理有限公司</a>
+              <a href="https://www.yusung.com.tw/" class="link-gray-700" target="_blank">宇菘科技&紘宇顧問管理有限公司</a>
               <span>&nbsp; All rights reserved.</span>
             </li>
           </ul>

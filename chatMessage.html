@@ -5,37 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <title>資訊查詢 - Report AI</title>
-    <script type="module" crossorigin src="/ReportAI/assets/main-3d41cc7c.js"></script>
-    <link rel="stylesheet" href="/ReportAI/assets/main-e320b930.css">
+    <script type="module" crossorigin src="/ReportAI/assets/main-0817a085.js"></script>
+    <link rel="stylesheet" href="/ReportAI/assets/main-5e284077.css">
   </head>
   <body>
     <div class="page">
       <header class="navbar navbar-expand-md d-print-none" >
   <div class="container-xl">
-    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" 
+    <button class="navbar-toggler text-gray-700" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" 
     aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" type="button" title="button" 
-    aria-controls="nav" aria-label="Expand navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>  -->
+
     <h1 class="navbar-brand d-none-navbar-horizontal brand-image-dark pe-0 pe-md-3">
-      <a href="./index.html">
-        <img src="/ReportAI/assets/logo-941be46b.png" width="110" height="32" alt="Report AI" title="Report AI" class="navbar-brand-image">
-      </a>
+      <!-- <a href="./index.html">
+        <img src="../assets/images/logo.png" width="110" height="32" alt="Report AI" title="Report AI" class="navbar-brand-image">
+      </a> -->
     </h1>
     <div class="navbar-nav flex-row order-md-last">
       <div class="nav-item dropdown">
         <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
-          <div class="d-none d-xl-block text-light fs-3 me-2">15,432,765筆</div>
+          <div class="d-none d-xl-block text-gray-700 fs-3 me-2">15,432,765筆</div>
           <div class="d-block d-xl-block ps-2">
-            <div class="fs-3 fs-sm-1 text-light">王大明</div>
-            <div class="mt-2 fs-4 fs-sm-2 text-light dropdown-toggle">總經理</div>
+            <div class="fs-3 fs-sm-1 text-gray-700">王大明</div>
+            <div class="mt-2 fs-4 fs-sm-2 text-gray-700 dropdown-toggle">總經理</div>
           </div>
         </a>
         <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-          <a href="./sign-in.html" class="dropdown-item">登出</a>
+          <a href="./index.html" class="dropdown-item">登出</a>
         </div>
       </div>
     </div>
@@ -43,7 +40,7 @@
 </header>
 
 <div class="navbar-expand-md">
-  <div class="collapse navbar-collapse" id="nav">
+  <div class="collapse navbar-collapse" id="navbar-menu">
     <div class="navbar">
       <div class="container-xl">
         <ul class="navbar-nav" id="nav">
@@ -164,8 +161,7 @@
     var navLinks = document.querySelectorAll('#nav .nav-link, #nav .dropdown-item');
 
     navLinks.forEach(function(link) {
-        var targetPage = link.getAttribute('href').split('/').pop(); //注意這裡獲取連結的屬性為 href，而不是 data-path
-
+        var targetPage = link.getAttribute('href').split('/').pop(); 
         if (currentPage === targetPage) {
             link.classList.add('active');
             
@@ -176,13 +172,15 @@
         }
     });
 });
-</script>      <div class="page-wrapper">
+</script>
+
+      <div class="page-wrapper">
         <!-- Page header -->
         <div class="page-header d-print-none">
           <div class="container-xl">
             <div class="row g-2 align-items-center">
               <div class="col">
-                <h2 class="page-title text-white">
+                <h2 class="page-title text-primary">
                   資訊查詢
                 </h2>
               </div>
@@ -195,15 +193,6 @@
             <div class="card border-top-0 bg-transparent border-0 border-gradient-blue-bottom p-2">
               <div class="row g-0">
                 <div class="col-12 col-lg-5 col-xl-3 border-end">
-
-                  <!-- <div class="card-header border-0 d-none d-md-block">
-                    <div class="input-icon">
-                      <span class="input-icon-addon">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
-                      </span>
-                      <input type="text" value="" class="form-control border-gradient border-gradient-blue" placeholder="搜尋…" aria-label="Search" />
-                    </div>
-                  </div> -->
 
                   <div class="card-body scrollable p-2" style="max-height:38rem">
                     <div class="nav flex-column nav-pills" role="tablist">
@@ -396,31 +385,46 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="card-footer bg-transparent border-0">
-                    <div class="input-group input-group-flat">
-                      <input type="text" class="form-control" autocomplete="off" placeholder="請輸入問題" />
-                      <span class="input-group-text">
-                        <a href="#" class="link-secondary btn btn-info btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="語音" data-bs-original-title="語音"> 
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-microphone">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M9 2m0 3a3 3 0 0 1 3 -3h0a3 3 0 0 1 3 3v5a3 3 0 0 1 -3 3h0a3 3 0 0 1 -3 -3z" />
-                            <path d="M5 10a7 7 0 0 0 14 0" />
-                            <path d="M8 21l8 0" />
-                            <path d="M12 17l0 4" />
-                          </svg>
+                  </div>             
+                    <div class="card-footer bg-transparent border-0 d-flex">
+                      <a href="#" class="link-secondary btn btn-purple text-white me-2"  data-bs-toggle="modal" data-bs-target="#modal-command"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-robot">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M6 4m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
+                          <path d="M12 2v2" />
+                          <path d="M9 12v9" />
+                          <path d="M15 12v9" />
+                          <path d="M5 16l4 -2" />
+                          <path d="M15 14l4 2" />
+                          <path d="M9 18h6" />
+                          <path d="M10 8v.01" />
+                          <path d="M14 8v.01" />
+                        </svg>
+                        命令工廠
+                      </a> 
+                      <div class="input-group input-group-flat">
+                        <input type="text" class="form-control" autocomplete="off" placeholder="請輸入問題">
+                        <span class="input-group-text p-1">
+                          <a href="#" class="link-secondary btn btn-info btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="語音" data-bs-original-title="語音"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-microphone">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                              <path d="M9 2m0 3a3 3 0 0 1 3 -3h0a3 3 0 0 1 3 3v5a3 3 0 0 1 -3 3h0a3 3 0 0 1 -3 -3z"></path>
+                              <path d="M5 10a7 7 0 0 0 14 0"></path>
+                              <path d="M8 21l8 0"></path>
+                              <path d="M12 17l0 4"></path>
+                            </svg>
+                          </a>
+                          <a href="#" class="link-secondary ms-2 btn btn-primary btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="傳送" data-bs-original-title="傳送"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-send">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                              <path d="M10 14l11 -11"></path>
+                              <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5"></path>
+                            </svg>
                         </a>
-                        <a href="#" class="link-secondary ms-2 btn btn-primary btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="傳送" data-bs-original-title="傳送"> 
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-send">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M10 14l11 -11" />
-                            <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5" />
-                          </svg>
-                      </a>
-                      </span>
-                      <!-- <button class="btn btn-primary">傳送</button> -->
+                        </span>
+                        <!-- <button class="btn btn-primary">傳送</button> -->
+                      </div>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -433,7 +437,7 @@
           <ul class="list-inline list-inline-dots mb-0">
             <li class="d-flex flex-column flex-sm-row justify-content-center text-center">
               <span> Copyright &copy; 2024 &nbsp;</span>
-              <a href="https://www.yusung.com.tw/" class="link-primary" target="_blank">宇菘科技&紘宇顧問管理有限公司</a>
+              <a href="https://www.yusung.com.tw/" class="link-gray-700" target="_blank">宇菘科技&紘宇顧問管理有限公司</a>
               <span>&nbsp; All rights reserved.</span>
             </li>
           </ul>
@@ -447,7 +451,130 @@
         <polyline points="6 15 12 9 18 15"></polyline></svg>
       </a>
     </div>
-    <!-- Libs JS -->
+    <!-- modal -->
+    <div class="modal modal-blur fade" id="modal-command" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" role="document">
+        <div class="modal-content border-0 border-rounded-gradient">
+    <div class="modal-header border-0">
+        <h5 class="modal-title text-primary">指令分類</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="container mt-3 d-flex">
+        <!-- Nav pills -->
+        <div class="col-3">
+          <ul class="nav nav-pills flex-column border-1" role="tablist">
+            <li class="nav-item mb-2">
+              <a class="nav-link p-3 active" data-bs-toggle="pill" href="#menu1">熱點提示</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link p-3" data-bs-toggle="pill" href="#menu2">寫作協助</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link p-3" data-bs-toggle="pill" href="#menu3">文章 / 報告</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link p-3" data-bs-toggle="pill" href="#menu4">面試</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link p-3" data-bs-toggle="pill" href="#menu5">程式開發</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link p-3" data-bs-toggle="pill" href="#menu6">學習</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link p-3" data-bs-toggle="pill" href="#menu7">語言翻譯</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link p-3" data-bs-toggle="pill" href="#menu8">日常生活</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link p-3" data-bs-toggle="pill" href="#menu9">角色扮演</a>
+          </li>
+
+          </ul>
+        </div>
+        <!-- Tab panes -->
+        <div class="col-9">
+          <div class="tab-content">
+            <div id="menu1" class="container tab-pane active">
+              <a href="#" class="w-100  text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
+                給我一個食譜，材料包括<span class="text-danger">[_材料1_]</span>、<span class="text-danger">[_材料2_]</span>、<span class="text-danger">[_材料..._]</span>。 
+              </a>
+              <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
+                解釋英文單字 [_英文單字_] 並給我 [_數位_] 個常用句子。
+              </a>
+              <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
+                我目前正在研究[_報告的背景和目的_]。我的報告主題是[_主題_]，請提供[_數位_]種開始方式，足夠簡單讓[_目標受眾_]理解，但又足夠吸引他們注意。
+              </a>
+              <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
+                寫一篇關於[_知識_]的[_數位_]字研究報告，在報告中引用最新研究成果並引用專家意見。
+              </a>
+              <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
+                您是[_某個主題_]的專家，請針對以下陳述[_附加陳述_]提供[_數位_]個反駁，每個反駁均附有支持證據
+              </a>
+              <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
+                您是[_某領域/某主題_]的專家，請總結以下內容，並提出今後對以下內容進一步研究的方向[_附內容_]
+              </a>
+              <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
+                您目前正在面試 [_公司_] 的 [_工作_]，請分享 [_數位_] 個在 [_工作_] 面試期間最常問到的問題。
+              </a>
+            </div>
+
+            <div id="menu2" class="container tab-pane fade">
+              <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
+                您是[_職業_]，我將向您發送一封電子郵件，您將回覆此電子郵件。電子郵件：[_附上電子郵件內容_]
+              </a>
+              <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
+                在 [_話題_] 上寫 [_數位_] [_社群平台_] 樣式標題，遵循以下規則：[_規則 1_]、[_規則 2_]、[_其他規則_]
+              </a>
+              <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
+                提供主題 [_一些話題_] 的文章大綱
+              </a>
+              <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
+                產生一篇關於主題 [_話題_] 的文章
+              </a>
+              <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
+                為以下產品關鍵字產生 [_數位_] 句產品文案。產品關鍵字：[_附加關鍵字..._]
+              </a>
+              <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
+                請幫我寫一首[_人/歌曲/藝術家_]風格的歌曲。歌曲中包含的元素必須有 [_關鍵字..._]
+              </a>
+              <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
+                以[_風格描述_]的風格寫一個關於[_故事想法_]的短篇故事
+              </a>
+            </div>
+
+            <div id="menu3" class="container tab-pane fade">
+              <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
+                我目前正在研究[報告的背景和目的]。我的報告主題是[_主題_]，請提供[數字]種開始方式，足夠簡單讓[_目標受眾_]理解，但又足夠吸引他們注意。
+              </a>
+              <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
+                寫一篇關於[_知識_]的[_數位_]字研究報告，在報告中引用最新研究成果並引用專家意見。
+              </a>
+              <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
+                您是[_某個主題_]的專家，請針對以下陳述[_附加陳述_]提供[_數位_]個反駁，每個反駁均附有支持證據
+              </a>
+              <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
+                您是[_某領域/某主題_]的專家，請總結以下內容，並提出今後對以下內容進一步研究的方向[_附內容_]
+              </a>
+              <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
+                給我 [_數位_] 篇關於 [_領域] 的文章。
+              </a>
+              <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
+                以點的形式總結本文的[_數位_]個重點：[_附文章內容/附文章網址_]
+              </a>
+              <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
+                以點的形式總結[_數量_][_領域_]個知識要點。
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+      </div>
+  </div>
     <!-- Tabler Core -->
     
   </body>
