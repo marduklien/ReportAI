@@ -1,6 +1,7 @@
-import "./node_modules/@tabler/core/dist/js/tabler.min.js";
+//import "./node_modules/@tabler/core/dist/js/tabler.min.js";
 
-import "./node_modules/bootstrap/dist/js/bootstrap.min.js";
+// import "./node_modules/bootstrap/dist/js/bootstrap.min.js";
+//import "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./assets/js/dropdown.js";
 
 import "./node_modules/@tabler/core/dist/libs/nouislider/dist/nouislider.min.js";

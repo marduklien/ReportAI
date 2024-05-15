@@ -1,6 +1,10 @@
 .navbar {
   background: transparent;
   box-shadow: none;
+	@media screen and (max-width: 480px){
+    // background: #FFF;
+    color: #333;;
+  }
 }
 
 .navbar-brand-image {
