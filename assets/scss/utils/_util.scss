@@ -137,8 +137,8 @@ textarea {
    // --tblr-table-striped-color: #232f3d;
 //     --tblr-table-active-bg: #2f3a47;
      --tblr-table-active-color: #a4d1ea;
-     --tblr-table-hover-bg: #61a1dc; 
-     --tblr-table-hover-color: #FFF;  
+     --tblr-table-hover-bg: #bdd6ee; 
+     --tblr-table-hover-color: #FFF !important;  
 //     border-color: var(--tblr-table-border-color);
 }
 
@@ -332,10 +332,10 @@ thead, tbody, tfoot, tr, td, th {
 }
 
 .chat-bubble {
-    background-color: #7e9ec7;
+    background-color: #99adc8;
 }
 .chat-bubble-me {
-    background-color: #5d709b;
+    background-color: #7d88a2;
 }
 .chat-bubble-date {
     color: #F1EAFF;
