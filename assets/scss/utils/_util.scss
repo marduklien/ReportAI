@@ -338,21 +338,25 @@ thead, tbody, tfoot, tr, td, th {
 }
 
 .text-body {
-    color: #FFF;
+    color: #333;
+}
+
+.chatbubble__card {
+    background-color: #eaf4ff;
 }
 
 .chat-bubble {
-    background-color: #99adc8;
+    background-color: #aac0d6;
 }
 .chat-bubble-me {
-    background-color: #7d88a2;
+    background-color: #bdd6ee;
 }
 .chat-bubble-date {
-    color: #F1EAFF;
+    color: #333;
 }
 
 .chat-bubble-body {
-    color: #fff;
+    color: #333;
 }
 
 .text-body .div:hover{
