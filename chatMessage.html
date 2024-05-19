@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <title>資訊查詢 - Report AI</title>
-    <script type="module" crossorigin src="/ReportAI/assets/main-ae5c79ab.js"></script>
-    <link rel="stylesheet" href="/ReportAI/assets/main-dedca39e.css">
+    <script type="module" crossorigin src="/ReportAI/assets/main-4d644708.js"></script>
+    <link rel="stylesheet" href="/ReportAI/assets/main-0451d464.css">
   </head>
   <body>
     <div class="page">
@@ -255,9 +255,10 @@
                     </div>
                 </nav>
     
-                <div class="card scrollable">
+                <div class="card chatbubble__card scrollable mb-2">
                   <div class="chat chat__area p-2">
                     <div class="chat-bubbles">
+
                       <div class="chat-item">
                         <div class="row align-items-end justify-content-end">
                           <div class="col col-lg-12">
@@ -279,7 +280,7 @@
                         </div>
                       </div>
 
-                      <div class="chat-item">
+                      <div class="chat-item ms-4">
                         <div class="row align-items-end">
                           <div class="col-auto mb-2">
                             <span class="avatar" style="background-image: url(/ReportAI/assets/robot-b47bec46.png)">
@@ -310,7 +311,7 @@
                       </div>
                       </div>
 
-                      <div class="chat-item">
+                      <div class="chat-item ms-4">
                         <div class="row align-items-end">
                           <div class="col-auto mb-2">
                             <span class="avatar" style="background-image: url(/ReportAI/assets/robot-b47bec46.png)">
@@ -361,7 +362,7 @@
                       </div>
                       </div>
 
-                      <div class="chat-item">
+                      <div class="chat-item ms-4">
                         <div class="row align-items-end">
                           <div class="col-auto mb-2">
                             <span class="avatar" style="background-image: url(/ReportAI/assets/robot-b47bec46.png)">
@@ -377,7 +378,7 @@
                               <div class="chat-bubble-body">
                                 <p>這裡是 商品與城市關係的結果</p>
                                 <div class="mt-2">
-                                  <img src="/ReportAI/assets/ec3kbbmx-df1a0a89.png" alt="" class="img-fluid">
+                                  <div id="chart-1" class="bg-light"></div>
                                 </div>
                               </div>
                             </div>
@@ -395,7 +396,7 @@
                         </div>
                       </div>
             
-                      <div class="chat-item">
+                      <div class="chat-item ">
                         <div class="row align-items-end justify-content-end">
                           <div class="col col-lg-12">
                             <div class="chat-bubble chat-bubble-me">
@@ -415,7 +416,7 @@
                         </div>
                       </div>
 
-                      <div class="chat-item">
+                      <div class="chat-item ms-4">
                         <div class="row align-items-end">
                           <div class="col-auto mb-2">
                             <span class="avatar" style="background-image: url(/ReportAI/assets/robot-b47bec46.png)"></span>
@@ -429,6 +430,7 @@
                           </div>
                         </div>
                       </div>
+
                     </div>
                   </div>
                 </div>
@@ -623,29 +625,80 @@
       </div>
   </div>
 
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <!-- <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-               $('#sidebarCollapse').find('#collapseIcon').toggleClass('fa-arrow-left').toggleClass('fa-arrow-right');
-      
-            });
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  	<!-- chart-1 -->
+	<script>
+		var options = {
+			chart: {
+				type: 'bar'
+			},
+			plotOptions: {
+					bar: {
+						columnWidth: '50%',
+					}
+				},
+				dataLabels: {
+					enabled: false,
+				},
+				series: [{
+					name: "男性",
+					data: [155, 65, 465, 265, 225, 325, 80]
+				},{
+					name: "女性",
+					data: [113, 42, 65, 54, 76, 65, 35]
+				}],
+  				tooltip: {
+					theme: 'dark'
+				},
+  				grid: {
+					padding: {
+						top: -20,
+						right: 0,
+						left: -4,
+						bottom: -4
+					},
+					strokeDashArray: 4,
+				},
+				xaxis: {
+					labels: {
+						padding: 0,
+					},
+					tooltip: {
+						enabled: false
+					},
+					axisBorder: {
+						show: false,
+					},
+				},
+  				yaxis: {
+					labels: {
+						padding: 4
+					},
+				},
+				labels: [
+					'0-20歲', '21-30歲', '31-40歲', '41-50歲', '51-60歲', '61-70歲', '71-80歲'
+				],
+				colors: ["#93C6E7","#EFA3C8","#BA90C6","#FFC764","#7AB2B2","#948979"],
+				legend: {
+					show: true,
+				},
+		}
+
+		var chart = new ApexCharts(document.querySelector("#chart-1"), options);
+
+		chart.render();
+	</script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+            $('#sidebarCollapse').find('#collapseIcon').toggleClass('ti-arrow-bar-to-left').toggleClass('ti-arrow-bar-to-right');
+  
         });
-    </script> -->
-        <script type="text/javascript">
-          $(document).ready(function () {
-              $('#sidebarCollapse').on('click', function () {
-                  $('#sidebar').toggleClass('active');
-                 $('#sidebarCollapse').find('#collapseIcon').toggleClass('ti-arrow-bar-to-left').toggleClass('ti-arrow-bar-to-right');
-        
-              });
-          });
-      </script>
-      
+    });
+</script>
+
     <!-- Tabler Core -->
     
 
