@@ -625,7 +625,21 @@
       </div>
   </div>
 
-	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+            $('#sidebarCollapse').find('#collapseIcon').toggleClass('ti-arrow-bar-to-left').toggleClass('ti-arrow-bar-to-right');
+  
+        });
+    });
+</script>
+
+    <!-- Tabler Core -->
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
   	<!-- chart-1 -->
 	<script>
 		var options = {
@@ -689,18 +703,6 @@
 		chart.render();
 	</script>
 
-  <script type="text/javascript">
-    $(document).ready(function () {
-        $('#sidebarCollapse').on('click', function () {
-            $('#sidebar').toggleClass('active');
-            $('#sidebarCollapse').find('#collapseIcon').toggleClass('ti-arrow-bar-to-left').toggleClass('ti-arrow-bar-to-right');
-  
-        });
-    });
-</script>
-
-    <!-- Tabler Core -->
-    
 
   </body>
 </html>
