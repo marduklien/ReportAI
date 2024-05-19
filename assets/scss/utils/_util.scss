@@ -335,6 +335,7 @@ thead, tbody, tfoot, tr, td, th {
     color: #FFF;
     background-color: #6b9ed1;
     border-radius: var(--tblr-border-radius-lg);
+    transition: all 0.3s;
 }
 
 .text-body {
@@ -374,14 +375,16 @@ thead, tbody, tfoot, tr, td, th {
 }
 
 #sidebar {
-    width: 300px;
+    min-width: 250px;
+    max-width: 250px;
     color: #fff;
     transition: all 0.3s; 
  
 }
 
 #sidebar.active {
-    margin-left: -300px;
+    margin-left: -250px;
+    transition: all 0.3s;
 }
 
 #sidebar .sidebar-header {
@@ -411,11 +414,15 @@ a[data-toggle="collapse"] {
 
 @media screen and (max-width: 480px) {
     #sidebar {
-        margin-left: -300px;
+        margin-left: -250px;
+        transition: all 0.3s;
     }
+
     #sidebar.active {
         margin-left: 0px;
+        transition: all 0.3s;
     }
+
     #sidebarCollapse span {
         display: none;
     }
