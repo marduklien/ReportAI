@@ -1,20 +1,11 @@
-import "./node_modules/@tabler/core/dist/js/tabler";
-import "./node_modules/@tabler/core/dist/libs/bootstrap/dist/js/bootstrap.min";
 
-//import "./node_modules/@tabler/core/dist/libs/bootstrap/dist/js/bootstrap.bundle.min";
-
+//import "./node_modules/@tabler/core/dist/js/tabler.min";
 import "./assets/js/dropdown.js";
-// import "./node_modules/apexcharts/dist/apexcharts.min";
-
-
-// import "./node_modules/@tabler/core/dist/libs/nouislider/dist/nouislider.min.js";
 import "./node_modules/@tabler/core/dist/libs/litepicker/dist/js/main.js";
 import "./node_modules/@tabler/core/dist/libs/tom-select/dist/js/tom-select.complete.min.js";
 
 
-
 import "./assets/scss/all.scss";
-
 
 // Get the button
 let mybutton = document.getElementById("backtop");
@@ -30,5 +21,4 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
 

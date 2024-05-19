@@ -47,7 +47,6 @@ textarea {
     background-color:#dfe9f5;
 }
 
-
 // select2
 .select2-container--bootstrap-5 .select2-selection--multiple .select2-search {
    // color: $primary;
@@ -301,13 +300,24 @@ thead, tbody, tfoot, tr, td, th {
 }
 
 
-
-
 //chat 
 .avatar {
     border: none;
     box-shadow:none;
     background-color: transparent;
+}
+.question__list {
+    height: 50rem;
+    @media screen and (max-width: 480px) {
+        height: 32rem;
+    }
+}
+
+.chat__area {
+    height: 42rem;
+    @media screen and (max-width: 480px) {
+        height: 32rem;
+    }
 }
 
 .nav-pills .nav-link {
@@ -347,6 +357,64 @@ thead, tbody, tfoot, tr, td, th {
 
 .text-body .div:hover{
     color: #FFF;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    width: 300px;
+    color: #fff;
+    transition: all 0.3s; 
+ 
+}
+
+#sidebar.active {
+    margin-left: -300px;
+}
+
+#sidebar .sidebar-header {
+    padding: 0px;
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 0px;
+    // height: 100%;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media screen and (max-width: 480px) {
+    #sidebar {
+        margin-left: -300px;
+    }
+    #sidebar.active {
+        margin-left: 0px;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
 }
 
 // card

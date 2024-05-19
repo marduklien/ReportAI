@@ -12,7 +12,7 @@
       <div class="page-wrapper">
       <!-- Page header -->
       <div class="page-header d-print-none">
-        <div class="container-xl">
+        <div class="container-fluid">
           <div class="row g-2 align-items-center">
             <div class="col">
               <h2 class="page-title text-primary">
@@ -24,12 +24,12 @@
       </div>
         <!-- Page body -->
         <div class="page-body">
-          <div class="container-xl">
+          <div class="container-fluid">
             <div class="row row-cards">
 
 				<div class="col-lg-6 col-xl-6">
 					<div class="card border-0 border-rounded-gradient">
-						<div class="card-header border-0 d-flex justify-content-between mb-4">
+						<div class="card-header border-0 d-flex flex-wrap justify-content-between">
 								<h2 class="mb-3 text-primary">不同年齡段男性與女性消費者人數</h2>
 							<div class="d-flex justify-slef-end">
 								<a href="#" class="link-secondary btn btn-danger btn-icon me-2" data-bs-toggle="tooltip" 
@@ -56,7 +56,7 @@
 						</div>
 						<div class="collapse" id="collapseChart_1">
 							<div class="card-body">
-								<div id="chart-1"></div>
+								<div id="chart-1" class="chart"></div>
 							</div>
 						</div>
 					</div>
@@ -64,7 +64,7 @@
 
 				<div class="col-lg-6 col-xl-6">
 					<div class="card border-0 border-rounded-gradient">
-						<div class="card-header border-0 d-flex justify-content-between mb-4">
+						<div class="card-header border-0 d-flex flex-wrap justify-content-between">
 							<h2 class="mb-3 text-primary">不同年齡段與性別在銷貨收入關聯性</h2>
 							<div class="d-flex justify-slef-end">
 								<a href="#" class="link-secondary btn btn-danger btn-icon me-2" 
@@ -91,7 +91,7 @@
 						</div>
 						<div class="collapse" id="collapseChart_2">
 							<div class="card-body">
-								<div id="chart-2"></div>
+								<div id="chart-2" class="chart"></div>
 							</div>
 						</div>
 					</div>
@@ -99,7 +99,7 @@
 
 				<div class="col-lg-6 col-xl-6">
 					<div class="card border-0 border-rounded-gradient">
-						<div class="card-header border-0 d-flex justify-content-between mb-4">
+						<div class="card-header border-0 d-flex flex-wrap justify-content-between">
 							<h2 class="mb-3 text-primary">各別區域銷貨毛利</h2>
 							<div class="d-flex justify-slef-end">
 								<a href="#" class="link-secondary btn btn-danger btn-icon me-2" data-bs-toggle="tooltip"
@@ -126,7 +126,7 @@
 						</div>
 						<div class="collapse" id="collapseChart_3">
 							<div class="card-body">
-								<div id="chart-3"></div>
+								<div id="chart-3" class="chart"></div>
 							</div>
 						</div>
 					</div>
@@ -145,38 +145,22 @@
 		  <polyline points="6 15 12 9 18 15"></polyline></svg>
 		</a>
 	  </div>
-	  
-	  <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/libs/apexcharts/dist/apexcharts.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script type="module" src="../main.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/libs/apexcharts/dist/apexcharts.min.js" defer></script> -->
-	
+
 	<!-- chart-1 -->
 	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			window.ApexCharts && (new ApexCharts(document.getElementById('chart-1'), {
-				chart: {
-					background: '#FFFFFF',
-					type: "bar",
-					fontFamily: 'inherit',
-					height: 340,
-					parentHeightOffset: 0,
-					toolbar: {
-						show: true,
-					},
-					animations: {
-						enabled: true
-					},
-				},
-				plotOptions: {
+		var options = {
+			chart: {
+				type: 'bar'
+			},
+			plotOptions: {
 					bar: {
 						columnWidth: '50%',
 					}
 				},
 				dataLabels: {
 					enabled: false,
-				},
-				fill: {
-					opacity: 1,
 				},
 				series: [{
 					name: "男性",
@@ -185,10 +169,10 @@
 					name: "女性",
 					data: [113, 42, 65, 54, 76, 65, 35]
 				}],
-				tooltip: {
+  				tooltip: {
 					theme: 'dark'
 				},
-				grid: {
+  				grid: {
 					padding: {
 						top: -20,
 						right: 0,
@@ -208,48 +192,37 @@
 						show: false,
 					},
 				},
-				yaxis: {
+  				yaxis: {
 					labels: {
 						padding: 4
 					},
 				},
 				labels: [
-					'0-20', '21-30', '31-40', '41-50', '51-60', '61-70', '71-80'
+					'0-20歲', '21-30歲', '31-40歲', '41-50歲', '51-60歲', '61-70歲', '71-80歲'
 				],
-				colors: [tabler.getColor("primary"), tabler.getColor("pink")],
+				colors: ["#93C6E7","#EFA3C8","#BA90C6","#FFC764","#7AB2B2","#948979"],
 				legend: {
 					show: true,
 				},
-			})).render();
-		});
+		}
+
+		var chart = new ApexCharts(document.querySelector("#chart-1"), options);
+
+		chart.render();
 	</script>
 	<!-- chart-2 -->
 	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			window.ApexCharts && (new ApexCharts(document.getElementById('chart-2'), {
-				chart: {
-					background: '#FFFFFF',
-					type: "bar",
-					fontFamily: 'inherit',
-					height: 340,
-					parentHeightOffset: 0,
-					toolbar: {
-						show: true,
-					},
-					animations: {
-						enabled: true
-					},
-				},
-				plotOptions: {
+		var options = {
+			chart: {
+				type: 'bar'
+			},
+			plotOptions: {
 					bar: {
 						columnWidth: '50%',
 					}
 				},
 				dataLabels: {
 					enabled: false,
-				},
-				fill: {
-					opacity: 1,
 				},
 				series: [{
 					name: "男性",
@@ -258,10 +231,10 @@
 					name: "女性",
 					data: [113, 42, 65, 54, 76, 65, 35]
 				}],
-				tooltip: {
+  				tooltip: {
 					theme: 'dark'
 				},
-				grid: {
+  				grid: {
 					padding: {
 						top: -20,
 						right: 0,
@@ -275,97 +248,88 @@
 						padding: 0,
 					},
 					tooltip: {
-						enabled: false,
+						enabled: false
 					},
 					axisBorder: {
 						show: false,
 					},
-					// type: 'datetime',
 				},
-				yaxis: {
+  				yaxis: {
 					labels: {
 						padding: 4
 					},
 				},
 				labels: [
-					'0-20', '21-30', '31-40', '41-50', '51-60', '61-70', '71-80'
+					'0-20歲', '21-30歲', '31-40歲', '41-50歲', '51-60歲', '61-70歲', '71-80歲'
 				],
-				colors: [tabler.getColor("primary"), tabler.getColor("pink")],
+				colors: ["#93C6E7","#EFA3C8","#BA90C6","#FFC764","#7AB2B2","#948979"],
 				legend: {
 					show: true,
 				},
-			})).render();
-		});
+		}
+
+		var chart = new ApexCharts(document.querySelector("#chart-2"), options);
+
+		chart.render();
 	</script>
 	<!-- chart-3 -->
 	<script>
-	document.addEventListener("DOMContentLoaded", function () {
-		window.ApexCharts && (new ApexCharts(document.getElementById('chart-3'), {
+		var options = {
 			chart: {
-				background: '#FFFFFF',
-				type: "bar",
-				fontFamily: 'inherit',
-				height: 340,
-				parentHeightOffset: 0,
-				toolbar: {
-					show: true,
-				},
-				animations: {
-					enabled: true
-				},
+				type: 'bar'
 			},
 			plotOptions: {
-				bar: {
-					columnWidth: '50%',
-				}
-			},
-			dataLabels: {
-				enabled: true,
-			},
-			fill: {
-				opacity: 1,
-			},
-			series: [{
-				name: "Tasks completion",
-				data: [155, 65, 465, 265, 225]
-			}],
-			tooltip: {
-				theme: 'dark'
-			},
-			grid: {
-				padding: {
-					top: -20,
-					right: 0,
-					left: -4,
-					bottom: -4
+					bar: {
+						columnWidth: '50%',
+					}
 				},
-				strokeDashArray: 4,
-			},
-			xaxis: {
-				labels: {
-					padding: 0,
+				dataLabels: {
+					enabled: false,
 				},
-				tooltip: {
-					enabled: false
+				series: [{
+					name: "銷貨毛利",
+					data: [155, 65, 465, 265, 225]
+				}],
+  				tooltip: {
+					theme: 'dark'
 				},
-				axisBorder: {
-					show: false,
+  				grid: {
+					padding: {
+						top: -20,
+						right: 0,
+						left: -4,
+						bottom: -4
+					},
+					strokeDashArray: 4,
 				},
-			},
-			yaxis: {
-				labels: {
-					padding: 4
+				xaxis: {
+					labels: {
+						padding: 0,
+					},
+					tooltip: {
+						enabled: false
+					},
+					axisBorder: {
+						show: false,
+					},
 				},
-			},
-			labels: [
-				'中部', '北部', '南部', '外島', '東部'
-			],
-			colors: [tabler.getColor("primary")],
-			legend: {
-				show: true,
-			},
-		})).render();
-	});
+  				yaxis: {
+					labels: {
+						padding: 4
+					},
+				},
+				labels: [
+					'中部', '北部', '南部', '外島', '東部'
+				],
+				colors: ["#93C6E7","#EFA3C8","#BA90C6","#FFC764","#7AB2B2","#948979"],
+				legend: {
+					show: true,
+				},
+		}
+
+		var chart = new ApexCharts(document.querySelector("#chart-3"), options);
+
+		chart.render();
 	</script>
   </body>
 </html>
