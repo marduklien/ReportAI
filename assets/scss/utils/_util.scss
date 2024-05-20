@@ -224,7 +224,7 @@ thead, tbody, tfoot, tr, td, th {
 
   .dropdown-menu a:hover {
     color: #FFF;
-    background-color: #0d71c2;
+    background-color: rgb(59 130 246 / .5);
   }
 
   .dropdown.show .dropdown-menu {
@@ -367,6 +367,8 @@ thead, tbody, tfoot, tr, td, th {
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
+
+
 
 .wrapper {
     display: flex;

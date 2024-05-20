@@ -1,7 +1,14 @@
 .btn-login {
   color: #FFF;
-  background: linear-gradient(to right,  rgba(122,188,255,1) 0%,rgba(64,150,238,1) 100%); 
+  background: linear-gradient(90deg, #0070e0 0%, #09b5d8 100%);
 }
+
+.btn-login:hover {
+  color: #FFF;
+  background: linear-gradient(90deg, #09b5d8 0%, #0070e0 100%);
+  transition: all 0.3s;
+}
+
 
 #particles-js {
   position: absolute;

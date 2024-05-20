@@ -2,7 +2,6 @@
   background: transparent;
   box-shadow: none;
 	@media screen and (max-width: 480px){
-    // background: #FFF;
     color: #333;;
   }
 }
@@ -37,20 +36,20 @@
 
 #nav .nav-item > a:hover {
   color: #FFF !important;
-  background-color: #2E3188;
+  background-color: rgb(1,128,255);
 }
 
 #nav .nav-item > a.active {
   color: #FFF !important;
-  background-color: #2E3188;
+  background-color: rgb(1,128,255);
 }
 
 #nav .dropdown-item:hover {
   color: #FFF !important;
-  background-color: #2E3188;
+  background-color: rgb(59 130 246 / .5);
 }
 
 #nav .dropdown-item.active, .dropdown-item:active {
-  color: #2824a1 !important;
-  background-color: #a5c8ef;
+  color: #FFF !important;
+  background-color: rgb(59 130 246 / .5);
 }
