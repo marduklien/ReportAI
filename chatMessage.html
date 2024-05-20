@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <title>資訊查詢 - Report AI</title>
-    <script type="module" crossorigin src="/ReportAI/assets/main-91133762.js"></script>
-    <link rel="stylesheet" href="/ReportAI/assets/main-8552a781.css">
+    <script type="module" crossorigin src="/ReportAI/assets/main-e57c43e0.js"></script>
+    <link rel="stylesheet" href="/ReportAI/assets/main-f68079ce.css">
   </head>
   <body>
     <div class="page">
-      <div class="py-3">
-  <header class="navbar navbar-expand-md navbar-transparent d-print-none">
+      
+  <header class="navbar navbar-expand-md navbar-transparent d-print-none border border-top-0 border-bottom-1 border-gray-600 pt-3 pb-3 pb-sm-0">
     <div class="container-fluid">
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -136,7 +136,6 @@
       </div>
     </div>
   </header>
-</div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -178,263 +177,460 @@
             <nav id="sidebar">
               <div class="question__list nav flex-column nav-pills p-2" role="tablist">
                 <div class="card-body scrollable p-2">
-                  
-                <a href="#chat-1" class="nav-link text-start mw-100 p-3 mb-2 active" id="chat-1-tab"
-                 data-bs-toggle="pill" role="tab" aria-selected="true">
-                  <div class="row align-items-center flex-fill">
-                      商品與城市關係
-                  </div>
-                </a>
-
-                <a href="#chat-1" class="nav-link text-start mw-100 p-3 mb-2" id="chat-1-tab" 
-                data-bs-toggle="pill" role="tab" aria-selected="false" tabindex="-1">
-                  <div class="row align-items-center flex-fill">
-                      不同年齡段與性別在銷貨收入關聯性
-                  </div>
-                </a>
-
-                <a href="#chat-1" class="nav-link text-start mw-100 p-3 mb-2" id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false" tabindex="-1">
-                  <div class="row align-items-center flex-fill">
-                      根據上述加上銷貨毛利
-                  </div>
-                </a>
-
-                <a href="#chat-1" class="nav-link text-start mw-100 p-3 mb-2" id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false" tabindex="-1">
-                  <div class="row align-items-center flex-fill">
-                    各別城市銷貨毛利
-                  </div>
-                </a>
-
-                <a href="#chat-1" class="nav-link text-start mw-100 p-3 mb-2" id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false" tabindex="-1">
-                  <div class="row align-items-center flex-fill">
-                      今年的銷貨收入
-                  </div>
-                </a>
-
-                <a href="#chat-1" class="nav-link text-start mw-100 p-3 mb-2" id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false" tabindex="-1">
-                  <div class="row align-items-center flex-fill">
-                      幫我查去年每個月的營業額
-                  </div>
-                </a>
-
-                <a href="#chat-1" class="nav-link text-start mw-100 p-3 mb-2" id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false" tabindex="-1">
-                  <div class="row align-items-center flex-fill">
-                      依據上個查詢結果 幫我加上每個月毛利
-                  </div>
-                </a>
-
-                <a href="#chat-1" class="nav-link text-start mw-100 p-3 mb-2" id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false" tabindex="-1">
-                  <div class="row align-items-center flex-fill">
-                      可以幫我查詢這個月最暢銷的十個商品
-                  </div>
-                </a>
-
-                <a href="#chat-1" class="nav-link text-start mw-100 p-3 mb-2" id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false" tabindex="-1">
-                  <div class="row align-items-center flex-fill">
-                      依據上次結果 將會員等級放X軸
-                  </div>
-                </a>
-
-                <a href="#chat-1" class="nav-link text-start mw-100 p-3 mb-2" id="chat-1-tab" data-bs-toggle="pill" role="tab" aria-selected="false" tabindex="-1">
-                  <div class="row align-items-center flex-fill">
-                      我想查詢會員與商品名稱間的關係
-                  </div>
-                </a>
+                  <ul class="nav nav-pills d-flex flex-column" role="tablist">
+                    <li class="nav-item mb-2">
+                      <a href="#chat-1" class="nav-link text-start mw-100 p-3 active" 
+                      data-bs-toggle="pill" role="tab" aria-selected="true">
+                       <div class="row align-items-center flex-fill">
+                           商品與城市關係
+                       </div>
+                     </a>
+                    </li>  
+                    <li class="nav-item mb-2">
+                        <a href="#chat-2" class="nav-link text-start mw-100 p-3"  
+                        data-bs-toggle="pill" role="tab" aria-selected="false" tabindex="-1">
+                          <div class="row align-items-center flex-fill">
+                              不同年齡段與性別在銷貨收入關聯性
+                          </div>
+                        </a>  
+                    </li>  
+                    <li class="nav-item mb-2">
+                      <a href="#chat-1" class="nav-link text-start mw-100 p-3"
+                      data-bs-toggle="pill" role="tab" aria-selected="false" tabindex="-1">
+                        <div class="row align-items-center flex-fill">
+                            根據上述加上銷貨毛利
+                        </div>
+                      </a>
+                    </li>  
+                <li class="nav-item mb-2">
+                  <a href="#chat-1" class="nav-link text-start mw-100 p-3" 
+                  data-bs-toggle="pill" role="tab" aria-selected="false" tabindex="-1">
+                    <div class="row align-items-center flex-fill">
+                      各別城市銷貨毛利
+                    </div>
+                  </a>
+                </li>  
+                <li class="nav-item mb-2">
+                    <a href="#chat-1" class="nav-link text-start mw-100 p-3" 
+                    data-bs-toggle="pill" role="tab" aria-selected="false" tabindex="-1">
+                    <div class="row align-items-center flex-fill">
+                        今年的銷貨收入
+                    </div>
+                  </a>
+                </li>  
+                <li class="nav-item mb-2">
+                    <a href="#chat-1" class="nav-link text-start mw-100 p-3" 
+                    data-bs-toggle="pill" role="tab" aria-selected="false" tabindex="-1">
+                      <div class="row align-items-center flex-fill">
+                          幫我查去年每個月的營業額
+                      </div>
+                    </a>
+                </li>  
+                <li class="nav-item mb-2">
+                    <a href="#chat-1" class="nav-link text-start mw-100 p-3"  
+                    data-bs-toggle="pill" role="tab" aria-selected="false" tabindex="-1">
+                      <div class="row align-items-center flex-fill">
+                          依據上個查詢結果 幫我加上每個月毛利
+                      </div>
+                    </a>
+                </li>  
+                <li class="nav-item mb-2">
+                    <a href="#chat-1" class="nav-link text-start mw-100 p-3" 
+                    data-bs-toggle="pill" role="tab" aria-selected="false" tabindex="-1">
+                      <div class="row align-items-center flex-fill">
+                          可以幫我查詢這個月最暢銷的十個商品
+                      </div>
+                    </a>
+                </li>  
+                <li class="nav-item mb-2">
+                    <a href="#chat-1" class="nav-link text-start mw-100 p-3"  
+                    data-bs-toggle="pill" role="tab" aria-selected="false" tabindex="-1">
+                      <div class="row align-items-center flex-fill">
+                          依據上次結果 將會員等級放X軸
+                      </div>
+                    </a>
+                </li>  
+                <li class="nav-item mb-2">
+                  <a href="#chat-1" class="nav-link text-start mw-100 p-3"
+                  data-bs-toggle="pill" role="tab" aria-selected="false" tabindex="-1">
+                    <div class="row align-items-center flex-fill">
+                        我想查詢會員與商品名稱間的關係
+                    </div>
+                  </a>
+                </li>  
+                </ul>
               </div>
               </div>
             </nav>
-    
             <!-- Page Content  -->
             <div id="content" class="w-100">
-
                 <nav class="mb-2">
                     <div class="container-fluid">
-                      <button type="button" id="sidebarCollapse" class="btn btn-icon bg-transparent fs-1">
+                      <button type="button" id="sidebarCollapse" class="btn btn-icon bg-transparent fs-1 border-0">
                           <i id="collapseIcon" class="ti ti-arrow-bar-to-left"></i>
                       </button>
                     </div>
                 </nav>
-    
-                <div class="card chatbubble__card scrollable mb-2">
-                  <div class="chat chat__area p-2">
-                    <div class="chat-bubbles">
+                <div class="tab-content">
+                  <div class="card chatbubble__card scrollable mb-2 tab-pane active" id="chat-1">
+                    <div class="chat chat__area p-2">
+                      <div class="chat-bubbles">
 
-                      <div class="chat-item">
-                        <div class="row align-items-end justify-content-end">
-                          <div class="col col-lg-12">
-                            <div class="chat-bubble chat-bubble-me">
-                              <div class="chat-bubble-title">
-                                <div class="row">
-                                  <div class="col-auto chat-bubble-date">09:32</div>
+                        <div class="chat-item">
+                          <div class="row align-items-end justify-content-end">
+                            <div class="col col-lg-12">
+                              <div class="chat-bubble chat-bubble-me">
+                                <div class="chat-bubble-title">
+                                  <div class="row">
+                                    <div class="col-auto chat-bubble-date">09:32</div>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="chat-bubble-body">
-                                <p>商品與城市關係</p>
+                                <div class="chat-bubble-body">
+                                  <p>商品與城市關係</p>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="col-auto mt-2">
-                            <span class="avatar" style="background-image: url(/ReportAI/assets/user-9641b8b3.png)">
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="chat-item ms-4">
-                        <div class="row align-items-end">
-                          <div class="col-auto mb-2">
-                            <span class="avatar" style="background-image: url(/ReportAI/assets/robot-b47bec46.png)">
-                            </span>
-                          </div>
-                          <div class="col col-lg-12">
-                            <div class="chat-bubble mb-2">
-                              <div class="chat-bubble-title">
-                                <div class="row">
-                                  <div class="col-auto chat-bubble-date">09:34</div>
-                                </div>
-                              </div>
-                              <div class="chat-bubble-body">
-                                <p>收到您的問題 商品與城市關係</p>
-                              </div>
+                            <div class="col-auto mt-2">
+                              <span class="avatar" style="background-image: url(/ReportAI/assets/user-9641b8b3.png)">
+                              </span>
                             </div>
                           </div>
                         </div>
-                        <div class="pin d-flex justify-content-end">
-                          <button class="switch-icon fs-1" data-bs-toggle="switch-icon">
-                            <span class="switch-icon-a text-secondary">
-                              <i class="ti ti-pin"></i>
-                            </span>
-                            <span class="switch-icon-b text-red">
-                              <i class="ti ti-pin"></i>
-                            </span>
-                        </button>
-                      </div>
-                      </div>
 
-                      <div class="chat-item ms-4">
-                        <div class="row align-items-end">
-                          <div class="col-auto mb-2">
-                            <span class="avatar" style="background-image: url(/ReportAI/assets/robot-b47bec46.png)">
-                            </span>
-                          </div>
-                          <div class="col col-lg-12">
-                            <div class="chat-bubble mb-2">
-                              <div class="chat-bubble-title">
-                                <div class="row">
-                                  <div class="col-auto chat-bubble-date">09:35</div>
+                        <div class="chat-item ms-4">
+                          <div class="row align-items-end">
+                            <div class="col-auto mb-2">
+                              <span class="avatar" style="background-image: url(/ReportAI/assets/robot-b47bec46.png)">
+                              </span>
+                            </div>
+                            <div class="col col-lg-12">
+                              <div class="chat-bubble mb-2">
+                                <div class="chat-bubble-title">
+                                  <div class="row">
+                                    <div class="col-auto chat-bubble-date">09:34</div>
+                                  </div>
+                                </div>
+                                <div class="chat-bubble-body">
+                                  <p>收到您的問題 商品與城市關係</p>
                                 </div>
                               </div>
-                              <div class="chat-bubble-body">
-                                <!-- 今年銷貨收入 -->
-                                <div class="table-responsive border-0 border-gradient-purple-bottom pb-3">
-                                  <table class="table table-hover table-vcenter text-primary">
-                                      <thead>
-                                      <tr>
-                                          <th>今年銷貨收入</th>
+                            </div>
+                          </div>
+                          <div class="pin d-flex justify-content-end">
+                            <button class="switch-icon fs-1" data-bs-toggle="switch-icon">
+                              <span class="switch-icon-a text-secondary">
+                                <i class="ti ti-pin"></i>
+                              </span>
+                              <span class="switch-icon-b text-red">
+                                <i class="ti ti-pin"></i>
+                              </span>
+                          </button>
+                        </div>
+                        </div>
+
+                        <div class="chat-item ms-4">
+                          <div class="row align-items-end">
+                            <div class="col-auto mb-2">
+                              <span class="avatar" style="background-image: url(/ReportAI/assets/robot-b47bec46.png)">
+                              </span>
+                            </div>
+                            <div class="col col-lg-12">
+                              <div class="chat-bubble mb-2">
+                                <div class="chat-bubble-title">
+                                  <div class="row">
+                                    <div class="col-auto chat-bubble-date">09:35</div>
+                                  </div>
+                                </div>
+                                <div class="chat-bubble-body">
+                                  <!-- 今年銷貨收入 -->
+                                  <div class="table-responsive border-0 border-gradient-purple-bottom pb-3">
+                                    <table class="table table-hover table-vcenter text-primary">
+                                        <thead>
+                                        <tr>
+                                            <th>今年銷貨收入</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>110,277,736</td>
+                                        </tr>
+                                        <tr>
+                                            <td>110,277,736</td>
                                       </tr>
-                                      </thead>
-                                      <tbody>
                                       <tr>
                                           <td>110,277,736</td>
                                       </tr>
+                                        </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="pin d-flex justify-content-end">
+                            <button class="switch-icon fs-1" data-bs-toggle="switch-icon">
+                              <span class="switch-icon-a text-secondary">
+                                <i class="ti ti-pin"></i>
+                              </span>
+                              <span class="switch-icon-b text-red">
+                                <i class="ti ti-pin"></i>
+                              </span>
+                          </button>
+                        </div>
+                        </div>
+
+                        <div class="chat-item ms-4">
+                          <div class="row align-items-end">
+                            <div class="col-auto mb-2">
+                              <span class="avatar" style="background-image: url(/ReportAI/assets/robot-b47bec46.png)">
+                              </span>
+                            </div>
+                            <div class="col col-lg-12">
+                              <div class="chat-bubble mb-2">
+                                <div class="chat-bubble-title">
+                                  <div class="row">
+                                    <div class="col-auto chat-bubble-date">09:40</div>
+                                  </div>
+                                </div>
+                                <div class="chat-bubble-body">
+                                  <p>這裡是 商品與城市關係的結果</p>
+                                  <div class="mt-2">
+                                    <div id="chart-1" class="bg-light"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="pin d-flex justify-content-end">
+                                <button class="switch-icon fs-1" data-bs-toggle="switch-icon">
+                                  <span class="switch-icon-a text-secondary">
+                                    <i class="ti ti-pin"></i>
+                                  </span>
+                                  <span class="switch-icon-b text-red">
+                                    <i class="ti ti-pin"></i>
+                                  </span>
+                              </button>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+              
+                        <div class="chat-item ">
+                          <div class="row align-items-end justify-content-end">
+                            <div class="col col-lg-12">
+                              <div class="chat-bubble chat-bubble-me">
+                                <div class="chat-bubble-title">
+                                  <div class="row">
+                                    <div class="col-auto chat-bubble-date">09:47</div>
+                                  </div>
+                                </div>
+                                <div class="chat-bubble-body">
+                                  <p>不同年齡段與性別在銷貨收入關聯性</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-auto mt-2">
+                              <span class="avatar" style="background-image: url(/ReportAI/assets/user-9641b8b3.png)"></span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="chat-item ms-4">
+                          <div class="row align-items-end">
+                            <div class="col-auto mb-2">
+                              <span class="avatar" style="background-image: url(/ReportAI/assets/robot-b47bec46.png)"></span>
+                            </div>
+                            <div class="col-auto">
+                              <div class="chat-bubble mb-2">
+                                <div class="chat-bubble-body">
+                                  <p class="text-light text-italic">typing<span class="animated-dots"></span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card chatbubble__card scrollable mb-2 tab-pane fade" id="chat-2">
+                    <div class="chat chat__area p-2">
+                      <div class="chat-bubbles">
+
+                        <div class="chat-item">
+                          <div class="row align-items-end justify-content-end">
+                            <div class="col col-lg-12">
+                              <div class="chat-bubble chat-bubble-me">
+                                <div class="chat-bubble-title">
+                                  <div class="row">
+                                    <div class="col-auto chat-bubble-date">09:32</div>
+                                  </div>
+                                </div>
+                                <div class="chat-bubble-body">
+                                  <p>不同年齡段與性別在銷貨收入關聯性</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-auto mt-2">
+                              <span class="avatar" style="background-image: url(/ReportAI/assets/user-9641b8b3.png)">
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="chat-item ms-4">
+                          <div class="row align-items-end">
+                            <div class="col-auto mb-2">
+                              <span class="avatar" style="background-image: url(/ReportAI/assets/robot-b47bec46.png)">
+                              </span>
+                            </div>
+                            <div class="col col-lg-12">
+                              <div class="chat-bubble mb-2">
+                                <div class="chat-bubble-title">
+                                  <div class="row">
+                                    <div class="col-auto chat-bubble-date">09:34</div>
+                                  </div>
+                                </div>
+                                <div class="chat-bubble-body">
+                                  <p>收到您的問題 不同年齡段與性別在銷貨收入關聯性</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="pin d-flex justify-content-end">
+                            <button class="switch-icon fs-1" data-bs-toggle="switch-icon">
+                              <span class="switch-icon-a text-secondary">
+                                <i class="ti ti-pin"></i>
+                              </span>
+                              <span class="switch-icon-b text-red">
+                                <i class="ti ti-pin"></i>
+                              </span>
+                          </button>
+                        </div>
+                        </div>
+
+                        <div class="chat-item ms-4">
+                          <div class="row align-items-end">
+                            <div class="col-auto mb-2">
+                              <span class="avatar" style="background-image: url(/ReportAI/assets/robot-b47bec46.png)">
+                              </span>
+                            </div>
+                            <div class="col col-lg-12">
+                              <div class="chat-bubble mb-2">
+                                <div class="chat-bubble-title">
+                                  <div class="row">
+                                    <div class="col-auto chat-bubble-date">09:35</div>
+                                  </div>
+                                </div>
+                                <div class="chat-bubble-body">
+                                  <!-- 今年銷貨收入 -->
+                                  <div class="table-responsive border-0 border-gradient-purple-bottom pb-3">
+                                    <table class="table table-hover table-vcenter text-primary">
+                                        <thead>
+                                        <tr>
+                                            <th>今年銷貨收入</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>110,277,736</td>
+                                        </tr>
+                                        <tr>
+                                            <td>110,277,736</td>
+                                      </tr>
                                       <tr>
                                           <td>110,277,736</td>
-                                    </tr>
-                                    <tr>
-                                        <td>110,277,736</td>
-                                    </tr>
-                                      </tbody>
-                                  </table>
+                                      </tr>
+                                        </tbody>
+                                    </table>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
+                          <div class="pin d-flex justify-content-end">
+                            <button class="switch-icon fs-1" data-bs-toggle="switch-icon">
+                              <span class="switch-icon-a text-secondary">
+                                <i class="ti ti-pin"></i>
+                              </span>
+                              <span class="switch-icon-b text-red">
+                                <i class="ti ti-pin"></i>
+                              </span>
+                          </button>
                         </div>
-                        <div class="pin d-flex justify-content-end">
-                          <button class="switch-icon fs-1" data-bs-toggle="switch-icon">
-                            <span class="switch-icon-a text-secondary">
-                              <i class="ti ti-pin"></i>
-                            </span>
-                            <span class="switch-icon-b text-red">
-                              <i class="ti ti-pin"></i>
-                            </span>
-                        </button>
-                      </div>
-                      </div>
+                        </div>
 
-                      <div class="chat-item ms-4">
-                        <div class="row align-items-end">
-                          <div class="col-auto mb-2">
-                            <span class="avatar" style="background-image: url(/ReportAI/assets/robot-b47bec46.png)">
-                            </span>
-                          </div>
-                          <div class="col col-lg-12">
-                            <div class="chat-bubble mb-2">
-                              <div class="chat-bubble-title">
-                                <div class="row">
-                                  <div class="col-auto chat-bubble-date">09:40</div>
+                        <div class="chat-item ms-4">
+                          <div class="row align-items-end">
+                            <div class="col-auto mb-2">
+                              <span class="avatar" style="background-image: url(/ReportAI/assets/robot-b47bec46.png)">
+                              </span>
+                            </div>
+                            <div class="col col-lg-12">
+                              <div class="chat-bubble mb-2">
+                                <div class="chat-bubble-title">
+                                  <div class="row">
+                                    <div class="col-auto chat-bubble-date">09:40</div>
+                                  </div>
+                                </div>
+                                <div class="chat-bubble-body">
+                                  <p>這裡是 不同年齡段與性別在銷貨收入關聯性的結果</p>
+                                  <div class="mt-2">
+                                    <div id="chart-2" class="bg-light"></div>
+                                  </div>
                                 </div>
                               </div>
-                              <div class="chat-bubble-body">
-                                <p>這裡是 商品與城市關係的結果</p>
-                                <div class="mt-2">
-                                  <div id="chart-1" class="bg-light"></div>
+                              <div class="pin d-flex justify-content-end">
+                                <button class="switch-icon fs-1" data-bs-toggle="switch-icon">
+                                  <span class="switch-icon-a text-secondary">
+                                    <i class="ti ti-pin"></i>
+                                  </span>
+                                  <span class="switch-icon-b text-red">
+                                    <i class="ti ti-pin"></i>
+                                  </span>
+                              </button>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+              
+                        <div class="chat-item ">
+                          <div class="row align-items-end justify-content-end">
+                            <div class="col col-lg-12">
+                              <div class="chat-bubble chat-bubble-me">
+                                <div class="chat-bubble-title">
+                                  <div class="row">
+                                    <div class="col-auto chat-bubble-date">09:47</div>
+                                  </div>
+                                </div>
+                                <div class="chat-bubble-body">
+                                  <p>根據上述加上銷貨毛利</p>
                                 </div>
                               </div>
                             </div>
-                            <div class="pin d-flex justify-content-end">
-                              <button class="switch-icon fs-1" data-bs-toggle="switch-icon">
-                                <span class="switch-icon-a text-secondary">
-                                  <i class="ti ti-pin"></i>
-                                </span>
-                                <span class="switch-icon-b text-red">
-                                  <i class="ti ti-pin"></i>
-                                </span>
-                            </button>
-                          </div>
-                          </div>
-                        </div>
-                      </div>
-            
-                      <div class="chat-item ">
-                        <div class="row align-items-end justify-content-end">
-                          <div class="col col-lg-12">
-                            <div class="chat-bubble chat-bubble-me">
-                              <div class="chat-bubble-title">
-                                <div class="row">
-                                  <div class="col-auto chat-bubble-date">09:47</div>
-                                </div>
-                              </div>
-                              <div class="chat-bubble-body">
-                                <p>不同年齡段與性別在銷貨收入關聯性</p>
-                              </div>
+                            <div class="col-auto mt-2">
+                              <span class="avatar" style="background-image: url(/ReportAI/assets/user-9641b8b3.png)"></span>
                             </div>
                           </div>
-                          <div class="col-auto mt-2">
-                            <span class="avatar" style="background-image: url(/ReportAI/assets/user-9641b8b3.png)"></span>
-                          </div>
                         </div>
-                      </div>
 
-                      <div class="chat-item ms-4">
-                        <div class="row align-items-end">
-                          <div class="col-auto mb-2">
-                            <span class="avatar" style="background-image: url(/ReportAI/assets/robot-b47bec46.png)"></span>
-                          </div>
-                          <div class="col-auto">
-                            <div class="chat-bubble mb-2">
-                              <div class="chat-bubble-body">
-                                <p class="text-light text-italic">typing<span class="animated-dots"></span></p>
+                        <div class="chat-item ms-4">
+                          <div class="row align-items-end">
+                            <div class="col-auto mb-2">
+                              <span class="avatar" style="background-image: url(/ReportAI/assets/robot-b47bec46.png)"></span>
+                            </div>
+                            <div class="col-auto">
+                              <div class="chat-bubble mb-2">
+                                <div class="chat-bubble-body">
+                                  <p class="text-light text-italic">typing<span class="animated-dots"></span></p>
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
 
+                      </div>
                     </div>
                   </div>
                 </div>
-
                 <div class="card-footer bg-transparent border-0 d-flex">
                   <a href="#" class="link-secondary btn btn-purple text-white me-2" data-bs-toggle="modal" data-bs-target="#modal-command"> 
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-robot">
@@ -475,7 +671,6 @@
                 </div>
             </div>
         </div>
-    
         </div>
       </div>
       <footer class="footer footer-transparent d-print-none">
@@ -511,7 +706,7 @@
     <div class="container mt-3 d-flex">
         <!-- Nav pills -->
         <div class="col-3">
-          <ul class="nav nav-pills flex-column border-1" role="tablist">
+          <ul class="nav nav-pills d-flex flex-column border-1" role="tablist">
             <li class="nav-item mb-2">
               <a class="nav-link p-3 active" data-bs-toggle="pill" href="#menu1">熱點提示</a>
             </li>
@@ -568,7 +763,6 @@
                 您目前正在面試 [_公司_] 的 [_工作_]，請分享 [_數位_] 個在 [_工作_] 面試期間最常問到的問題。
               </a>
             </div>
-
             <div id="menu2" class="container tab-pane fade">
               <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
                 您是[_職業_]，我將向您發送一封電子郵件，您將回覆此電子郵件。電子郵件：[_附上電子郵件內容_]
@@ -592,7 +786,6 @@
                 以[_風格描述_]的風格寫一個關於[_故事想法_]的短篇故事
               </a>
             </div>
-
             <div id="menu3" class="container tab-pane fade">
               <a href="#" class="w-100 text-start border border-1 border-azure rounded-4 p-3 mb-3" role="button">
                 我目前正在研究[報告的背景和目的]。我的報告主題是[_主題_]，請提供[數字]種開始方式，足夠簡單讓[_目標受眾_]理解，但又足夠吸引他們注意。
@@ -616,7 +809,6 @@
                 以點的形式總結[_數量_][_領域_]個知識要點。
               </a>
             </div>
-
           </div>
         </div>
       </div>
@@ -702,7 +894,68 @@
 
 		chart.render();
 	</script>
+	<!-- chart-2 -->
+	<script>
+		var options = {
+			chart: {
+				type: 'bar'
+			},
+			plotOptions: {
+					bar: {
+						columnWidth: '50%',
+					}
+				},
+				dataLabels: {
+					enabled: false,
+				},
+				series: [{
+					name: "男性",
+					data: [155, 65, 465, 265, 225, 325, 80]
+				},{
+					name: "女性",
+					data: [113, 42, 65, 54, 76, 65, 35]
+				}],
+  				tooltip: {
+					theme: 'dark'
+				},
+  				grid: {
+					padding: {
+						top: -20,
+						right: 0,
+						left: -4,
+						bottom: -4
+					},
+					strokeDashArray: 4,
+				},
+				xaxis: {
+					labels: {
+						padding: 0,
+					},
+					tooltip: {
+						enabled: false
+					},
+					axisBorder: {
+						show: false,
+					},
+				},
+  				yaxis: {
+					labels: {
+						padding: 4
+					},
+				},
+				labels: [
+					'0-20歲', '21-30歲', '31-40歲', '41-50歲', '51-60歲', '61-70歲', '71-80歲'
+				],
+				colors: ["#93C6E7","#EFA3C8","#BA90C6","#FFC764","#7AB2B2","#948979"],
+				legend: {
+					show: true,
+				},
+		}
 
+		var chart = new ApexCharts(document.querySelector("#chart-2"), options);
+
+		chart.render();
+	</script>
 
   </body>
 </html>
