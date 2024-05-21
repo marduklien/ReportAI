@@ -339,8 +339,8 @@ thead, tbody, tfoot, tr, td, th {
 }
 
 .nav-pills .nav-link.active {
-    color: #FFF;
-    background-color: #6b9ed1;
+    color: #FFF !important;
+    background-color: #6b9ed1 !important;
     border-radius: var(--tblr-border-radius-lg);
     transition: all 0.3s;
 }

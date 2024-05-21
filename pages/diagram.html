@@ -277,9 +277,10 @@
         <polyline points="6 15 12 9 18 15"></polyline></svg>
       </a>
     </div>
-    <script type="module" src="../main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
 
+    <script type="module" src="../main.js"></script>
+    <!-- list.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
         const list = new List('table-default', {
@@ -293,58 +294,57 @@
             ]
         });
         })
-      </script>
-
-      <script>
-        var filters = ["", "", ""]; // 根據列數初始化過濾器數組
+    </script>
+    <!-- search fliter -->
+    <script>
+      var filters = ["", "", ""]; // 根據列數初始化過濾器數組
 
 function setFilter(element, index) {
-  filters[index] = element.value.toUpperCase();
-  filterTable();
+filters[index] = element.value.toUpperCase();
+filterTable();
 
-  const clearButton = element.nextElementSibling.nextElementSibling;
-  clearButton.style.visibility = element.value ? "visible" : "hidden";
+const clearButton = element.nextElementSibling.nextElementSibling;
+clearButton.style.visibility = element.value ? "visible" : "hidden";
 }
 
 function filterTable() {
-  var table = document.getElementById("myTable");
-  var rows = Array.from(table.getElementsByTagName("tr"));
+var table = document.getElementById("myTable");
+var rows = Array.from(table.getElementsByTagName("tr"));
 
-  for (var rowItr = 2; rowItr < rows.length; rowItr++) {
-    // 從第3行開始跳過表頭和搜尋行
-    var row = rows[rowItr];
-    var cells = Array.from(row.getElementsByTagName("td"));
+for (var rowItr = 2; rowItr < rows.length; rowItr++) {
+  // 從第3行開始跳過表頭和搜尋行
+  var row = rows[rowItr];
+  var cells = Array.from(row.getElementsByTagName("td"));
 
-    var isRowVisible = filters.every((filter, filterIndex) => {
-      var cell = cells[filterIndex];
-      var txtValue = cell ? cell.textContent || cell.innerText : "";
+  var isRowVisible = filters.every((filter, filterIndex) => {
+    var cell = cells[filterIndex];
+    var txtValue = cell ? cell.textContent || cell.innerText : "";
 
-      return filter === "" || txtValue.toUpperCase().indexOf(filter) > -1;
-    });
+    return filter === "" || txtValue.toUpperCase().indexOf(filter) > -1;
+  });
 
-    row.style.display = isRowVisible ? "" : "none";
-  }
+  row.style.display = isRowVisible ? "" : "none";
+}
 }
 
 function toggleDropdown(button, index, event) {
-  event.preventDefault();
-  const dropdown = button.nextElementSibling.nextElementSibling; // 下拉菜單是filterButton後面兩個元素
-  dropdown.classList.toggle("show");
+event.preventDefault();
+const dropdown = button.nextElementSibling.nextElementSibling; // 下拉菜單是filterButton後面兩個元素
+dropdown.classList.toggle("show");
 }
 
 function clearFilter(index, event) {
-  event.preventDefault();
-  filters[index] = "";
-  const inputElement = document.querySelectorAll(".searchRow .myInput")[index];
-  inputElement.value = "";
-  filterTable();
-  const clearButton = inputElement.nextElementSibling.nextElementSibling;
-  clearButton.style.visibility = "hidden";
-  const dropdown = clearButton.nextElementSibling;
-  dropdown.classList.remove("show");
+event.preventDefault();
+filters[index] = "";
+const inputElement = document.querySelectorAll(".searchRow .myInput")[index];
+inputElement.value = "";
+filterTable();
+const clearButton = inputElement.nextElementSibling.nextElementSibling;
+clearButton.style.visibility = "hidden";
+const dropdown = clearButton.nextElementSibling;
+dropdown.classList.remove("show");
 }
 
-      </script>
-
+    </script>
   </body>
 </html>

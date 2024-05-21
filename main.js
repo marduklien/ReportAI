@@ -1,7 +1,8 @@
-
-//import "./node_modules/@tabler/core/dist/js/tabler.min";
 import "./assets/js/switch-icon.js";
 import "./assets/js/dropdown.js";
+import "https://cdn.jsdelivr.net/npm/apexcharts";
+import "./assets/js/charts.js";
+
 import "./node_modules/@tabler/core/dist/libs/litepicker/dist/js/main.js";
 import "./node_modules/@tabler/core/dist/libs/tom-select/dist/js/tom-select.complete.min.js";
 
