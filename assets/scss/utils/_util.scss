@@ -307,16 +307,23 @@ thead, tbody, tfoot, tr, td, th {
     background-color: transparent;
 }
 .question__list {
-    height: 50rem;
+    height: 43rem;
     @media screen and (max-width: 480px) {
-        height: 32rem;
+        height: auto;
+        min-height: 32rem;
+    }
+    @media screen and (max-width: 320px) {
+        height: 28rem;
     }
 }
 
 .chat__area {
-    height: 42rem;
+    height: 36rem;
     @media screen and (max-width: 480px) {
-        height: 32rem;
+        height: 28rem;
+    }
+    @media screen and (max-width: 320px) {
+        height: 22rem;
     }
 }
 
@@ -362,6 +369,12 @@ thead, tbody, tfoot, tr, td, th {
 
 .text-body .div:hover{
     color: #FFF;
+}
+
+.order__list:hover {
+    color: #333;
+    text-decoration: none;
+    background-color: RGB(189,214,238, 0.4);
 }
 
 /* ---------------------------------------------------

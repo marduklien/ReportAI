@@ -1,11 +1,13 @@
 
 //import "./node_modules/@tabler/core/dist/js/tabler.min";
+import "./assets/js/switch-icon.js";
 import "./assets/js/dropdown.js";
 import "./node_modules/@tabler/core/dist/libs/litepicker/dist/js/main.js";
 import "./node_modules/@tabler/core/dist/libs/tom-select/dist/js/tom-select.complete.min.js";
 
 
 import "./assets/scss/all.scss";
+
 
 // Get the button
 let mybutton = document.getElementById("backtop");
