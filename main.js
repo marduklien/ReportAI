@@ -1,5 +1,6 @@
 import "./assets/js/switch-icon.js";
 import "./assets/js/dropdown.js";
+// apexcharts
 import "https://cdn.jsdelivr.net/npm/apexcharts";
 import "./assets/js/charts.js";
 

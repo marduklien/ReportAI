@@ -1,14 +1,17 @@
 // font
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
+// 這支 functions 一定要放第一個，因為他裡面有些函式 Bootstrap5 會用到，不然後面有很多會用到的都會無法執行
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/@tabler/core/src/scss/tabler";
+//@import "../../node_modules/bootstrap/scss/bootstrap";    // 這支為 bootstrap 的變數
+
 
 // tabler flag
 @import url('https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-flags.min.css');
 // tabler icon
 @import url('https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css');
-//tabler-vendors
+// tabler-vendors
 @import url('https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-vendors.min.css');
 // tom-select
 @import url('https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.bootstrap5.min.css');
@@ -17,9 +20,10 @@
 
 
 // 變數
-
+//這支為自定變數，運用 !default 概念，先吃到就不會再去讀後面的設定了
 @import "./helps/variables";
-@import "./helps/variables-dark";
+//@import "./helps/variables-dark";
+
 
 // @import './utils/variables';
 // @import './utils/variables-bs5';
