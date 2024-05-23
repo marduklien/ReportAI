@@ -178,113 +178,95 @@
             <!-- 事件 -->
             <div class="card">
               <div class="card-body">
-                <ul class="steps steps-vertical">
-                  <li class="step-item">
-                    <div class="text-secondary">
-                      <h3 class="mb-4 fs-2">日期 : 2023-02-01</h3>
-                      <!-- <h3 class="mb-4 fs-2 fw-bold text-azure">事件名稱 : 2023第一季總營收第一期未達目標 97%</h3> -->
-                      <div class="mb-4 fs-2 fw-bold">事件狀態 : <span class="ms-2 badge bg-orange text-orange-fg">處理中</span></div>
-                      <h5 class="fw-bold text-primary mb-4 fs-2">事件管理人 : 總經理</h5>
-                      <h5 class="fw-bold text-cyan mb-4 fs-2">事件聯絡人 : 謝經理(管理總部)</h5>
-                      <p class="fs-2 mb-4 pe-7">
-                        2023 年第一季營收為新台幣 5.3 百萬元，較去年同期大幅衰退。<span class="text-warning">報表</span><br>
-                        稅後淨損新台幣 8.7 百萬元，每股稅後淨損為新台幣 0.11 元。<br>
-                        負債比率為 1%<span class="text-warning">連結</span>，流動比率及速動比率分別高於 100%，財務結構穩健無慮<br>
-                        本季營收較前一季成長，係因本季調整營運策略，，致使營收較上期增加。<br>
-                        帳列按攤銷後成本衡量之金融資產_流動為定存性質，隨時可做為營運資金用途，顯示公司營運資金充足無慮。
-                      </p>
-                    </div>
-                  </li>
-                  <li class="step-item active">
-                    <div class="h2 mb-4">回覆內容</div>
-                    <div class="text-secondary">
-                      <h3 class="mb-4 fs-2 text-gray-600">2023-02-01 13:24 AM (32天前)</h3>
-                      <h5 class="fw-bold text-primary mb-4 fs-2">回覆人 : 總經理</h5>
-                      <p class="fs-2 pe-7">已核對</p>
-                    </div>
-                    </li>
-                    <li class="step-item">
-                      <div class="d-flex flex-column align-items-start">
-                        <h5 class="fw-bold mb-2 fs-2">新增回覆</h5>
-                    </div>
-
-                      <!-- 回覆內容 -->
-                      <div class="col-12">
-                        <div class="tab-content mb-4" id="pills-tabContent">
-
-                          <div class="tab-pane fade show active" id="markasread" role="tabpanel" aria-labelledby="markasread-tab" tabindex="0">
-                            <ul class="justify-content-end nav nav-pills" id="pills-tab" role="tablist">
-                              <li class="nav-item d-flex" role="presentation">
-                                <button class="btn btn-outline-primary  me-3 rounded-1" id="markasread-tab"
-                                  data-bs-toggle="pill" data-bs-target="#markasread" type="button" role="tab"
-                                  aria-controls="markasread" aria-selected="true">當前回覆</button>
-                                <button class="btn btn-primary rounded-1" id="reply-tab" data-bs-toggle="pill"
-                                  data-bs-target="#reply" type="button" role="tab" aria-controls="reply"
-                                  aria-selected="true">新增回覆</button>
-                              </li>
-                            </ul>  
+                  <ul class="steps steps-vertical">
+                      <li class="step-item">
+                        <div class="text-secondary">
+                          <h3 class="mb-3 fs-2">日期 : 2023-02-01</h3>
+                          <div class="mb-3 fs-2 fw-bold">事件狀態 : <span class="ms-2 badge bg-orange text-orange-fg">處理中</span></div>
+                          <div class="mb-3 col-12 col-sm-3">
+                            <div class="row">
+                              <div class="col-6">
+                                <select class="form-select" aria-label="選擇狀態">
+                                  <option selected>選擇狀態</option>
+                                  <option value="1">處理中</option>
+                                  <option value="2">完成</option>
+                                  <option value="3">忽略</option>
+                                </select>
+                              </div>
+                              <div class="col-6">
+                                <button class="btn btn-primary">修改</button>
+                              </div>
+                            </div>
                           </div>
-
+                          <h5 class="fw-bold text-primary mb-3 fs-2">事件管理人 : 總經理</h5>
+                          <h5 class="fw-bold text-cyan mb-3 fs-2">事件聯絡人 : 謝經理(管理總部)</h5>
+                          <p class="fs-2 mb-4">
+                            2023 年第一季營收為新台幣 5.3 百萬元，較去年同期大幅衰退。<span class="text-warning">報表</span><br>
+                            稅後淨損新台幣 8.7 百萬元，每股稅後淨損為新台幣 0.11 元。<br>
+                            負債比率為 1%<span class="text-warning">連結</span>，流動比率及速動比率分別高於 100%，財務結構穩健無慮<br>
+                            本季營收較前一季成長，係因本季調整營運策略，，致使營收較上期增加。<br>
+                            帳列按攤銷後成本衡量之金融資產_流動為定存性質，隨時可做為營運資金用途，顯示公司營運資金充足無慮。
+                          </p>
                         </div>
-                        <!-- 新增回覆 -->
-                        <div class="tab-content" id="pills-tabContent">
-                          <div class="tab-pane fade" id="reply" role="tabpanel" aria-labelledby="reply-tab" tabindex="0">
-                            <form action="post">
-                                <textarea id="tinymce-default" class="border-0 w-100 px-4 py-3 text-area-resize-none bg-dark" name="reply" id="replyanswer"
-                                cols="30" rows="5" placeholder="請新增回覆...">
-                                <p class="fs-2 pe-7">請輸入內容...</p>
-                                </textarea>
-                            <ul class="justify-content-end nav nav-pills m-3" id="pills-tab" role="tablist">
-                              <li class="nav-item d-flex" role="presentation">
-                                <button class="btn btn-outline-danger me-3 rounded-1" id="markasread-tab" data-bs-toggle="pill"
-                                  data-bs-target="#markasread" type="button" role="tab" aria-controls="markasread"
-                                  aria-selected="true">取消</button>
-                                <button class="btn btn-primary rounded-1 active" id="reply-tab" data-bs-toggle="pill"
-                                  data-bs-target="#reply" type="button" role="tab" aria-controls="reply"
-                                  aria-selected="true">送出</button>
-                              </li>
-                            </ul>
-                          </form>
+                      </li>
+                      <li class="step-item active">
+                        <div class="h2 mb-2">回覆內容</div>
+                        <div class="text-secondary mb-4">
+                          <h3 class="mb-2 fs-2 text-gray-600">2023-02-01 13:24 AM (32天前)</h3>
+                          <h5 class="fw-bold text-primary mb-2 fs-2">回覆人 : 總經理</h5>
+                          <p class="fs-2">已核對</p>
+                        </div>
+                      </li>
+                      <li class="step-item">
+                        <div class="col-12">
+                          <!--隱藏 -->
+                          <ul class="nav nav-tabs d-none" role="tablist">
+                            <li role="presentation"> <a href="#markasread" id="markasread-tab" data-bs-toggle="tab" data-bs-target="#markasread" role="tab" aria-controls="markasread" aria-selected="true" class="active">List 1</a> </li>
+                            <li role="presentation"> <a href="#reply" id="reply-tab" data-bs-toggle="tab" data-bs-target="#reply" role="tab" aria-controls="reply" aria-selected="false" class="">List 2</a> </li>
+                          </ul>
+                          <div class="tab-content">
+                            <!-- 起始區 -->
+                            <div id="markasread" role="tabpanel" aria-labelledby="markasread-tab" class="tab-pane fade show active">
+                              <div class="col-12 col-sm-6">
+                                <div class="card border-0 rounded-2">
+                                  <div class="card-header ps-0 pb-2">
+                                      <h2 class="mb-1 fw-bold">新增回覆</h2>
+                                  </div>
+                                  <div class="card-body ps-0">
+                                      <button class="btn btn-primary rounded-1" type="button" id="goToList1">
+                                          新增回覆
+                                      </button>   
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- 回覆編輯區 -->
+                            <div id="reply" role="tabpanel" aria-labelledby="reply-tab" class="tab-pane fade">
+                                <div class="col-12 col-sm-6">
+                                  <div class="card border-0 rounded-2">
+                                    <div class="card-header ps-0 pb-2">
+                                      <h2 class="mb-1 fw-bold">新增回覆內容</h2>
+                                  </div>
+                                    <div class="card-body ps-0">
+                                      <form action="post">
+                                        <textarea id="tinymce-default" class="border-0 w-100 px-4 text-area-resize-none" name="reply"
+                                        cols="30" rows="5" placeholder="請新增回覆...">
+                                        <p class="fs-2 pe-7">請輸入內容...</p>
+                                        </textarea>
+                                      </form>
+                                        <div class="d-flex justify-content-end pt-4">
+                                          <button class="btn btn-danger rounded-1 me-3" type="cancel" id="goToList2">取消</button>
+                                          <button class="btn btn-primary rounded-1" type="submit" id="goToList3">送出</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
                           </div>
                         </div>
-                      </div>
-                    </li>
+                      </li>
                   </ul>
               </div>
-              </div>
             </div>
-
-            <!-- <div class="card border-0 border-rounded-gradient mb-4">
-              <div class="card-header d-flex flex-column align-items-start">
-                  <h3 class="mb-4 fs-2 fw-bold text-azure">事件名稱 : 2023第一季總營收第一期未達目標 97%</h3>
-                  <div class="mb-4 fs-2 fw-bold">事件狀態 : <span class="ms-2 badge bg-orange text-orange-fg">處理中</span></div>
-                  <h5 class="fw-bold text-primary mb-4 fs-2">事件管理人 : 總經理</h5>
-                  <h5 class="fw-bold text-cyan mb-2 fs-2">事件聯絡人 : 謝經理(管理總部)</h5>
-              </div>
-              <div class="card-body">
-                <ul class="steps steps-vertical">
-                  <li class="step-item">Step one</li>
-                  <li class="step-item">Step two</li>
-                  <li class="step-item active">Step three</li>
-                  <li class="step-item">Step four</li>
-                  <li class="step-item">Step five</li>
-                </ul>
-                <div class="d-flex">
-                  <div class="border-1 pb-0 w-100">
-                    <h5 class="text-gray-600 fs-2 mb-4">事件描述 : </h5>
-                    <p class="fs-2 mb-4 pe-7">
-                      2023 年第一季營收為新台幣 5.3 百萬元，較去年同期大幅衰退。<span class="text-warning">報表</span><br>
-                      稅後淨損新台幣 8.7 百萬元，每股稅後淨損為新台幣 0.11 元。<br>
-                      負債比率為 1%<span class="text-warning">連結</span>，流動比率及速動比率分別高於 100%，財務結構穩健無慮<br>
-                      本季營收較前一季成長，係因本季調整營運策略，，致使營收較上期增加。<br>
-                      帳列按攤銷後成本衡量之金融資產_流動為定存性質，隨時可做為營運資金用途，顯示公司營運資金充足無慮。</p>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-
-        </div>
-      </div>
       <footer class="footer footer-transparent d-print-none">
     <div class="container-fluid">
       <div class="row align-items-center">
@@ -308,6 +290,17 @@
       </a>
     </div>
     
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#goToList1").click(function () {
+          $("#reply-tab").tab("show");
+        });
+        $("#goToList2").click(function () {
+          $("#markasread-tab").tab("show");
+        });
+    });
+    </script>
     <!-- tinymce -->
     <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/libs/tinymce/tinymce.min.js" defer></script>
     <script>
