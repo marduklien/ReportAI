@@ -7,7 +7,6 @@ import "./assets/js/charts.js";
 import "./node_modules/@tabler/core/dist/libs/litepicker/dist/js/main.js";
 import "./node_modules/@tabler/core/dist/libs/tom-select/dist/js/tom-select.complete.min.js";
 
-
 import "./assets/scss/all.scss";
 
 

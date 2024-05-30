@@ -75,6 +75,7 @@
                           <ul class="nav nav-tabs d-none" role="tablist">
                             <li role="presentation"> <a href="#markasread" id="markasread-tab" data-bs-toggle="tab" data-bs-target="#markasread" role="tab" aria-controls="markasread" aria-selected="true" class="active">List 1</a> </li>
                             <li role="presentation"> <a href="#reply" id="reply-tab" data-bs-toggle="tab" data-bs-target="#reply" role="tab" aria-controls="reply" aria-selected="false" class="">List 2</a> </li>
+                            <li role="presentation"> <a href="#reply__result" id="result-tab" data-bs-toggle="tab" data-bs-target="#reply__result" role="tab" aria-controls="reply" aria-selected="false" class="">List 2</a> </li>
                           </ul>
                           <div class="tab-content">
                             <!-- 起始區 -->
@@ -116,6 +117,22 @@
                           </div>
                         </div>
                       </li>
+                      <!-- 回復結果 新增li -->
+                      <!-- <li class="step-item">
+                          <div id="reply__result" role="tabpanel" aria-labelledby="result-tab" class="tab-pane fade">
+                            <div class="col-12 col-sm-6">
+                                  <div class="h2 mb-2 fw-bold">回覆內容</div>
+                                  <div class="text-secondary mb-4">
+                                    <h3 class="mb-2 fs-2 text-gray-600">2023-02-02 13:24 AM </h3>
+                                    <h5 class="fw-bold text-primary mb-2 fs-2">回覆人 : 總經理</h5>
+                                    <p class="fs-2">回覆文字回覆文字回覆文字回覆文字回覆文字</p>
+                                  </div>
+                                  <div class="card-body ps-0">
+                                    <button class="btn btn-primary rounded-1" id="goToList3">新增回復</button>
+                                  </div>
+                            </div>
+                          </div>
+                      </li> -->
                   </ul>
               </div>
             </div>
@@ -137,6 +154,9 @@
         });
         $("#goToList2").click(function () {
           $("#markasread-tab").tab("show");
+        });
+        $("#goToList3").click(function () {
+          $("#result-tab").tab("show");
         });
     });
     </script>
