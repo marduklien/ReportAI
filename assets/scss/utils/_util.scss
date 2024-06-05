@@ -1,6 +1,17 @@
 //零件
 .btn-close {
+ --tblr-btn-close-opacity: .75;
  --tblr-btn-close-focus-shadow: none;
+}
+
+.btn-voice:hover {
+    background-color: #337CCF;
+    opacity: 1;
+}
+
+.btn-send:hover {
+    background-color: #363062;
+    opacity: 1;
 }
 
 .form-control {
