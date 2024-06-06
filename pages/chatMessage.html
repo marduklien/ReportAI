@@ -115,7 +115,7 @@
               </div>
             </nav>
             <!-- Page Content  -->
-            <div id="content" class="w-100">
+            <div id="content" class="">
                 <nav class="mb-2">
                     <div class="container-fluid">
                       <button type="button" id="sidebarCollapse" class="btn btn-icon bg-transparent fs-1 border-0">
@@ -126,7 +126,6 @@
                 <div class="tab-content">
                   <div class="card chatbubble__card scrollable mb-2 tab-pane active" id="chat-1">
                     <div class="chat chat__area p-2">
-                      <div class="chat-bubbles">
 
                         <div class="chat-item">
                           <div class="row align-items-end justify-content-end">
@@ -300,13 +299,11 @@
                           </div>
                         </div>
 
-                      </div>
                     </div>
                   </div>
                   <div class="card chatbubble__card scrollable mb-2 tab-pane fade" id="chat-2">
                     <div class="chat chat__area p-2">
-                      <div class="chat-bubbles">
-
+        
                         <div class="chat-item">
                           <div class="row align-items-end justify-content-end">
                             <div class="col col-lg-12">
@@ -479,7 +476,7 @@
                           </div>
                         </div>
 
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -531,132 +528,6 @@
 
     <!-- Tabler Core -->
     <script type="module" src="../main.js"></script>
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
-  	<!-- chart-1 -->
-	<!-- <script>
-		var options = {
-			chart: {
-				type: 'bar'
-			},
-			plotOptions: {
-					bar: {
-						columnWidth: '50%',
-					}
-				},
-				dataLabels: {
-					enabled: false,
-				},
-				series: [{
-					name: "男性",
-					data: [155, 65, 465, 265, 225, 325, 80]
-				},{
-					name: "女性",
-					data: [113, 42, 65, 54, 76, 65, 35]
-				}],
-  				tooltip: {
-					theme: 'dark'
-				},
-  				grid: {
-					padding: {
-						top: -20,
-						right: 0,
-						left: -4,
-						bottom: -4
-					},
-					strokeDashArray: 4,
-				},
-				xaxis: {
-					labels: {
-						padding: 0,
-					},
-					tooltip: {
-						enabled: false
-					},
-					axisBorder: {
-						show: false,
-					},
-				},
-  				yaxis: {
-					labels: {
-						padding: 4
-					},
-				},
-				labels: [
-					'0-20歲', '21-30歲', '31-40歲', '41-50歲', '51-60歲', '61-70歲', '71-80歲'
-				],
-				colors: ["#93C6E7","#EFA3C8","#BA90C6","#FFC764","#7AB2B2","#948979"],
-				legend: {
-					show: true,
-				},
-		}
-
-		var chart = new ApexCharts(document.querySelector("#chart-1"), options);
-
-		chart.render();
-	</script> -->
-	<!-- chart-2 -->
-	<!-- <script>
-		var options = {
-			chart: {
-				type: 'bar'
-			},
-			plotOptions: {
-					bar: {
-						columnWidth: '50%',
-					}
-				},
-				dataLabels: {
-					enabled: false,
-				},
-				series: [{
-					name: "男性",
-					data: [155, 65, 465, 265, 225, 325, 80]
-				},{
-					name: "女性",
-					data: [113, 42, 65, 54, 76, 65, 35]
-				}],
-  				tooltip: {
-					theme: 'dark'
-				},
-  				grid: {
-					padding: {
-						top: -20,
-						right: 0,
-						left: -4,
-						bottom: -4
-					},
-					strokeDashArray: 4,
-				},
-				xaxis: {
-					labels: {
-						padding: 0,
-					},
-					tooltip: {
-						enabled: false
-					},
-					axisBorder: {
-						show: false,
-					},
-				},
-  				yaxis: {
-					labels: {
-						padding: 4
-					},
-				},
-				labels: [
-					'0-20歲', '21-30歲', '31-40歲', '41-50歲', '51-60歲', '61-70歲', '71-80歲'
-				],
-				colors: ["#93C6E7","#EFA3C8","#BA90C6","#FFC764","#7AB2B2","#948979"],
-				legend: {
-					show: true,
-				},
-		}
-
-		var chart = new ApexCharts(document.querySelector("#chart-2"), options);
-
-		chart.render();
-	</script> -->
 
 
   </body>

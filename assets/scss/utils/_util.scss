@@ -366,6 +366,9 @@ thead, tbody, tfoot, tr, td, th {
 }
 
 .chatbubble__card {
+    max-height: 100vh;
+    transition: all 0.3s;
+    overflow-y:auto;
     background-color: #eaf4ff;
 }
 
