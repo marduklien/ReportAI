@@ -28,4 +28,3 @@ function topFunction() {
 $(document).ready(function(){  
   $(".chatbubble__card").scrollTop($('.chatbubble__card')[0].scrollHeight);
 })
-
